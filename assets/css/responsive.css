@@ -1,0 +1,401 @@
+/**
+ * [Table of contents]
+ *
+ * [&. Content / #key]
+ * [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ * Summary:
+ *
+ *  0. VARIABLE LESS
+ *    - 0.1. Color
+ *  1. RESPONSIVE SCREEN
+ *    - 1.1. Media screen max width 1600px
+ *    - 1.2. Media screen max width 1024px
+ *    - 1.3. Media screen max width 768px
+ *    - 1.4. Media screen max width 767px
+ *    - 1.5. Media screen max width 667px
+ *    - 1.6. Media screen max width 600px
+ *    - 1.7. Media screen max width 480px
+ *    - 1.8. Media screen max width 414px
+ *    - 1.9. Media screen max width 380px
+ *    - 1.10. Media screen max width 320px
+ */
+/*=====================================
+=            VARIABLE LESS            =
+=====================================*/
+/*----------  0.1. Color  ----------*/
+.technology a:hover,
+.technology a:focus,
+.technology a:hover .number,
+.technology .label-wrapper .label-topic,
+.technology .dropdown-menu li:hover > .link-page,
+.technology .button-search .icons:hover,
+.technology .catelogy-item .link,
+.technology .post-number,
+.technology .link-page:hover,
+.technology .link-page:focus,
+.technology .dropdown:hover .main-menu,
+.technology .title-wrapper:hover .link,
+.technology .info-fashion .link:hover,
+.technology .info-fashion .link:hover span {
+  color: #5768d1 !important;
+}
+.technology .label-topic:after,
+.technology .label-topic:before,
+.technology .title-topic:before,
+.technology .title-topic:after,
+.technology .title-topic-2:before,
+.technology .title-topic-2:after,
+.technology .pagination-wrapper .pagination li.active .pagi-link,
+.technology .pagination-wrapper .pagination .pagi-link:before,
+.technology .subscribe-widget .form-wrapper button,
+.technology .navigation .main-menu:before,
+.technology .tabs-list-2 .link:before,
+.technology .tabs-list-2 .link:after,
+.technology .label-rating {
+  background-color: #5768d1 !important;
+}
+.technology .read-more:hover {
+  color: #5768d1;
+}
+.technology .read-more:hover i {
+  color: #5768d1;
+}
+.technology .read-more:hover:before,
+.technology .read-more:hover:after {
+  background-color: #5768d1 !important;
+}
+.technology .gaming-top-news .post-number {
+  color: #FFF !important;
+}
+.video a:hover,
+.video a:focus,
+.video a:hover .number,
+.video .label-wrapper .label-topic,
+.video .dropdown-menu li:hover > .link-page,
+.video .button-search .icons:hover,
+.video .catelogy-item .link,
+.video .post-number,
+.video .link-page:hover,
+.video .link-page:focus,
+.video .dropdown:hover .main-menu,
+.video .title-wrapper:hover .link,
+.video .info-fashion .link:hover,
+.video .info-fashion .link:hover span {
+  color: #33d793 !important;
+}
+.video .label-topic:after,
+.video .label-topic:before,
+.video .title-topic:before,
+.video .title-topic:after,
+.video .title-topic-2:before,
+.video .title-topic-2:after,
+.video .pagination-wrapper .pagination li.active .pagi-link,
+.video .pagination-wrapper .pagination .pagi-link:before,
+.video .subscribe-widget .form-wrapper button,
+.video .navigation .main-menu:before,
+.video .tabs-list-2 .link:before,
+.video .tabs-list-2 .link:after,
+.video .label-rating {
+  background-color: #33d793 !important;
+}
+.video .read-more:hover {
+  color: #33d793;
+}
+.video .read-more:hover i {
+  color: #33d793;
+}
+.video .read-more:hover:before,
+.video .read-more:hover:after {
+  background-color: #33d793 !important;
+}
+.video .gaming-top-news .post-number {
+  color: #FFF !important;
+}
+.minimalist a:hover,
+.minimalist a:focus,
+.minimalist a:hover .number,
+.minimalist .label-wrapper .label-topic,
+.minimalist .dropdown-menu li:hover > .link-page,
+.minimalist .button-search .icons:hover,
+.minimalist .catelogy-item .link,
+.minimalist .post-number,
+.minimalist .link-page:hover,
+.minimalist .link-page:focus,
+.minimalist .dropdown:hover .main-menu,
+.minimalist .title-wrapper:hover .link,
+.minimalist .info-fashion .link:hover,
+.minimalist .info-fashion .link:hover span {
+  color: #daad86 !important;
+}
+.minimalist .label-topic:after,
+.minimalist .label-topic:before,
+.minimalist .title-topic:before,
+.minimalist .title-topic:after,
+.minimalist .title-topic-2:before,
+.minimalist .title-topic-2:after,
+.minimalist .pagination-wrapper .pagination li.active .pagi-link,
+.minimalist .pagination-wrapper .pagination .pagi-link:before,
+.minimalist .subscribe-widget .form-wrapper button,
+.minimalist .navigation .main-menu:before,
+.minimalist .tabs-list-2 .link:before,
+.minimalist .tabs-list-2 .link:after,
+.minimalist .label-rating {
+  background-color: #daad86 !important;
+}
+.minimalist .read-more:hover {
+  color: #daad86;
+}
+.minimalist .read-more:hover i {
+  color: #daad86;
+}
+.minimalist .read-more:hover:before,
+.minimalist .read-more:hover:after {
+  background-color: #daad86 !important;
+}
+.minimalist .gaming-top-news .post-number {
+  color: #FFF !important;
+}
+.personal-blog a:hover,
+.personal-blog a:focus,
+.personal-blog a:hover .number,
+.personal-blog .label-wrapper .label-topic,
+.personal-blog .dropdown-menu li:hover > .link-page,
+.personal-blog .button-search .icons:hover,
+.personal-blog .catelogy-item .link,
+.personal-blog .post-number,
+.personal-blog .link-page:hover,
+.personal-blog .link-page:focus,
+.personal-blog .dropdown:hover .main-menu,
+.personal-blog .title-wrapper:hover .link,
+.personal-blog .info-fashion .link:hover,
+.personal-blog .info-fashion .link:hover span {
+  color: #daad86 !important;
+}
+.personal-blog .label-topic:after,
+.personal-blog .label-topic:before,
+.personal-blog .title-topic:before,
+.personal-blog .title-topic:after,
+.personal-blog .title-topic-2:before,
+.personal-blog .title-topic-2:after,
+.personal-blog .pagination-wrapper .pagination li.active .pagi-link,
+.personal-blog .pagination-wrapper .pagination .pagi-link:before,
+.personal-blog .subscribe-widget .form-wrapper button,
+.personal-blog .navigation .main-menu:before,
+.personal-blog .tabs-list-2 .link:before,
+.personal-blog .tabs-list-2 .link:after,
+.personal-blog .label-rating {
+  background-color: #daad86 !important;
+}
+.personal-blog .read-more:hover {
+  color: #daad86;
+}
+.personal-blog .read-more:hover i {
+  color: #daad86;
+}
+.personal-blog .read-more:hover:before,
+.personal-blog .read-more:hover:after {
+  background-color: #daad86 !important;
+}
+.personal-blog .gaming-top-news .post-number {
+  color: #FFF !important;
+}
+.gaming-01 a:hover,
+.gaming-01 a:focus,
+.gaming-01 a:hover .number,
+.gaming-01 .label-wrapper .label-topic,
+.gaming-01 .dropdown-menu li:hover > .link-page,
+.gaming-01 .button-search .icons:hover,
+.gaming-01 .catelogy-item .link,
+.gaming-01 .post-number,
+.gaming-01 .link-page:hover,
+.gaming-01 .link-page:focus,
+.gaming-01 .dropdown:hover .main-menu,
+.gaming-01 .title-wrapper:hover .link,
+.gaming-01 .info-fashion .link:hover,
+.gaming-01 .info-fashion .link:hover span {
+  color: #e51515 !important;
+}
+.gaming-01 .label-topic:after,
+.gaming-01 .label-topic:before,
+.gaming-01 .title-topic:before,
+.gaming-01 .title-topic:after,
+.gaming-01 .title-topic-2:before,
+.gaming-01 .title-topic-2:after,
+.gaming-01 .pagination-wrapper .pagination li.active .pagi-link,
+.gaming-01 .pagination-wrapper .pagination .pagi-link:before,
+.gaming-01 .subscribe-widget .form-wrapper button,
+.gaming-01 .navigation .main-menu:before,
+.gaming-01 .tabs-list-2 .link:before,
+.gaming-01 .tabs-list-2 .link:after,
+.gaming-01 .label-rating {
+  background-color: #e51515 !important;
+}
+.gaming-01 .read-more:hover {
+  color: #e51515;
+}
+.gaming-01 .read-more:hover i {
+  color: #e51515;
+}
+.gaming-01 .read-more:hover:before,
+.gaming-01 .read-more:hover:after {
+  background-color: #e51515 !important;
+}
+.gaming-01 .gaming-top-news .post-number {
+  color: #FFF !important;
+}
+.fashion-01 a:hover,
+.fashion-01 a:focus,
+.fashion-01 a:hover .number,
+.fashion-01 .label-wrapper .label-topic,
+.fashion-01 .dropdown-menu li:hover > .link-page,
+.fashion-01 .button-search .icons:hover,
+.fashion-01 .catelogy-item .link,
+.fashion-01 .post-number,
+.fashion-01 .link-page:hover,
+.fashion-01 .link-page:focus,
+.fashion-01 .dropdown:hover .main-menu,
+.fashion-01 .title-wrapper:hover .link,
+.fashion-01 .info-fashion .link:hover,
+.fashion-01 .info-fashion .link:hover span {
+  color: #ffb0c1 !important;
+}
+.fashion-01 .label-topic:after,
+.fashion-01 .label-topic:before,
+.fashion-01 .title-topic:before,
+.fashion-01 .title-topic:after,
+.fashion-01 .title-topic-2:before,
+.fashion-01 .title-topic-2:after,
+.fashion-01 .pagination-wrapper .pagination li.active .pagi-link,
+.fashion-01 .pagination-wrapper .pagination .pagi-link:before,
+.fashion-01 .subscribe-widget .form-wrapper button,
+.fashion-01 .navigation .main-menu:before,
+.fashion-01 .tabs-list-2 .link:before,
+.fashion-01 .tabs-list-2 .link:after,
+.fashion-01 .label-rating {
+  background-color: #ffb0c1 !important;
+}
+.fashion-01 .read-more:hover {
+  color: #ffb0c1;
+}
+.fashion-01 .read-more:hover i {
+  color: #ffb0c1;
+}
+.fashion-01 .read-more:hover:before,
+.fashion-01 .read-more:hover:after {
+  background-color: #ffb0c1 !important;
+}
+.fashion-01 .gaming-top-news .post-number {
+  color: #FFF !important;
+}
+.travel-01 a:hover,
+.travel-01 a:focus,
+.travel-01 a:hover .number,
+.travel-01 .label-wrapper .label-topic,
+.travel-01 .dropdown-menu li:hover > .link-page,
+.travel-01 .button-search .icons:hover,
+.travel-01 .catelogy-item .link,
+.travel-01 .post-number,
+.travel-01 .link-page:hover,
+.travel-01 .link-page:focus,
+.travel-01 .dropdown:hover .main-menu,
+.travel-01 .title-wrapper:hover .link,
+.travel-01 .info-fashion .link:hover,
+.travel-01 .info-fashion .link:hover span {
+  color: #119e9e !important;
+}
+.travel-01 .label-topic:after,
+.travel-01 .label-topic:before,
+.travel-01 .title-topic:before,
+.travel-01 .title-topic:after,
+.travel-01 .title-topic-2:before,
+.travel-01 .title-topic-2:after,
+.travel-01 .pagination-wrapper .pagination li.active .pagi-link,
+.travel-01 .pagination-wrapper .pagination .pagi-link:before,
+.travel-01 .subscribe-widget .form-wrapper button,
+.travel-01 .navigation .main-menu:before,
+.travel-01 .tabs-list-2 .link:before,
+.travel-01 .tabs-list-2 .link:after,
+.travel-01 .label-rating {
+  background-color: #119e9e !important;
+}
+.travel-01 .read-more:hover {
+  color: #119e9e;
+}
+.travel-01 .read-more:hover i {
+  color: #119e9e;
+}
+.travel-01 .read-more:hover:before,
+.travel-01 .read-more:hover:after {
+  background-color: #119e9e !important;
+}
+.travel-01 .gaming-top-news .post-number {
+  color: #FFF !important;
+}
+.travel-02 a:hover,
+.travel-02 a:focus,
+.travel-02 a:hover .number,
+.travel-02 .label-wrapper .label-topic,
+.travel-02 .dropdown-menu li:hover > .link-page,
+.travel-02 .button-search .icons:hover,
+.travel-02 .catelogy-item .link,
+.travel-02 .post-number,
+.travel-02 .link-page:hover,
+.travel-02 .link-page:focus,
+.travel-02 .dropdown:hover .main-menu,
+.travel-02 .title-wrapper:hover .link,
+.travel-02 .info-fashion .link:hover,
+.travel-02 .info-fashion .link:hover span {
+  color: #00aeda !important;
+}
+.travel-02 .label-topic:after,
+.travel-02 .label-topic:before,
+.travel-02 .title-topic:before,
+.travel-02 .title-topic:after,
+.travel-02 .title-topic-2:before,
+.travel-02 .title-topic-2:after,
+.travel-02 .pagination-wrapper .pagination li.active .pagi-link,
+.travel-02 .pagination-wrapper .pagination .pagi-link:before,
+.travel-02 .subscribe-widget .form-wrapper button,
+.travel-02 .navigation .main-menu:before,
+.travel-02 .tabs-list-2 .link:before,
+.travel-02 .tabs-list-2 .link:after,
+.travel-02 .label-rating {
+  background-color: #00aeda !important;
+}
+.travel-02 .read-more:hover {
+  color: #00aeda;
+}
+.travel-02 .read-more:hover i {
+  color: #00aeda;
+}
+.travel-02 .read-more:hover:before,
+.travel-02 .read-more:hover:after {
+  background-color: #00aeda !important;
+}
+.travel-02 .gaming-top-news .post-number {
+  color: #FFF !important;
+}
+/*----------  0.2. Font  ----------*/
+/*=============================
+ ====  END VARIABLE LESS   ====
+ =============================*/
+/*=============================
+ =====       MIXINS       =====
+ =============================*/
+/*=============================
+ ====      END MIXINS      ====
+ =============================*/
+/*=========================================
+=            RESPONSIVE SCREEN            =
+=========================================*/
+/*----------  1.1. Media screen max width 1600px  ----------*/
+/*----------  1.2. Media screen max width 1024px  ----------*/
+/*----------  1.3. Media screen max width 768px  ----------*/
+/*----------  1.4. Media screen max width 767px  ----------*/
+/*----------  1.5. Media screen max width 667px  ----------*/
+/*----------  1.6. Media screen max width 600px  ----------*/
+/*----------  1.7. Media screen max width 480px  ----------*/
+/*----------  1.8. Media screen max width 414px  ----------*/
+/*----------  1.9. Media screen max width 380px  ----------*/
+/*----------  1.10. Media screen max width 320px  ----------*/

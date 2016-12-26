@@ -1,0 +1,48 @@
+<div class="block-list column-2">
+    <div class="title-topic">post by author</div>
+    <div class="block-news-content">
+        <div class="block-item" ng-repeat="news in postByAuthorCtrl.newses">
+            <div class="news-layout-1">
+                <div class="news-video">
+                    <a href="#" class="news-image"><img src="{{news.image}}" alt="" class="img-responsive"></a>
+                </div>
+                <div class="news-content">
+                    <div class="label-wrapper"><a href="#" class="label-topic">{{news.category}}</a></div><a href="#" class="title">{{news.title}}</a>
+                    <div class="info-wrapper">
+                        <div class="info-left">
+                            <div class="comment-wrapper">
+                                <div class="comment-avatar">
+                                    <div class="avatar avatar-1">T</div>
+                                    <div class="avatar avatar-2">M</div>
+                                    <div class="avatar avatar-3">A</div>
+                                </div>
+                                <div class="comment-info">{{news.comments}} comments</div>
+                            </div>
+                        </div>
+                        <div class="info-right">
+                            <ul class="info">
+                                <li><a href="#" class="link">{{news.date}}</a></li>
+                                <li><a href="#" class="link">{{news.views}} views</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <nav class="pagination-wrapper">
+        <ul class="pagination">
+            <li><a href="#" aria-label="Previous" class="pagi-link prev"><span aria-hidden="true">prev</span></a></li>
+            <li><a href="#" class="pagi-link">1</a></li>
+            <li class="active"><a href="#" class="pagi-link">2</a></li>
+            <li><a href="#" class="pagi-link">3</a></li>
+            <li><a href="#" class="pagi-link">4</a></li>
+            <li><a href="#" aria-label="Next" class="pagi-link next"><span aria-hidden="true">next</span></a></li>
+        </ul>
+        <div class="position-page">Page <span class="active">2 </span>of 6</div>
+        <div class="clearfix"></div>
+    </nav>
+</div>

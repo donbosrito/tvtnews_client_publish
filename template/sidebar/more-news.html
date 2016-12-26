@@ -1,0 +1,33 @@
+<div class="news-may-you-like-single-post widget">
+    <div class="title-topic">more news you may like</div>
+    <div class="content-widget">
+        <div class="block-news-4">
+            <div class="main-news-wrapper">
+                <div class="news-layout-1">
+                    <a href="#" class="news-image"><img src="{{moreNewsCtrl.firstNews.image}}" alt="" class="img-responsive"></a>
+                    <div class="news-content"><a href="#" class="title">{{moreNewsCtrl.firstNews.title}}</a>
+                        <ul class="info">
+                            <li><a href="#" class="link">By {{moreNewsCtrl.firstNews.author}}</a></li>
+                            <li><a href="#" class="link">{{moreNewsCtrl.firstNews.date}}</a></li>
+                            <li><a href="#" class="link">{{moreNewsCtrl.firstNews.views}} views</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="layout-list-news column-2">
+                <div class="block-item" ng-repeat="news in moreNewsCtrl.twoNews">
+                    <div class="news-layout-1 small">
+                        <a href="#" class="news-image"><img src="{{news.image}}" alt="" class="img-responsive"></a>
+                        <div class="news-content"><a href="#" class="title">{{news.title}}</a>
+                            <ul class="info">
+                                <li><a href="#" class="link">{{news.date}}</a></li>
+                                <li><a href="#" class="link">{{news.views}} views</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

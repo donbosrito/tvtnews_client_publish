@@ -1,0 +1,42 @@
+<h1 class="title-post">motivational quotes for business and other work environments</h1>
+<!-- SHARE BUTTONS-->
+<div class="sharing-wrapper">
+    <div class="item">
+        <div class="figure-wrapper">
+            <div class="figure-data">{{ singlePostCtrl.news.sharingCount }}</div>
+            <div class="figure-text">shares</div>
+        </div>
+    </div>
+    <div class="item"><a href="#" class="button share-facebook"><i class="fa fa-facebook ic-social hovered"></i><i class="fa fa-facebook ic-social unhovered"></i><div class="share-text">Share</div></a></div>
+    <div class="item"><a href="#" class="button share-twitter"><i class="fa fa-twitter ic-social hovered"></i><i class="fa fa-twitter ic-social unhovered"></i><div class="share-text">Share</div></a></div>
+    <div class="item other-share-wrapper"><a class="button other-share share-gplus"><i class="fa fa-google-plus"></i></a><a class="button other-share share-pinterest"><i class="fa fa-pinterest"></i></a><a class="button other-share share-linkedin"><i class="fa fa-linkedin"></i></a></div>
+    <div class="item"><a class="button button-more"><i class="fa fa-ellipsis-h ic-more"></i><div class="share-text more">more</div><i class="fa fa-caret-left ic-less hide"></i><div class="share-text less hide">less</div></a></div>
+</div>
+<!-- MAIN CONTENT OF POST-->
+<div class="main-content"><img src="{{ singlePostCtrl.news.poster }}" alt="" class="img-responsive content-image">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="writter-info-wrapper">
+                    <a href="#"><img src="{{ singlePostCtrl.news._author.avatar }}" class="img-responsive writter-pic"></a>
+                    <div class="writter-text-wrapper"><a href="" class="link writter-text">By <span class="writter-name">{{ singlePostCtrl.news._author.name }}</span></a>
+                        <ul class="info">
+                            <li><a href="#" class="link">{{ singlePostCtrl.news.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
+                            <li><a href="#" class="link">{{ singlePostCtrl.news.readingCount }} views</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-9">
+                <div class="content-post-wrapper">
+                    <div ng-bind-html="singlePostCtrl.news.body"></div>
+                    <div class="tag-wrapper"><i class="fa fa-tag icon-tag"></i>
+                        <ul class="list-tag" ng-repeat="tag in singlePostCtrl.news.tags">
+                            <li class="item-tag"><a href="#" class="tag">{{ tag }}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="banner-widget widget">
+    <div class="section-content">
+        <a href="#" class="link"><img src="assets/images/qc-images/banner-300x250_2.jpg" alt="" class="img-responsive"></a>
+    </div>
+</div>
+<div class="list-news-widget widget">
+    <div class="title-topic">latest news</div>
+    <div class="content-widget">
+        <!-- BLOCK 3-->
+        <div class="block-news-3">
+            <div class="block-news-content">
+                <div class="layout-main-news">
+                    <div class="news-layout-1">
+                        <div class="news-video">
+                            <a href="#" class="news-image"><img src="{{lastNewsCtrl.firstLastNews.image}}" alt="" class="img-responsive"></a>
+                            <div class="group-btn-video"><span class="btn-play"><i class="fa fa-play"></i></span><span class="btn-volume"><i class="fa fa-volume-off"></i></span><span class="btn-zoom"><i class="fa fa-arrows-alt"></i></span></div>
+                        </div>
+                        <div class="news-content"><a href="#" class="title">{{lastNewsCtrl.firstLastNews.title}}</a>
+                            <ul class="info">
+                                <li><a href="#" class="link">by {{lastNewsCtrl.firstLastNews.author}}</a></li>
+                                <li><a href="#" class="link">{{lastNewsCtrl.firstLastNews.date}}</a></li>
+                                <li><a href="#" class="link">{{lastNewsCtrl.firstLastNews.views}} views</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-list-news">
+                    <div class="single-recent-post-widget" ng-repeat="news in lastNewsCtrl.restLastNews">
+                        <div class="img-wrapper">
+                            <a href="#" class="thumb"><img src="{{news.image}}" alt="" class="img-responsive"></a>
+                        </div>
+                        <div class="post-info"><a href="#" class="title">{{news.title}}</a>
+                            <ul class="info">
+                                <li><a href="#" class="link">{{news.date}}</a></li>
+                                <li><a href="#" class="link">{{news.likes}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

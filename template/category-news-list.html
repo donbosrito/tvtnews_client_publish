@@ -1,0 +1,84 @@
+
+<div class="col-md-8 col-xs-12 main-news main-left">
+    <!-- BLOCK 2-->
+    <div class="block-news-2">
+        <div class="block-news-content">
+            <div class="layout-main-news">
+                <div class="news-layout-3 big">
+                    <a href="#post/{{ categoryNewsListCtrl.firstCategoryNews._id }}" class="news-image"><img src="{{ categoryNewsListCtrl.firstCategoryNews.poster }}" alt="" class="img-responsive"></a>
+                    <div class="news-content">
+                        <div class="label-wrapper"><a href="#" class="label-topic">{{ categoryNewsListCtrl.firstCategoryNews._category.name }}</a></div>
+                        <a href="#post/{{ categoryNewsListCtrl.firstCategoryNews._id }}" class="title">{{ categoryNewsListCtrl.firstCategoryNews.title }}</a>
+                        <div class="info-wrapper">
+                            <div class="info-left">
+                                <div class="comment-wrapper">
+                                    <div class="comment-avatar">
+                                        <div class="avatar avatar-1">T</div>
+                                        <div class="avatar avatar-2">M</div>
+                                        <div class="avatar avatar-3">A</div>
+                                    </div>
+                                    <div class="comment-info">{{ categoryNewsListCtrl.firstCategoryNews.commentCount }} comments</div>
+                                </div>
+                            </div>
+                            <div class="info-right">
+                                <ul class="info">
+                                    <li><a href="#" class="link">by {{ categoryNewsListCtrl.firstCategoryNews._author.nickname }}</a></li>
+                                    <li><a href="#" class="link">{{ categoryNewsListCtrl.firstCategoryNews.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
+                                    <li><a href="#" class="link">{{ categoryNewsListCtrl.firstCategoryNews.readingCount }} views</a></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layout-list-news column-1">
+                <div class="block-item" ng-repeat="news in categoryNewsListCtrl.restCategoryNews">
+                    <div class="news-layout-2 small">
+                        <div class="news-video">
+                            <a href="#post/{{ categoryNewsListCtrl.firstCategoryNews._id }}" class="news-image"><img src="{{ news.poster }}" alt="" class="img-responsive"></a>
+                        </div>
+                        <div class="news-content">
+                            <div class="label-wrapper"><a href="#" class="label-topic">{{ news._category.name }}</a></div>
+                            <a href="#post/{{ categoryNewsListCtrl.firstCategoryNews._id }}" class="title">{{ news.title }}</a>
+                            <div class="info-wrapper">
+                                <div class="info-left">
+                                    <div class="comment-wrapper">
+                                        <div class="comment-avatar">
+                                            <div class="avatar avatar-1">T</div>
+                                            <div class="avatar avatar-2">M</div>
+                                            <div class="avatar avatar-3">A</div>
+                                        </div>
+                                        <div class="comment-info">{{ news.commentCount }}</div>
+                                    </div>
+                                </div>
+                                <div class="info-right">
+                                    <ul class="info">
+                                        <li><a href="#" class="link">{{ news._author.nickname }}</a></li>
+                                        <li><a href="#" class="link">{{ news.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
+                                        <li><a href="#" class="link">{{ news.readingCount }}</a></li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="description">{{ news.summary }}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <nav class="pagination-wrapper">
+                <ul class="pagination">
+                    <li><a href="#" aria-label="Previous" class="pagi-link prev"><span aria-hidden="true">prev</span></a></li>
+                    <li><a href="#" class="pagi-link">1</a></li>
+                    <li class="active"><a href="#" class="pagi-link">2</a></li>
+                    <li><a href="#" class="pagi-link">3</a></li>
+                    <li><a href="#" class="pagi-link">4</a></li>
+                    <li><a href="#" aria-label="Next" class="pagi-link next"><span aria-hidden="true">next</span></a></li>
+                </ul>
+                <div class="position-page">Page <span class="active">2 </span>of 6</div>
+                <div class="clearfix"></div>
+            </nav>
+        </div>
+    </div>
+</div>

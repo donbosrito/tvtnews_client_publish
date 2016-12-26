@@ -1,0 +1,26 @@
+<div class="hot-news-heading">
+    <div class="left-info"><i class="icons flaticon-nature"></i>
+        <h4 class="title">What's Hot Today</h4></div>
+    <div class="right-info">
+        <div class="hot-news-prev"><i class="fa fa-angle-left"></i></div>
+        <div class="hot-news-next"><i class="fa fa-angle-right"></i></div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="hot-news-content overflow-hidden">
+    <div class="slick-4-item">
+        <div class="item" ng-repeat="news in hotNewsCtrl.newses">
+            <div class="news-layout-1">
+                <a href="#post/{{ news._id }}" class="news-image"><img ng-src="{{ news.poster }}" alt="" class="img-responsive"></a>
+                <div class="news-content">
+                    <div class="label-wrapper"><a href="#" class="label-topic">{{ news._category.name }}</a></div>
+                    <a href="#post/{{ news._id }}" class="title">{{ news.title }}</a>
+                    <ul class="info">
+                        <li> <a href="#" class="link">{{ news._author.nickname }}</a></li>
+                        <li><a href="#" class="link">{{ news.readingCount }} views</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

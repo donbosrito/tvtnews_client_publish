@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tvtNews">
+
+<head>
+    <title>TVT News | Home Default</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT CSS-->
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,700">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900">
+    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Vidaloka:300,400,500,700,900">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yrsa:300,400,500,600,700">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trocchi">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind+Madurai:400,500,600">
+    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-awesome/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/flat-icon/flaticon.css">
+    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/ion-icon/css/ionicons.css">
+    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/weather-fonts/weather-font.css">
+    <!-- LIBRARY CSS-->
+    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick-theme.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/custom-scroll/jquery.mCustomScrollbar.min.css">
+    <!-- STYLE CSS-->
+    <link type="text/css" rel="stylesheet" href="assets/css/layout.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/components.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/block.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/responsive.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox.css?v=2.1.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-buttons.css?v=1.0.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-thumbs.css?v=1.0.7">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <!-- BEGIN PAGE LOADER-->
+    <div class="body-wrapper">
+        <!-- WRAPPER CONTENT-->
+        <div class="wrapper-content">
+            <!-- HEADER-->
+            <header-default></header-default>
+            <!-- MAIN CONTENT-->
+            <ng-view></ng-view>
+            <!-- FOOTER-->
+            <footer-default></footer-default>
+            <!-- BUTTON BACK TO TOP-->
+            <div class="btn-wrapper back-to-top"><a href="" class="btn btn-transparent"><i class="fa fa-angle-up"></i></a></div>
+        </div>
+    </div>
+    <!-- LIBRARY JS-->
+    <script src="assets/libs/jquery/jquery-2.2.3.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/libs/slick-slider/slick.min.js"></script>
+    <script src="assets/libs/easy-ticker/jquery.easing.min.js"></script>
+    <script src="assets/libs/easy-ticker/jquery.easy-ticker.min.js"></script>
+    <script src="assets/libs/directional-hover/jquery.directional-hover.js"></script>
+    <script src="assets/libs/custom-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async="" defer=""></script>
+    <script src="assets/libs/weather/jquery.simpleWeather.min.js"></script>
+    <script src="frontend/angularjs/angular.min.js"></script>
+    <script src="frontend/angularjs/angular-route.js"></script>
+    <script src="frontend/angularjs/angular-sanitize.js"></script>
+    <!-- MAIN JS-->
+    <script src="assets/js/main.js"></script>
+    <script src="frontend/javascript/controllers.js"></script>
+    <script src="frontend/javascript/components.js"></script>
+    <script src="frontend/javascript/directives.js"></script>
+    <script src="frontend/javascript/routes.js"></script>
+    <!-- LOADING SCRIPTS FOR PAGE-->
+    <script src="assets/libs/fancybox/js/jquery.fancybox.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-buttons.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-thumbs.js"></script>
+    <script src="assets/js/pages/homepage-default.js"></script>
+    <!-- ABOUT US -->
+    <script src="assets/libs/appear/jquery.appear.js"></script>
+    <script src="assets/libs/count-to/jquery.countTo.js"></script>
+    <script src="assets/js/pages/about-us.js"></script>
+    <!-- CONTACT US -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu6tm60TzeUo9rWpLnrQ7mrFn4JPMVje4&amp;amp;sensor=false"></script>
+    <script src="assets/js/pages/contact.js"></script>
+</body>
+
+</html>

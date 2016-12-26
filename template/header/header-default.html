@@ -1,0 +1,132 @@
+<header>
+    <div class="header-main">
+        <div class="header-topbar">
+            <div class="container">
+                <div class="header-topbar-wrapper">
+                    <div class="topbar-left">
+                        <ul class="list-inline list-unstyled topbar-link">
+                            <li><a href="#" class="link">featured</a></li>
+                            <li><a href="#" class="link">blog</a></li>
+                            <li><a href="#" class="link">about</a></li>
+                            <li><a href="#" class="link">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="topbar-right">
+                        <ul class="list-inline list-unstyled socials">
+                            <li><a href="#" class="link facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="link google"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" class="link instagram"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle fixed-header-mobile">
+            <div class="container">
+                <div class="header-middle-wrapper">
+                    <div class="menu-wrapper">
+                        <div class="hamburger-menu style-1">
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                        <div class="logo-wrapper">
+                            <a href="index.html" class="logo"><img src="assets/images/logo/logo.png" alt="" class="img-responsive" /></a>
+                        </div>
+                    </div>
+                    <div class="banner-wrapper">
+                        <a href="#" class="logo"><img src="assets/images/qc-images/banner-728x90-4.jpg" alt="" class="img-responsive" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-mobile">
+                <div class="nav-search-mobile">
+                    <form><input type="text" placeholder="Search..." /><button type="submit" class="fa fa-search"></button></form>
+                </div>
+                <ul class="nav navbar-nav menu-mobile">
+                    <li ng-repeat="category in headerDefaultCtrl.categories">
+                        <a href="#category/{{ category._id }}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">{{ category.name }}</span></a>
+                    </li>
+                    <li><a href="#" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Other Pages</span></a><span class="icons-dropdown-wrapper"><i class="icons-dropdown fa fa-plus"></i></span>
+                        <ul class="nav sub-menu-mobile">
+                            <li><a href="#about" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">About Us</span></a></li>
+                            <li><a href="#contact" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Contact Us    </span></a></li>
+                            <li><a href="#author" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Author List</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom fixed-header">
+            <div class="container">
+                <ul class="navigation nav navbar-nav">
+                    <li class="dropdown"><a href="#" class="main-menu"><span class="text">Home</span></a>
+                        <ul class="dropdown-menu dropdown-menu-1">
+                            <li><a href="#" class="link-page"><i class="icons fa fa-angle-right"></i><span class="text">Home </span></a></li>
+                            <li><a href="#" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Comming Soon #Home</span></a></li>
+                            <li class="dropdown"><a href="javascript:void(0)" class="link-page"><i class="icons fa fa-angle-right"></i><span class="text">Comming Soon</span><i class="icons-dropdown fa fa-angle-up"></i></a>
+                                <div class="dropdown-menu dropdown-menu-col-2 right">
+                                    <ul class="list-unstyled">
+                                        <li> <a href="javascript:void(0)" class="link-page"><i class="icons fa fa-angle-right"></i><span class="text">example 1</span></a></li>
+                                        <li> <a href="javascript:void(0)" class="link-page"><i class="icons fa fa-angle-right"></i><span class="text">example 2</span></a></li>
+                                        <li> <a href="javascript:void(0)" class="link-page"><i class="icons fa fa-angle-right"></i><span class="text">example 3</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-mega"><a href="javascript:void(0)" class="main-menu"><span class="text">Netizen Buzz</span></a>
+                        <ul class="dropdown-menu dropdown-mega-menu">
+                            <li>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div class="category-widget"><a href="javascript:void(0)" class="title-topic">YG Example</a>
+                                                <ul class="list-unstyled info-list">
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">BIGBANG</span></a></li>
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">2NE1</span></a></li>
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">BLACKPINK</span></a></li>
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">IKON</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="category-widget"><a href="javascript:void(0)" class="title-topic">SM Example</a>
+                                                <ul class="list-unstyled info-list">
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">EXO</span></a></li>
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">SNSD</span></a></li>
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">RED VELVET</span></a></li>
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">SHINee</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="category-widget"><a href="javascript:void(0)" class="title-topic">JYP Example</a>
+                                                <ul class="list-unstyled info-list">
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">TWICE</span></a></li>
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">GOT7</span></a></li>
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">2PM</span></a></li>
+                                                    <li><a href="javascript:void(0)" class="link-page-2"><i class="icons fa fa-angle-right"></i><span class="text">WONDER GIRLS        </span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li ng-repeat="category in headerDefaultCtrl.categories">
+                        <a href="#category/{{ category._id }}" class="main-menu"><span class="text">{{ category.name }}</span></a>
+                    </li>
+                </ul>
+                <div class="button-search"><i class="icons fa fa-search"></i></div>
+                <div class="nav-search hide">
+                    <form><input type="text" placeholder="Search..." class="searchbox" /></form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</header>

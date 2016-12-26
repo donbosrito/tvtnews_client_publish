@@ -1,0 +1,276 @@
+
+/*----------  0.1. Color  ----------*/
+@main-color: #d73333;
+@text-color: #777777;
+@title-color: #333333;
+@info-color: #9a9a9a;
+@main-color-gaming: #e51515;
+@text-color-gaming: #c1c1c1;
+@title-color-gaming: #FFF;
+@info-color-gaming: #505050;
+@bg-gaming-color: #03030d;
+
+@main-color-travel: #119e9e;
+@main-color-travel-02: #00aeda;
+@text-color-travel: #243b3b;
+@text-color-travel-02: #68787d;
+@info-color-travel: #a5a5a5;
+@title-color-travel: #fff;
+@title-color-travel-02: #283e45;
+@dark-title-color-travel: #0c1b1b;
+
+@main-color-lifestyle: #bd90b5;
+@text-color-lifestyle: #666;
+@title-color-lifestyle: #222;
+@info-color-lifestyle: #888;
+@date-color-lifestyle: #999;
+
+@main-color-fashion: #ffb0c1;
+@info-color-fashion: #515050;
+@info-color-fashion-2: #888888;
+@title-color-fashion: #333333;
+@text-color-fashion: #777777;
+@label-color-fashion: #ee86ad;
+@border-color-fashion: #e4e3e2;
+@bg-color-label-fashion: #222222;
+@author-color-fashion: #555555;
+
+@main-color-food: #ff83af;
+@sub-color-food: #7caef4;
+@text-color-food: #777;
+@title-color-food: #333;
+@info-color-food: #9a9a9a;
+@border-color-food: #ededed;
+
+@text-color-food-blog: #69708d;
+@title-color-food-blog: #464f6b;
+
+.technology {
+    .change-color (#5768d1);
+}
+
+.video {
+    .change-color (#33d793);
+}
+
+.minimalist {
+    .change-color (#daad86);
+}
+
+.personal-blog {
+    .change-color (#daad86);
+}
+
+.gaming-01 {
+    .change-color(@main-color-gaming);
+}
+
+.fashion-01 {
+    .change-color(@main-color-fashion);
+}
+.travel-01 {
+    .change-color(@main-color-travel);
+}
+.travel-02{
+    .change-color(@main-color-travel-02);
+}
+
+
+/*----------  0.2. Font  ----------*/
+@font-family-9: 'Trocchi', serif;
+@font-family-7: 'Lora', serif;
+@font-family-6: 'Alegreya Sans', sans-serif;
+@font-family-4: "Roboto", Helvetica, Arial, sans-serif;
+@font-family-3: 'Merriweather', serif;
+@font-family-2: 'Poppins', sans-serif;
+@font-family: 'Source Sans Pro', sans-serif;
+@font-size: 14px;
+
+// Fashion 01 Font
+@font-fashion-1: 'Playfair Display', serif;
+@font-fashion-2: 'Catamaran', sans-serif;
+@font-hind-madurai: 'Hind Madurai', sans-serif;
+@font-lora: 'Lora', serif;
+
+// Travel Font
+@font-travel-1: 'Vidaloka', serif;
+@font-travel-2: 'Yrsa', serif;
+
+
+/*=============================
+ ====  END VARIABLE LESS   ====
+ =============================*/
+
+/*=============================
+ =====       MIXINS       =====
+ =============================*/
+
+.circle(@param) {
+    border-radius: @param;
+    -webkit-border-radius: @param;
+    -moz-border-radius: @param;
+}
+
+.transition(@param) {
+    transition: @param;
+    -webkit-transition: @param;
+    -moz-transition: @param;
+    -o-transition: @param;
+}
+
+.l-height(@param) {
+    height: @param;
+    line-height: @param;
+}
+
+.transform(@param) {
+    transform: @param;
+    -webkit-transform: @param;
+    -moz-transform: @param;
+    -ms-transform: @param;
+    -o-transform: @param;
+}
+
+.change-color(@param) {
+    a:hover, a:focus, a:hover .number,
+    .label-wrapper .label-topic,
+    .dropdown-menu li:hover > .link-page,
+    .button-search .icons:hover,
+    .catelogy-item .link, .post-number,
+    .link-page:hover, .link-page:focus,
+    .dropdown:hover .main-menu,
+    .title-wrapper:hover .link,
+    .info-fashion .link:hover,
+    .info-fashion .link:hover span {
+        color: @param !important;
+    }
+
+    .label-topic:after, .label-topic:before,
+    .title-topic:before, .title-topic:after,
+    .title-topic-2:before, .title-topic-2:after,
+    .pagination-wrapper .pagination li.active .pagi-link,
+    .pagination-wrapper .pagination .pagi-link:before,
+    .subscribe-widget .form-wrapper button,
+    .navigation .main-menu:before,
+    .tabs-list-2 .link:before, .tabs-list-2 .link:after,
+    .label-rating {
+        background-color: @param !important;
+    }
+
+    .read-more{
+        &:hover{
+            color: @param;
+            i {
+                color: @param;
+            }
+            &:before, &:after {
+                background-color: @param !important;
+            }
+        }
+    }
+
+    .gaming-top-news .post-number {
+        color: #FFF !important;
+    }
+}
+
+.linear-gradient(@direction, @main-color, @sub-color)  {
+    background: @main-color;
+    background: -webkit-linear-gradient(@direction, @main-color, @sub-color);
+    background: -o-linear-gradient(@direction, @main-color, @sub-color);
+    background: -moz-linear-gradient(@direction, @main-color, @sub-color);
+}
+
+.gradient-text(@text, @background, @gradient) {
+    background: white;
+    color: black;
+    position: relative;
+    text-shadow:
+        1px 1px 0px @background,
+        1px -1px 0px @background,
+        -1px -1px 0px @background,
+        -1px 1px 0px @background;
+    &::before,
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+    }
+    &::before {
+        background: @gradient;
+        content: '';
+        display: block;
+        mix-blend-mode: screen;
+    }
+    &::after {
+        content: @text;
+        background: @background;
+        color: white;
+        mix-blend-mode: multiply;
+    }
+}
+
+
+// .gradient-text(@text, @background, @gradient) {
+//     background: white;
+//     color: black;
+//     position: relative;
+//     text-shadow:
+//         1px 1px 0px @background,
+//         1px -1px 0px @background,
+//         -1px -1px 0px @background,
+//         -1px 1px 0px @background;
+//
+//     &::before,
+//     &::after {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         left: 0;
+//         pointer-events: none;
+//     }
+//
+//     &::before {
+//         background: @gradient;
+//         content: '';
+//         display: block;
+//         mix-blend-mode: screen;
+//     }
+//     &::after {
+//         content: @text;
+//         background: @background;
+//
+//         color: white;
+//         mix-blend-mode: multiply;
+//     }
+// }
+//
+
+.custom-placeholder(@rules) {
+    &::-webkit-input-placeholder {
+        @rules();
+    }
+    &:-moz-placeholder {
+        @rules();
+    }
+    &::-moz-placeholder {
+        @rules();
+    }
+    &:-ms-input-placeholder {
+        @rules();
+    }
+}
+
+.column-count(@param)  {
+    -webkit-column-count: @param;
+   -moz-column-count: @param;
+   column-count: @param;
+}
+
+/*=============================
+ ====      END MIXINS      ====
+ =============================*/
