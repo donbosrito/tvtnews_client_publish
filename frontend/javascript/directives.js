@@ -429,7 +429,7 @@
                 var controller = this;
 
                 var token = localStorage.getItem("token"); //$window.sessionStorage.token;
-                var userId = localStorage.getItem("token"); //$window.sessionStorage.userId;
+                var userId = localStorage.getItem("userId"); //$window.sessionStorage.userId;
 
                 var headerGetUser = {
                     "access_token": token,
