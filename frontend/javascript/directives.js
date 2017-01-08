@@ -5,9 +5,18 @@
         return {
             restrict: "E",
             templateUrl: "template/header/header-default.html",
-            controller: function ($http, $scope, $window) {
+            controller: function ($http, $scope, $window, $location) {
 
                 var controller = this;
+
+
+                $('#searchbox').keypress(function (e) {
+                    if (e.which == 13) {
+                        console.log('asd');
+                        $location.path('/search/' + $scope.searchTag + '/page/1');
+                        $scope.$apply();
+                    }
+                });
 
                 $scope.isLogin = $window.sessionStorage.token;
 

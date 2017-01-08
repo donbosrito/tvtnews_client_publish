@@ -1,82 +1,114 @@
-<div class="col-md-8 col-xs-12 main-news main-left">
-    <!-- BLOCK 2-->
-    <div class="block-news-2">
-        <div class="block-news-content">
-            <div class="layout-main-news">
-                <div class="news-layout-3 big">
-                    <a href="#post/{{ searchNewsListCtrl.firstCategoryNews._id }}" class="news-image"><img src="{{ searchNewsListCtrl.firstCategoryNews.poster }}" alt="" class="img-responsive"></a>
-                    <div class="news-content">
-                        <div class="label-wrapper"><a href="#" class="label-topic">{{ searchNewsListCtrl.firstCategoryNews._category.name }}</a></div>
-                        <a href="#post/{{ searchNewsListCtrl.firstCategoryNews._id }}" class="title">{{ searchNewsListCtrl.firstCategoryNews.title }}</a>
-                        <div class="info-wrapper">
-                            <div class="info-left">
-                                <div class="comment-wrapper">
-                                    <div class="comment-avatar">
-                                        <div class="avatar avatar-1">T</div>
-                                        <div class="avatar avatar-2">M</div>
-                                        <div class="avatar avatar-3">A</div>
-                                    </div>
-                                    <div class="comment-info">{{ searchNewsListCtrl.firstCategoryNews.commentCount }} comments</div>
-                                </div>
-                            </div>
-                            <div class="info-right">
-                                <ul class="info">
-                                    <li><a href="#" class="link">by {{ searchNewsListCtrl.firstCategoryNews._author.nickname }}</a></li>
-                                    <li><a href="#" class="link">{{ searchNewsListCtrl.firstCategoryNews.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
-                                    <li><a href="#" class="link">{{ searchNewsListCtrl.firstCategoryNews.readingCount }} views</a></li>
-                                </ul>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
+<div class="main-content">
+    <div class="breadcrumb-container">
+        <div class="container">
+            <div class="breadcrumb-wrapper">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Home</a></li>
+                    <li class="breadcrum-item"><span class="breadcrumb-active">Search </span></li>
+                </ol>
+                <div class="breadcrumb-text">#{{ searchNewsListCtrl.tag }}</div>
             </div>
-            <div class="layout-list-news column-1">
-                <div class="block-item" ng-repeat="news in categoryNewsListCtrl.restCategoryNews">
-                    <div class="news-layout-2 small">
-                        <div class="news-video">
-                            <a href="#post/{{ news._id }}" class="news-image"><img src="{{ news.poster }}" alt="" class="img-responsive"></a>
-                        </div>
-                        <div class="news-content">
-                            <div class="label-wrapper"><a href="#" class="label-topic">{{ news._category.name }}</a></div>
-                            <a href="#post/{{ news._id }}" class="title">{{ news.title }}</a>
-                            <div class="info-wrapper">
-                                <div class="info-left">
-                                    <div class="comment-wrapper">
-                                        <div class="comment-avatar">
-                                            <div class="avatar avatar-1">T</div>
-                                            <div class="avatar avatar-2">M</div>
-                                            <div class="avatar avatar-3">A</div>
+        </div>
+    </div>
+    <div class="main-news-wrapper padding-top-80 padding-bottom-80">
+        <div class="container">
+            <!-- MAIN NEWS-->
+            <div class="row">
+                <div class="col-md-8 col-xs-12 main-news main-left">
+                    <!-- BLOCK 2-->
+                    <div class="block-news-2">
+                        <div class="block-news-content">
+                            <div class="layout-main-news">
+                                <div class="news-layout-3 big">
+                                    <a href="#post/{{ searchNewsListCtrl.firstCategoryNews._id }}" class="news-image"><img src="{{ searchNewsListCtrl.firstCategoryNews.poster }}" alt="" class="img-responsive"></a>
+                                    <div class="news-content">
+                                        <div class="label-wrapper"><a href="#" class="label-topic">{{ searchNewsListCtrl.firstCategoryNews._category.name }}</a></div>
+                                        <a href="#post/{{ searchNewsListCtrl.firstCategoryNews._id }}" class="title">{{ searchNewsListCtrl.firstCategoryNews.title }}</a>
+                                        <div class="info-wrapper">
+                                            <div class="info-left">
+                                                <div class="comment-wrapper">
+                                                    <div class="comment-avatar">
+                                                        <div class="avatar avatar-1">T</div>
+                                                        <div class="avatar avatar-2">M</div>
+                                                        <div class="avatar avatar-3">A</div>
+                                                    </div>
+                                                    <div class="comment-info">{{ searchNewsListCtrl.firstCategoryNews.commentCount }} comments</div>
+                                                </div>
+                                            </div>
+                                            <div class="info-right">
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">by {{ searchNewsListCtrl.firstCategoryNews._author.nickname }}</a></li>
+                                                    <li><a href="#" class="link">{{ searchNewsListCtrl.firstCategoryNews.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
+                                                    <li><a href="#" class="link">{{ searchNewsListCtrl.firstCategoryNews.readingCount }} views</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="clearfix"></div>
                                         </div>
-                                        <div class="comment-info">{{ news.commentCount }}</div>
                                     </div>
                                 </div>
-                                <div class="info-right">
-                                    <ul class="info">
-                                        <li><a href="#" class="link">{{ news._author.nickname }}</a></li>
-                                        <li><a href="#" class="link">{{ news.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
-                                        <li><a href="#" class="link">{{ news.readingCount }}</a></li>
-                                    </ul>
-                                </div>
-                                <div class="clearfix"></div>
                             </div>
-                            <p class="description">{{ news.summary }}</p>
+                            <div class="layout-list-news column-1">
+                                <div class="block-item" ng-repeat="news in categoryNewsListCtrl.restCategoryNews">
+                                    <div class="news-layout-2 small">
+                                        <div class="news-video">
+                                            <a href="#post/{{ news._id }}" class="news-image"><img src="{{ news.poster }}" alt="" class="img-responsive"></a>
+                                        </div>
+                                        <div class="news-content">
+                                            <div class="label-wrapper"><a href="#" class="label-topic">{{ news._category.name }}</a></div>
+                                            <a href="#post/{{ news._id }}" class="title">{{ news.title }}</a>
+                                            <div class="info-wrapper">
+                                                <div class="info-left">
+                                                    <div class="comment-wrapper">
+                                                        <div class="comment-avatar">
+                                                            <div class="avatar avatar-1">T</div>
+                                                            <div class="avatar avatar-2">M</div>
+                                                            <div class="avatar avatar-3">A</div>
+                                                        </div>
+                                                        <div class="comment-info">{{ news.commentCount }}</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info-right">
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ news._author.nickname }}</a></li>
+                                                        <li><a href="#" class="link">{{ news.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
+                                                        <li><a href="#" class="link">{{ news.readingCount }}</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <p class="description">{{ news.summary }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <nav class="pagination-wrapper">
+                                <ul class="pagination">
+                                    <li ng-show="!searchNewsListCtrl.isHead"><a href="#" aria-label="Previous" class="pagi-link prev"><span aria-hidden="true">prev</span></a></li>
+                                    <li ng-repeat="pagi in searchNewsListCtrl.listPage" ng-class="{ active:pagi.active }">
+                                        <a href="#category/{{ searchNewsListCtrl.categoryId }}/page/{{ pagi.index }}" class="pagi-link">{{ pagi.index }}</a>
+                                    </li>
+                                    <li ng-show="!searchNewsListCtrl.isTail"><a href="#" aria-label="Next" class="pagi-link next"><span aria-hidden="true">next</span></a></li>
+                                </ul>
+                                <div class="position-page">Page <span class="active">{{ searchNewsListCtrl.currentPage }} </span>of {{ searchNewsListCtrl.pageCount }}</div>
+                                <div class="clearfix"></div>
+                            </nav>
                         </div>
                     </div>
                 </div>
-
+                <div class="col-md-4 col-xs-12 sidebar">
+                    <div class="sidebar-wrapper">
+                        <div class="col-2">
+                            <lastest-news></lastest-news>
+                        </div>
+                        <div class="col-2">
+                            <subscribe-feed></subscribe-feed>
+                            <featured-video></featured-video>
+                            <tags-widget></tags-widget>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <nav class="pagination-wrapper">
-                <ul class="pagination">
-                    <li ng-show="!searchNewsListCtrl.isHead"><a href="#" aria-label="Previous" class="pagi-link prev"><span aria-hidden="true">prev</span></a></li>
-                    <li ng-repeat="pagi in searchNewsListCtrl.listPage" ng-class="{ active:pagi.active }">
-                        <a href="#category/{{ searchNewsListCtrl.categoryId }}/page/{{ pagi.index }}" class="pagi-link">{{ pagi.index }}</a>
-                    </li>
-                    <li ng-show="!searchNewsListCtrl.isTail"><a href="#" aria-label="Next" class="pagi-link next"><span aria-hidden="true">next</span></a></li>
-                </ul>
-                <div class="position-page">Page <span class="active">{{ searchNewsListCtrl.currentPage }} </span>of {{ searchNewsListCtrl.pageCount }}</div>
-                <div class="clearfix"></div>
-            </nav>
         </div>
     </div>
 </div>
