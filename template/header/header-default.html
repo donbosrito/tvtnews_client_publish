@@ -20,7 +20,6 @@
                             <!--Trigger-->
                             <a ng-show="!isLogin" class="login-trigger" data-target="#login" data-toggle="modal">Login</a>
                             <a ng-show="!isLogin" class="login-trigger" data-target="#register" data-toggle="modal">Register</a>
-                            <fb:login-button ng-show="!isLogin" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
                             <a ng-show="isLogin" class="login-trigger" href="#user" >Trang cá nhân</a>
                             <a ng-show="isLogin" class="login-trigger" href="#" ng-click="LogoutAccount()">Logout</a>
                         </ul>
