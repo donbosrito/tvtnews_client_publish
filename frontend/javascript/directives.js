@@ -336,6 +336,7 @@
                 controller.browserImage = function () {
                     filepicker.pick(
                         {
+                            cropRatio: 1/1,
                             minitype:'image/*',
                             services:['COMPUTER','WEBCAM','FACEBOOK','IMAGE_SEARCH', 'URL'],
                             conversions:['crop','rotate', 'filter']
