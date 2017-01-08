@@ -2,10 +2,10 @@
 <div class="block-news-content slick-1-item-fade">
     <div class="item">
         <div class="layout-main-news">
-            <div class="news-layout-1 big bg-gray">
-                <a href="#" class="news-image"><img src="assets/images/big-images/image-1.jpg" alt="" class="img-responsive"></a>
+            <div class="news-layout-1 big bg-gray" ng-repeat="news in popularNewsCtrl.popularNews | limitTo:1:0">
+                <a href="#post/{{ news._id }}" class="news-image"><img ng-src="{{ news.poster }}" alt="" class="img-responsive"></a>
                 <div class="news-content">
-                    <div class="label-wrapper"><a href="#" class="label-topic">world</a></div><a href="#" class="title">Global Resorts Network Gen Putting Timeshares To Shame</a>
+                    <div class="label-wrapper"><a href="#post/{{ news._id }}" class="label-topic">{{ news._category._name }}</a></div><a href="#post/{{ news._id }}" class="title">{{ news.title }}</a>
                     <div class="info-wrapper">
                         <div class="info-left">
                             <div class="comment-wrapper">
@@ -14,14 +14,14 @@
                                     <div class="avatar avatar-2">M</div>
                                     <div class="avatar avatar-3">A</div>
                                 </div>
-                                <div class="comment-info">6 comments</div>
+                                <div class="comment-info">{{ news.commentCount }} comments</div>
                             </div>
                         </div>
                         <div class="info-right">
                             <ul class="info">
-                                <li><a href="#" class="link">By timothy</a></li>
-                                <li><a href="#" class="link">May 29, 2016</a></li>
-                                <li><a href="#" class="link">25 views</a></li>
+                                <li><a href="#" class="link">By {{ news._author.nickname }}</a></li>
+                                <li><a href="#" class="link">{{ news.dateCreated * 1000 | date:"yyyy-MM-dd" }}</a></li>
+                                <li><a href="#" class="link">{{ news.readCount }} views</a></li>
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -30,43 +30,13 @@
             </div>
         </div>
         <div class="layout-list-news">
-            <div class="single-recent-post-widget">
+            <div class="single-recent-post-widget" ng-repeat="news in popularNewsCtrl.popularNews | limitTo:4:1">
                 <div class="post-info">
-                    <div class="label-wrapper"><a href="#" class="label-topic">travel</a></div><a href="#" class="title">Replication For Dummies 4 Easy Steps To Professional DVD</a>
+                    <div class="label-wrapper"><a href="#post/{{ news._id }}" class="label-topic">{{ news._category.name }}</a></div><a href="#post/{{ news._id }}" class="title">{{ news.title }}</a>
                     <ul class="info">
-                        <li><a href="#" class="link">By timothy</a></li>
-                        <li><a href="#" class="link">May 15, 2016</a></li>
-                        <li><a href="#" class="link">15 views</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="single-recent-post-widget">
-                <div class="post-info">
-                    <div class="label-wrapper"><a href="#" class="label-topic">world</a></div><a href="#" class="title">Sensible Beauty Tips For Enhancing Your Appearance</a>
-                    <ul class="info">
-                        <li><a href="#" class="link">By timothy</a></li>
-                        <li><a href="#" class="link">May 15, 2016</a></li>
-                        <li><a href="#" class="link">15 views</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="single-recent-post-widget">
-                <div class="post-info">
-                    <div class="label-wrapper"><a href="#" class="label-topic">science</a></div><a href="#" class="title">An Ugly Myspace Profile Will Sure Ruin Your Reputation</a>
-                    <ul class="info">
-                        <li><a href="#" class="link">By timothy</a></li>
-                        <li><a href="#" class="link">May 15, 2016</a></li>
-                        <li><a href="#" class="link">15 views</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="single-recent-post-widget">
-                <div class="post-info">
-                    <div class="label-wrapper"><a href="#" class="label-topic">sport</a></div><a href="#" class="title">Benjamin Franklin S Method Of Habit Formation</a>
-                    <ul class="info">
-                        <li><a href="#" class="link">By timothy</a></li>
-                        <li><a href="#" class="link">May 15, 2016</a></li>
-                        <li><a href="#" class="link">15 views</a></li>
+                        <li><a href="#" class="link">By {{ news._author.nickname }}</a></li>
+                        <li><a href="#" class="link">{{ news.dateCreated * 1000 | date:"yyyy-MM-dd" }}</a></li>
+                        <li><a href="#" class="link">{{ news.readCount }} views</a></li>
                     </ul>
                 </div>
             </div>
@@ -75,10 +45,10 @@
     </div>
     <div class="item">
         <div class="layout-main-news">
-            <div class="news-layout-1 big bg-gray">
-                <a href="#" class="news-image"><img src="assets/images/big-images/image-2.jpg" alt="" class="img-responsive"></a>
+            <div class="news-layout-1 big bg-gray" ng-repeat="news in popularNewsCtrl.popularNews | limitTo:1:5">
+                <a href="#post/{{ news._id }}" class="news-image"><img ng-src="{{ news.poster }}" alt="" class="img-responsive"></a>
                 <div class="news-content">
-                    <div class="label-wrapper"><a href="#" class="label-topic">design</a></div><a href="#" class="title">An Ugly Profile Will Sure Ruin Your Reputation</a>
+                    <div class="label-wrapper"><a href="#post/{{ news._id }}" class="label-topic">{{ news._category.name }}</a></div><a href="#post/{{ news._id }}" class="title">{{ news.title }}</a>
                     <div class="info-wrapper">
                         <div class="info-left">
                             <div class="comment-wrapper">
@@ -87,14 +57,14 @@
                                     <div class="avatar avatar-2">M</div>
                                     <div class="avatar avatar-3">A</div>
                                 </div>
-                                <div class="comment-info">6 comments</div>
+                                <div class="comment-info">{{ news.commentCount }} comments</div>
                             </div>
                         </div>
                         <div class="info-right">
                             <ul class="info">
-                                <li><a href="#" class="link">By timothy</a></li>
-                                <li><a href="#" class="link">May 29,2016</a></li>
-                                <li><a href="#" class="link">25 views</a></li>
+                                <li><a href="#" class="link">By {{ news._author.nickname }}</a></li>
+                                <li><a href="#" class="link">{{ news.dateCreated * 1000 | date:"yyyy-MM-dd" }}</a></li>
+                                <li><a href="#" class="link">{{ news.readCount }} views</a></li>
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -103,43 +73,13 @@
             </div>
         </div>
         <div class="layout-list-news">
-            <div class="single-recent-post-widget">
+            <div class="single-recent-post-widget" ng-repeat="news in popularNewsCtrl.popularNews | limitTo:4:6">
                 <div class="post-info">
-                    <div class="label-wrapper"><a href="#" class="label-topic">fashion</a></div><a href="#" class="title">Stu Unger Rise And Fall Of A Poker Genius</a>
+                    <div class="label-wrapper"><a href="#post/{{ news._id }}" class="label-topic">{{ news._category.name }}</a></div><a href="#post/{{ news._id }}" class="title">{{ news.title }}</a>
                     <ul class="info">
-                        <li><a href="#" class="link">By timothy</a></li>
-                        <li><a href="#" class="link">May 15, 2016</a></li>
-                        <li><a href="#" class="link">15 views</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="single-recent-post-widget">
-                <div class="post-info">
-                    <div class="label-wrapper"><a href="#" class="label-topic">travel</a></div><a href="#" class="title">Herbal Skin Care Secrets Hidden At The Greengrocer</a>
-                    <ul class="info">
-                        <li><a href="#" class="link">By timothy</a></li>
-                        <li><a href="#" class="link">May 15, 2016</a></li>
-                        <li><a href="#" class="link">15 views</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="single-recent-post-widget">
-                <div class="post-info">
-                    <div class="label-wrapper"><a href="#" class="label-topic">world</a></div><a href="#" class="title">Addiction When Gambling Becomes A Problem</a>
-                    <ul class="info">
-                        <li><a href="#" class="link">By timothy</a></li>
-                        <li><a href="#" class="link">May 15, 2016</a></li>
-                        <li><a href="#" class="link">15 views</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="single-recent-post-widget">
-                <div class="post-info">
-                    <div class="label-wrapper"><a href="#" class="label-topic">entertainment</a></div><a href="#" class="title">How To Play Texas Holdem For Beginners</a>
-                    <ul class="info">
-                        <li><a href="#" class="link">By timothy</a></li>
-                        <li><a href="#" class="link">May 15, 2016</a></li>
-                        <li><a href="#" class="link">15 views</a></li>
+                        <li><a href="#" class="link">By {{ news._author.nickname }}</a></li>
+                        <li><a href="#" class="link">{{ news.dateCreated * 1000 | date:"yyyy-MM-dd" }}</a></li>
+                        <li><a href="#" class="link">{{ news.readCount }} views</a></li>
                     </ul>
                 </div>
             </div>

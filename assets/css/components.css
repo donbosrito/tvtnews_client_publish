@@ -2315,3 +2315,270 @@
   padding: 10px;
   text-align: center;
 }
+
+.image-post img {
+  width: 100%;
+}
+
+.text-style-i {
+  font-style: italic;
+}
+
+.text-style-b {
+  font-weight: bold;
+}
+
+.text-style-u {
+  text-decoration: underline;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+/*====================Popup Login====================*/
+/*Trigger Button*/
+.login-trigger {
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to bottom right, #B05574, #F87E7B);
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+
+.login-trigger:hover, .login-trigger:focus {
+  color: #FFFF00;
+}
+
+/*Modal*/
+h4 {
+  font-weight: bold;
+  color: #fff;
+}
+.close {
+  color: #fff;
+  transform: scale(1.2)
+}
+.modal-content {
+  font-weight: bold;
+  background: linear-gradient(to bottom right,#F87E7B,#B05574);
+}
+.form-control {
+  margin: 1em 0;
+}
+.form-control:hover, .form-control:focus {
+  box-shadow: none;
+  border-color: #fff;
+}
+.username, .password {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 2px solid #eee;
+  padding-left: 0;
+  font-weight: normal;
+  background: transparent;
+  color: #fff;
+}
+.form-control::-webkit-input-placeholder {
+  color: #eee;
+}
+.form-control:focus::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #fff;
+}
+.login, .register {
+  padding: 6px 20px;
+  border-radius: 20px;
+  background: none;
+  border: 2px solid #FAB87F;
+  color: #FAB87F;
+  font-weight: bold;
+  transition: all .5s;
+  margin-top: 1em;
+}
+.login:hover, .register:hover {
+  background: #FAB87F;
+  color: #fff;
+}
+
+.modal-backdrop {
+  z-index: -1;
+}
+
+/*-----------------------*/
+.tabs-list-news li a {
+  cursor: pointer;
+}
+
+.login-trigger {
+  cursor: pointer;
+}
+
+/*------------------------*/
+/*--- CSS Edit Profile ---*/
+select.ng-pristine.ng-untouched.ng-valid.ng-not-empty,
+select.ng-pristine.ng-valid.ng-not-empty.ng-touched,
+select.ng-valid.ng-not-empty.ng-dirty.ng-valid-parse.ng-touched,
+select.ng-valid.ng-not-empty.ng-dirty.ng-valid-parse.ng-untouched {
+  border: 2px solid #9c9c9c !important;
+  background-color: blanchedalmond !important;
+}
+
+input.editable-has-buttons.editable-input.ng-pristine.ng-valid.ng-not-empty.ng-valid-email.ng-untouched,
+input.editable-has-buttons.editable-input.ng-pristine.ng-valid.ng-not-empty.ng-valid-email.ng-touched,
+input.editable-has-buttons.editable-input.ng-not-empty.ng-dirty.ng-invalid.ng-invalid-email.ng-untouched,
+input.editable-has-buttons.editable-input.ng-not-empty.ng-dirty.ng-invalid.ng-invalid-email.ng-touched,
+input.editable-has-buttons.editable-input.ng-not-empty.ng-dirty.ng-valid.ng-valid-email.ng-untouched,
+input.editable-has-buttons.editable-input.ng-not-empty.ng-dirty.ng-valid.ng-valid-email.ng-touched,
+input.editable-has-buttons.editable-input.ng-valid.ng-not-empty.ng-dirty.ng-valid-parse.ng-untouched,
+input.editable-has-buttons.editable-input.ng-valid.ng-not-empty.ng-dirty.ng-valid-parse.ng-touched,
+input.editable-has-buttons.editable-input.ng-pristine.ng-valid.ng-not-empty.ng-untouched,
+input.editable-has-buttons.editable-input.ng-pristine.ng-valid.ng-not-empty.ng-touched,
+input.editable-has-buttons.editable-input.ng-pristine.ng-valid.ng-empty.ng-untouched,
+input.editable-has-buttons.editable-input.ng-pristine.ng-valid.ng-empty.ng-touched,
+input.editable-has-buttons.editable-input.ng-empty.ng-touched.ng-dirty.ng-invalid.ng-invalid-date,
+input.editable-has-buttons.editable-input.ng-valid.ng-not-empty.ng-dirty.ng-valid-date.ng-touched,
+input.editable-has-buttons.editable-input.ng-valid.ng-not-empty.ng-dirty.ng-valid-date.ng-untouched,
+input.editable-has-buttons.editable-input.ng-valid.ng-dirty.ng-valid-date.ng-empty.ng-touched,
+input.editable-has-buttons.editable-input.ng-valid.ng-dirty.ng-valid-date.ng-empty.ng-untouched,
+input.editable-has-buttons.editable-input.ng-valid.ng-dirty.ng-valid-parse.ng-empty.ng-touched:focus,
+input.editable-has-buttons.editable-input.ng-valid.ng-dirty.ng-valid-parse.ng-empty.ng-untouched:focus {
+  border: 2px solid #9c9c9c;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+input.editable-has-buttons.editable-input.ng-pristine.ng-valid.ng-empty.ng-untouched,
+input.editable-has-buttons.editable-input.ng-pristine.ng-valid.ng-empty.ng-touched,
+input.editable-has-buttons.editable-input.ng-empty.ng-touched.ng-dirty.ng-invalid.ng-invalid-date,
+input.editable-has-buttons.editable-input.ng-valid.ng-not-empty.ng-dirty.ng-valid-date.ng-touched,
+input.editable-has-buttons.editable-input.ng-valid.ng-not-empty.ng-dirty.ng-valid-date.ng-untouched,
+input.editable-has-buttons.editable-input.ng-valid.ng-dirty.ng-valid-date.ng-empty.ng-touched,
+input.editable-has-buttons.editable-input.ng-valid.ng-dirty.ng-valid-date.ng-empty.ng-untouched {
+  padding-top: 2px;
+}
+
+.editable-buttons button {
+  font-size: 20px;
+  padding: 6px;
+  background-color: blanchedalmond;
+  border: 2px solid #9c9c9c;
+  font-family: cursive;
+  transition: 0.2s;
+}
+
+.editable-buttons button:hover {
+  background-color: #fff;
+  border: 2px solid #000;
+  font-color: #000;
+}
+
+.animate
+{
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.blue
+{
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+  background-color: #E74C3C;
+  border-bottom: 5px solid #BD3E31;
+  text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+  background-color: #82BF56;
+  border-bottom: 5px solid #669644;
+  text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+  background-color: #F2CF66;
+  border-bottom: 5px solid #D1B358;
+  text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+
+a.btn.btn-edit-info.label-resume.action-button.shadow.animate {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.avatar-user:hover a.btn.btn-change-avatar {
+  display: initial;
+}
+
+a.btn.btn-change-avatar {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  border: 10px solid #fff;
+  background-color: transparent;
+  transition: 0.2s;
+  margin-left: 3px;
+}
+
+a.btn.btn-change-avatar:hover {
+  color: blanchedalmond;
+  border: 10px solid blanchedalmond;
+}
+
+.avatar-user img {
+  border: 10px solid #fff !important;
+}
+
+select.ng-pristine.ng-untouched.ng-valid.ng-empty,
+select.ng-pristine.ng-touched.ng-valid.ng-empty
+select.ng-valid.ng-untouched.ng-not-empty.ng-dirty.ng-valid-parse,
+select.ng-valid.ng-touched.ng-not-empty.ng-dirty.ng-valid-parse,
+select.ng-valid.ng-touched.ng-empty.ng-dirty.ng-valid-parse,
+select.ng-pristine.ng-valid.ng-empty.ng-touched,
+select.ng-pristine.ng-valid.ng-empty.ng-untouched,
+select.ng-untouched.ng-valid.ng-not-empty.ng-dirty.ng-valid-parse {
+  display: block;
+  font-size: 20px;
+  padding: 5px;
+}

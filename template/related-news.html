@@ -1,0 +1,16 @@
+<div class="related-post-wrapper block-list column-4 padding-top-80">
+    <div class="title-topic">related post</div>
+    <div class="block-news-content">
+        <div class="block-item" ng-repeat="news in relatedNewsCtrl.relatedNews | limitTo:8:0">
+            <div class="news-layout-1 small">
+                <a href="#post/{{ news._id }}" class="news-image"><img ng-src="{{ news.poster }}" alt="" class="img-responsive"></a>
+                <div class="news-content"><a href="#post/{{ news._id }}" class="title">{{ news.title }}</a>
+                    <ul class="info">
+                        <li><a href="#" class="link">{{ news.dateCreated * 1000 | date:"yyyy-MM-dd" }}</a></li>
+                        <li><a href="#" class="link">{{ news.readCount }} views</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -9,7 +9,7 @@
 </div>
 <div class="hot-news-content overflow-hidden">
     <div class="slick-4-item">
-        <div class="item" ng-repeat="news in hotNewsCtrl.newses">
+        <div class="item" ng-repeat="news in hotNewsCtrl.newses | limitTo:6 ">
             <div class="news-layout-1">
                 <a href="#post/{{ news._id }}" class="news-image"><img ng-src="{{ news.poster }}" alt="" class="img-responsive"></a>
                 <div class="news-content">

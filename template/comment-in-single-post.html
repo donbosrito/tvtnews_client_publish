@@ -1,0 +1,67 @@
+<!-- COMMENTS-->
+<div class="comments-wrapper padding-top-80">
+    <div class="title-topic">{{commentInSinglePostCtrl.comments.length}} comments</div>
+    <div class="comment-nested-wrapper">
+        <ul class="media-list">
+
+            <li class="media item-comment" ng-repeat="comment in commentInSinglePostCtrl.comments" id="pnlComment">
+                <div class="media-left author-photo-wrapper">
+                    <a href="#" class="author-photo"><img src="{{comment._user.avatar}}" alt="{{comment._user.nickname}}" class="media-object"></a>
+                </div>
+                <div class="media-body body-not-hidden">
+                    <div class="heading-wrapper">
+                        <div class="comment-info-wrapper"><a href="#" class="link"><h4 class="author-name">{{(comment._user.nickname != undefined && comment._user.nickname != "") ? comment._user.nickname : comment._user.username}}</h4></a>
+                            <ul class="info">
+                                <li><a href="#" class="link">{{comment.dateCommented * 1000 | date:'mediumDate'}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="comment-content">{{comment.message}}</div>
+                    <ul class="media-list inside-media-list">
+                        <li class="media-list item-comment" ng-repeat="reply in comment._reply">
+                            <div class="media-left author-photo-wrapper">
+                                <a href="#" class="author-photo"><img src="{{reply._user.avatar}}" alt="{{reply._user.nickname}}" class="media-object"></a>
+                            </div>
+                            <div class="media-body body-not-hidden">
+                                <div class="heading-wrapper">
+                                    <div class="comment-info-wrapper"><a href="#" class="link"><h4 class="author-name">{{(reply._user.nickname != undefined && reply._user.nickname != "") ? reply._user.nickname : reply._user.username}}</h4></a>
+                                        <ul class="info">
+                                            <li><a href="#" class="link">{{reply.dateCommented * 1000 | date:'mediumDate'}}</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="comment-content">{{reply.message}}</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="send-comment-wrapper">
+
+                        <form class="form-group contact-form" style="padding-top: 20px;">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12">
+                                    <div class="input-group" style="display: flex;">
+                                        <input type="text" placeholder="What you want to tell us?" class="text-area text-box" ng-model="commentInSinglePostCtrl.replyContent[$index]" />
+                                        <div class="button-group"><button class="btn-submit" style="width: 80px;" ng-click="commentInSinglePostCtrl.replyAComment($index, comment._id, comment._article)">Reply</button></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- LEAVE A COMMENT FORM-->
+<div class="send-comment-wrapper">
+    <form class="form-group contact-form" style="padding-top: 40px;">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <div class="input-group"><textarea rows="1" placeholder="What you want to tell us?" class="text-area text-box" ng-model="commentInSinglePostCtrl.commentContent"></textarea></div>
+            </div>
+        </div>
+        <div class="button-group pull-right"><button class="btn-submit" ng-click="commentInSinglePostCtrl.insertCommentOfSinglePost()">Comment</button></div>
+
+    </form>
+</div>

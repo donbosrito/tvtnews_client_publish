@@ -27,6 +27,7 @@
     <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick.css">
     <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick-theme.css">
     <link type="text/css" rel="stylesheet" href="assets/libs/custom-scroll/jquery.mCustomScrollbar.min.css">
+    <link type="text/css" rel="stylesheet" href="frontend/angularjs/xeditable.min.css">
     <!-- STYLE CSS-->
     <link type="text/css" rel="stylesheet" href="assets/css/layout.css">
     <link type="text/css" rel="stylesheet" href="assets/css/components.css">
@@ -65,7 +66,26 @@
     <script src="assets/libs/weather/jquery.simpleWeather.min.js"></script>
     <script src="frontend/angularjs/angular.min.js"></script>
     <script src="frontend/angularjs/angular-route.js"></script>
-    <script src="frontend/angularjs/angular-sanitize.js"></script>
+    <script src="frontend/angularjs/angular-sanitize.min.js"></script>
+    <script src="frontend/angularjs/xeditable.min.js"></script>
+    <script src="frontend/filestackjs/filestack.js"></script>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '402463633430661',
+                xfbml      : true,
+                version    : 'v2.8'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- MAIN JS-->
     <script src="assets/js/main.js"></script>
     <script src="frontend/javascript/controllers.js"></script>

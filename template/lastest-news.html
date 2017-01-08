@@ -1,8 +1,3 @@
-<div class="banner-widget widget">
-    <div class="section-content">
-        <a href="#" class="link"><img src="assets/images/qc-images/banner-300x250_2.jpg" alt="" class="img-responsive"></a>
-    </div>
-</div>
 <div class="list-news-widget widget">
     <div class="title-topic">latest news</div>
     <div class="content-widget">
@@ -12,27 +7,27 @@
                 <div class="layout-main-news">
                     <div class="news-layout-1">
                         <div class="news-video">
-                            <a href="#" class="news-image"><img src="{{lastNewsCtrl.firstLastNews.image}}" alt="" class="img-responsive"></a>
+                            <a href="#post/{{ lastNewsCtrl.newses[0]._id }}" class="news-image"><img ng-src="{{lastNewsCtrl.newses[0].poster}}" alt="" class="img-responsive"></a>
                             <div class="group-btn-video"><span class="btn-play"><i class="fa fa-play"></i></span><span class="btn-volume"><i class="fa fa-volume-off"></i></span><span class="btn-zoom"><i class="fa fa-arrows-alt"></i></span></div>
                         </div>
-                        <div class="news-content"><a href="#" class="title">{{lastNewsCtrl.firstLastNews.title}}</a>
+                        <div class="news-content"><a href="#post/{{ lastNewsCtrl.newses[0]._id }}" class="title">{{lastNewsCtrl.newses[0].title}}</a>
                             <ul class="info">
-                                <li><a href="#" class="link">by {{lastNewsCtrl.firstLastNews.author}}</a></li>
-                                <li><a href="#" class="link">{{lastNewsCtrl.firstLastNews.date}}</a></li>
-                                <li><a href="#" class="link">{{lastNewsCtrl.firstLastNews.views}} views</a></li>
+                                <li><a href="#" class="link">by {{lastNewsCtrl.newses[0]._author.name }}</a></li>
+                                <li><a href="#" class="link">{{lastNewsCtrl.newses[0].dateCreated * 1000 | date:"yyyy-MM-dd" }}</a></li>
+                                <li><a href="#" class="link">{{lastNewsCtrl.newses[0].readCount}} views</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="layout-list-news">
-                    <div class="single-recent-post-widget" ng-repeat="news in lastNewsCtrl.restLastNews">
+                    <div class="single-recent-post-widget" ng-repeat="news in lastNewsCtrl.newses | limitTo:4:1 ">
                         <div class="img-wrapper">
-                            <a href="#" class="thumb"><img src="{{news.image}}" alt="" class="img-responsive"></a>
+                            <a href="#post/{{ news._id }}" class="thumb"><img src="{{news.poster}}" alt="" class="img-responsive"></a>
                         </div>
-                        <div class="post-info"><a href="#" class="title">{{news.title}}</a>
+                        <div class="post-info"><a href="#post/{{ news._id }}" class="title">{{news.title}}</a>
                             <ul class="info">
-                                <li><a href="#" class="link">{{news.date}}</a></li>
-                                <li><a href="#" class="link">{{news.likes}}</a></li>
+                                <li><a href="#" class="link">{{news.dateCreated * 1000 | date:"yyyy-MM-dd"}}</a></li>
+                                <li><a href="#" class="link">{{news.readCount}} views</a></li>
                             </ul>
                         </div>
                     </div>

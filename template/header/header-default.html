@@ -7,8 +7,8 @@
                         <ul class="list-inline list-unstyled topbar-link">
                             <li><a href="#" class="link">featured</a></li>
                             <li><a href="#" class="link">blog</a></li>
-                            <li><a href="#" class="link">about</a></li>
-                            <li><a href="#" class="link">contact</a></li>
+                            <li><a href="#about" class="link">about</a></li>
+                            <li><a href="#contact" class="link">contact</a></li>
                         </ul>
                     </div>
                     <div class="topbar-right">
@@ -17,6 +17,12 @@
                             <li><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#" class="link google"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href="#" class="link instagram"><i class="fa fa-rss"></i></a></li>
+                            <!--Trigger-->
+                            <a ng-show="!isLogin" class="login-trigger" data-target="#login" data-toggle="modal">Login</a>
+                            <a ng-show="!isLogin" class="login-trigger" data-target="#register" data-toggle="modal">Register</a>
+                            <fb:login-button ng-show="!isLogin" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+                            <a ng-show="isLogin" class="login-trigger" href="#user" >Trang cá nhân</a>
+                            <a ng-show="isLogin" class="login-trigger" href="#" ng-click="LogoutAccount()">Logout</a>
                         </ul>
                     </div>
                     <div class="clearfix"></div>
@@ -47,7 +53,7 @@
                 </div>
                 <ul class="nav navbar-nav menu-mobile">
                     <li ng-repeat="category in headerDefaultCtrl.categories">
-                        <a href="#category/{{ category._id }}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">{{ category.name }}</span></a>
+                        <a href="#category/{{ category._id }}/page/1" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">{{ category.name }}</span></a>
                     </li>
                     <li><a href="#" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Other Pages</span></a><span class="icons-dropdown-wrapper"><i class="icons-dropdown fa fa-plus"></i></span>
                         <ul class="nav sub-menu-mobile">
@@ -118,7 +124,7 @@
                         </ul>
                     </li>
                     <li ng-repeat="category in headerDefaultCtrl.categories">
-                        <a href="#category/{{ category._id }}" class="main-menu"><span class="text">{{ category.name }}</span></a>
+                        <a href="#category/{{ category._id }}/page/1" class="main-menu"><span class="text">{{ category.name }}</span></a>
                     </li>
                 </ul>
                 <div class="button-search"><i class="icons fa fa-search"></i></div>
@@ -130,3 +136,39 @@
         </div>
     </div>
 </header>
+<!-- Modal -->
+<div id="login" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-body">
+                <button data-dismiss="modal" class="close">&times;</button>
+                <h4>Login</h4>
+                <form>
+                    <input ng-model="usernameLogin" type="text" name="username" class="username form-control" placeholder="Username"/>
+                    <input ng-model="passwordLogin" type="password" name="password" class="password form-control" placeholder="Password"/>
+                    <input class="btn login" type="submit" value="Login" ng-click="LoginAccount()" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-body">
+                <button data-dismiss="modal" class="close">&times;</button>
+                <h4>Register</h4>
+                <form>
+                    <input ng-model="usernameRegister" type="text" name="username" class="username form-control" placeholder="Username"/>
+                    <input ng-model="passwordRegister" type="password" name="password" class="password form-control" placeholder="Password"/>
+                    <input ng-model="rePasswordRegister" type="password" name="password" class="password form-control" placeholder="Re-password"/>
+
+                    <input class="btn register" type="submit" value="Register" ng-click="RegisterAccount()" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

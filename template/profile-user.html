@@ -1,0 +1,74 @@
+<div class="profile-user" >
+    <div class="cover-user">
+        <a class="box-cover-user">
+            <img class="img-cover" src="assets/images/background/bg-blackpink.png">
+        </a>
+    </div>
+    <div class="avatar-user">
+        <a class="box-avatar-user">
+            <a class="btn btn-change-avatar" ng-click="profileUserCtrl.browserImage()" type="filepicker"><span class="fa fa-pencil"></span></a>
+            <img width="200px" height="200px" src="{{ profileUserCtrl.user.avatar }}" />
+        </a>
+    </div>
+    <div class="row resume">
+        <div class="col-md-5 resume-img">
+            <img src="assets/images/more-images/img-sidebar-user-1.png" />
+        </div>
+        <div class="col-md-7 resume-user">
+            <div class="info-resume-user">
+                <h3 class="label-resume">Username: </h3>
+                <h3 class="info-resume">{{ profileUserCtrl.user.username }}</h3>
+            </div>
+            <div class="info-resume-user">
+                <h3 class="label-resume">Gender: </h3>
+                <h3 class="info-resume">{{ profileUserCtrl.user.gender }}</h3>
+            </div>
+            <div class="info-resume-user">
+                <h3 class="label-resume">Email: </h3>
+                <h3 class="info-resume">{{ profileUserCtrl.user.email }}</h3>
+            </div>
+            <div class="info-resume-user">
+                <h3 class="label-resume">Fullname: </h3>
+                <h3 class="info-resume">{{ profileUserCtrl.user.fullname }}</h3>
+            </div>
+            <div class="info-resume-user">
+                <h3 class="label-resume">Nickname: </h3>
+                <h3 class="info-resume">{{ profileUserCtrl.user.nickname }}</h3>
+            </div>
+            <div class="info-resume-user">
+                <h3 class="label-resume">Birthday: </h3>
+                <h3 class="info-resume">{{ profileUserCtrl.user.birthday | date:'yyyy-MM-dd' }}</h3>
+            </div>
+            <div class="info-resume-user">
+                <a href="#user/edit" class="btn btn-edit-info label-resume action-button shadow animate yellow">Chỉnh sửa thông tin</a>
+            </div>
+            <div class="info-resume-user">
+                <a ng-show="isVipAcc" href="#createpost" class="btn btn-edit-info label-resume action-button shadow animate blue">Tạo bài viết mới</a>
+            </div>
+            <div class="info-resume-user">
+                <a ng-show="isVipAcc" class="btn btn-edit-info label-resume action-button shadow animate green" data-target="#registerVipAcc" data-toggle="modal">Đăng ký VIP Acc</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="registerVipAcc" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-body">
+                <button data-dismiss="modal" class="close">&times;</button>
+                <h4>Register</h4>
+                <form>
+                    <input ng-model="usernameRegister" type="text" name="username" class="username form-control" placeholder="Username"/>
+                    <input ng-model="passwordRegister" type="password" name="password" class="password form-control" placeholder="Password"/>
+                    <input ng-model="rePasswordRegister" type="password" name="password" class="password form-control" placeholder="Re-password"/>
+                    <select ng-model="typeMemberRegister">
+                        <option>ADMIN</option>
+                        <option>AUTHOR</option>
+                    </select>
+                    <input class="btn register" type="submit" value="Register" ng-click="RegisterVipAccount()" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

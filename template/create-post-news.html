@@ -1,130 +1,199 @@
-<div class="panel panel-info">
-    <div class="panel-heading">
-        <h3 class="panel-title">Post</h3>
-    </div>
-    <div class="panel-body" id="pnlPreview">
-        <ul/>
-    </div>
-</div>
+<link type="text/css" rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
 
-<div>
-    <ul class="nav nav-tabs" id="tabs-editor" role="tablist">
-        <li role="presentation" class="active">
-            <a data-target="#text" id="insert-text-tab" role="tab" data-toggle="tab"
-               aria-controls="insert-text" aria-expanded="true">Text</a>
-        </li>
-        <li role="presentation" class="">
-            <a data-target="#image" role="tab" id="insert-image-tab" data-toggle="tab"
-               aria-controls="insert-image" aria-expanded="false">Image</a>
-        </li>
-        <li role="presentation" class="">
-            <a data-target="#html" role="tab" id="insert-html-tab" data-toggle="tab"
-               aria-controls="insert-image" aria-expanded="false">Html</a>
-        </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade  active in" role="tabpanel" id="text" aria-labelledby="insert-text">
-            <div class="panel panel-default editor-panel">
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default active">
-                        <input type="checkbox" id="text-bold" autocomplete="off"><i class="fa fa-bold"></i>
-                    </label>
-                    <label class="btn btn-default">
-                        <input type="checkbox" id="text-italic" autocomplete="off"><i class="fa fa-italic"></i>
-                    </label>
-                    <label class="btn btn-default">
-                        <input type="checkbox" id="text-underline" autocomplete="off"><i
-                            class="fa fa-underline"></i>
-                    </label>
+<style>
+    .form-control:hover, .form-control:focus {
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        border: 1px solid #ccc;
+    }
+
+    .form-control {
+        margin: 0;
+    }
+
+    .form-group {
+        padding-top: 0;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Post</h3>
+            </div>
+            <div class="panel-body" id="pnlPreview">
+                <ul/>
+            </div>
+        </div>
+
+        <div>
+            <ul class="nav nav-tabs" id="tabs-editor" role="tablist">
+                <li role="presentation" class="active">
+                    <a data-target="#text" id="insert-text-tab" role="tab" data-toggle="tab"
+                       aria-controls="insert-text" aria-expanded="true">Text</a>
+                </li>
+                <li role="presentation" class="">
+                    <a data-target="#image" role="tab" id="insert-image-tab" data-toggle="tab"
+                       aria-controls="insert-image" aria-expanded="false">Image</a>
+                </li>
+                <li role="presentation" class="">
+                    <a data-target="#html" role="tab" id="insert-html-tab" data-toggle="tab"
+                       aria-controls="insert-image" aria-expanded="false">Html</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade  active in" role="tabpanel" id="text" aria-labelledby="insert-text">
+                    <div class="panel panel-default editor-panel">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default">
+                                <input type="checkbox" id="text-bold" autocomplete="off"><i class="fa fa-bold"></i>
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="checkbox" id="text-italic" autocomplete="off"><i class="fa fa-italic"></i>
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="checkbox" id="text-underline" autocomplete="off"><i
+                                    class="fa fa-underline"></i>
+                            </label>
+                        </div>
+
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input type="radio" name="options" id="align-left" autocomplete="off" checked><i
+                                    class="fa fa-align-left"></i>
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="align-center" autocomplete="off"><i
+                                    class="fa fa-align-center"></i>
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="align-right" autocomplete="off"><i
+                                    class="fa fa-align-right"></i>
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="align-justify" autocomplete="off"><i
+                                    class="fa fa-align-justify"></i>
+                            </label>
+                        </div>
+                        <textarea class="form-control input-text"></textarea>
+                        <button class="btn btn-primary pull-right btn-add" type="button"
+                                ng-click="createPostNewsCtrl.addText()">Add
+                        </button>
+                    </div>
                 </div>
-
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default active">
-                        <input type="radio" name="options" id="align-left" autocomplete="off" checked><i
-                            class="fa fa-align-left"></i>
-                    </label>
-                    <label class="btn btn-default">
-                        <input type="radio" name="options" id="align-center" autocomplete="off"><i
-                            class="fa fa-align-center"></i>
-                    </label>
-                    <label class="btn btn-default">
-                        <input type="radio" name="options" id="align-right" autocomplete="off"><i
-                            class="fa fa-align-right"></i>
-                    </label>
-                    <label class="btn btn-default">
-                        <input type="radio" name="options" id="align-justify" autocomplete="off"><i
-                            class="fa fa-align-justify"></i>
-                    </label>
+                <div class="tab-pane fade" role="tabpanel" id="image" aria-labelledby="insert-image">
+                    <div class="panel-body" id="pnlPreviewImage">
+                        <div class="image-preview">
+                            <button type="filepicker" class="btn btn-default btn-post-image"
+                                    ng-click="createPostNewsCtrl.loadImage()" >Import Image
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <label for="image-url">Image url</label>
+                            <input type="text" class="form-control" id="image-url" placeholder="Image url">
+                        </div>
+                        <div class="form-group">
+                            <label for="image-caption">Image caption</label>
+                            <input type="text" class="form-control" id="image-caption" placeholder="Image caption">
+                        </div>
+                        <button type="button" class="btn btn-primary pull-right" style="margin-top: -5px;"
+                                ng-click="createPostNewsCtrl.addImage()">Add
+                        </button>
+                    </div>
                 </div>
-                <textarea class="form-control input-text"></textarea>
-                <button class="btn btn-primary pull-right btn-add" type="button"
-                        ng-click="createPostNewsCtrl.addText()">Add
-                </button>
+                <div class="tab-pane fade" role="tabpanel" id="html" aria-labelledby="insert-html">
+                    <div class="panel panel-default editor-panel">
+                        <textarea class="form-control input-html"></textarea>
+                        <button class="btn btn-primary pull-right btn-add" type="button"
+                                ng-click="createPostNewsCtrl.addHtml()">Add
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="tab-pane fade" role="tabpanel" id="image" aria-labelledby="insert-image">
-            <button type="button" class="btn btn-default btn-post-image"
-                    data-target="#modalImportImage" data-toggle="modal">Import Image
-            </button>
-        </div>
-        <div class="tab-pane fade" role="tabpanel" id="html" aria-labelledby="insert-html">
-            <div class="panel panel-default editor-panel">
-                <textarea class="form-control input-html"></textarea>
-                <button class="btn btn-primary pull-right btn-add" type="button"
-                        ng-click="createPostNewsCtrl.addHtml()">Add
-                </button>
+
+
+        <button type="button"
+                class="btn btn-primary btn-preview"
+                data-target="#modalPreview" data-toggle="modal"
+                ng-click="createPostNewsCtrl.showPost()">Preview
+        </button>
+        <button type="button"
+                class="btn btn-primary btn-add-news"
+
+                ng-click="createPostNewsCtrl.AddPostNews()">Add News
+        </button>
+        <div class="modal fade" id="modalPreview" tabindex="-1" role="dialog" aria-labelledby="modalPreview">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Preview</h4>
+                    </div>
+                    <div class="modal-body preview-post"/>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="modal fade" id="modalImportImage" tabindex="-1" role="dialog" aria-labelledby="modalPreview">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Import Image</h4>
+    <div class="col-md-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Category</h3>
             </div>
-            <div class="modal-body">
+            <div class="panel-body">
+                <select name="category-group" id="categoryGroup" class="form-control"
+                        ng-model="createPostNewsCtrl.itemSelected"
+                        ng-change="createPostNewsCtrl.onCategoryChange(itemSelected)">
+                    <option selected="selected" value="0">Select a category...</option>
+                    <option ng-repeat="category in createPostNewsCtrl.categories" value="{{category._id}}"
+                            ng-class="{'mainCategory' : category.disabled}">
+                        {{category.name}}
+                    </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Title</h3>
+            </div>
+            <div class="panel-body">
+                <textarea class="form-control input-title"></textarea>
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Poster</h3>
+            </div>
+            <div class="panel-body" id="pnlPreviewPoster">
+                <button type="filepicker" class="btn btn-default btn-post-image"
+                        ng-click="createPostNewsCtrl.loadPoster()">Import Poster
+                </button>
                 <div class="form-group">
-                    <label for="image-url">Image url</label>
-                    <input type="text" class="form-control" id="image-url" placeholder="Image url">
+                    <label for="poster-url">Poster url</label>
+                    <input type="text" class="form-control" id="poster-url" placeholder="Image url">
                 </div>
-                <div class="form-group">
-                    <label for="image-caption">Image caption</label>
-                    <input type="text" class="form-control" id="image-caption" placeholder="Image caption">
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" data-dismiss="modal" class="btn btn-primary" aria-label="Close"
-                        ng-click="createPostNewsCtrl.addImage()">Add
-                </button>
-                <button type="button" data-dismiss="modal" class="btn btn-default" aria-label="Close">Close</button>
             </div>
         </div>
-    </div>
-</div>
 
-<button type="button"
-        class="btn btn-primary btn-preview"
-        data-target="#modalPreview" data-toggle="modal"
-        ng-click="createPostNewsCtrl.showPost()">Preview
-</button>
-<button type="button"
-        class="btn btn-primary btn-add-news"
-
-        ng-click="createPostNewsCtrl.AddPostNews()">Add News
-</button>
-<div class="modal fade" id="modalPreview" tabindex="-1" role="dialog" aria-labelledby="modalPreview">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Preview</h4>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Summary</h3>
             </div>
-            <div class="modal-body preview-post"/>
+            <div class="panel-body">
+                <textarea class="form-control input-summary"></textarea>
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Tags</h3>
+            </div>
+            <div class="panel-body">
+                <textarea class="form-control input-tags"></textarea>
+            </div>
         </div>
     </div>
 </div>

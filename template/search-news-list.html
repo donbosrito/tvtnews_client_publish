@@ -4,10 +4,10 @@
         <div class="block-news-content">
             <div class="layout-main-news">
                 <div class="news-layout-3 big">
-                    <a href="#post/{{ categoryNewsListCtrl.firstCategoryNews._id }}" class="news-image"><img src="{{ categoryNewsListCtrl.firstCategoryNews.poster }}" alt="" class="img-responsive"></a>
+                    <a href="#post/{{ searchNewsListCtrl.firstCategoryNews._id }}" class="news-image"><img src="{{ searchNewsListCtrl.firstCategoryNews.poster }}" alt="" class="img-responsive"></a>
                     <div class="news-content">
-                        <div class="label-wrapper"><a href="#" class="label-topic">{{ categoryNewsListCtrl.firstCategoryNews._category.name }}</a></div>
-                        <a href="#post/{{ categoryNewsListCtrl.firstCategoryNews._id }}" class="title">{{ categoryNewsListCtrl.firstCategoryNews.title }}</a>
+                        <div class="label-wrapper"><a href="#" class="label-topic">{{ searchNewsListCtrl.firstCategoryNews._category.name }}</a></div>
+                        <a href="#post/{{ searchNewsListCtrl.firstCategoryNews._id }}" class="title">{{ searchNewsListCtrl.firstCategoryNews.title }}</a>
                         <div class="info-wrapper">
                             <div class="info-left">
                                 <div class="comment-wrapper">
@@ -16,14 +16,14 @@
                                         <div class="avatar avatar-2">M</div>
                                         <div class="avatar avatar-3">A</div>
                                     </div>
-                                    <div class="comment-info">{{ categoryNewsListCtrl.firstCategoryNews.commentCount }} comments</div>
+                                    <div class="comment-info">{{ searchNewsListCtrl.firstCategoryNews.commentCount }} comments</div>
                                 </div>
                             </div>
                             <div class="info-right">
                                 <ul class="info">
-                                    <li><a href="#" class="link">by {{ categoryNewsListCtrl.firstCategoryNews._author.nickname }}</a></li>
-                                    <li><a href="#" class="link">{{ categoryNewsListCtrl.firstCategoryNews.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
-                                    <li><a href="#" class="link">{{ categoryNewsListCtrl.firstCategoryNews.readingCount }} views</a></li>
+                                    <li><a href="#" class="link">by {{ searchNewsListCtrl.firstCategoryNews._author.nickname }}</a></li>
+                                    <li><a href="#" class="link">{{ searchNewsListCtrl.firstCategoryNews.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
+                                    <li><a href="#" class="link">{{ searchNewsListCtrl.firstCategoryNews.readingCount }} views</a></li>
                                 </ul>
                             </div>
                             <div class="clearfix"></div>
@@ -68,13 +68,13 @@
             </div>
             <nav class="pagination-wrapper">
                 <ul class="pagination">
-                    <li ng-show="!categoryNewsListCtrl.isHead"><a href="#" aria-label="Previous" class="pagi-link prev"><span aria-hidden="true">prev</span></a></li>
-                    <li ng-repeat="pagi in categoryNewsListCtrl.listPage" ng-class="{ active:pagi.active }">
-                        <a href="#category/{{ categoryNewsListCtrl.categoryId }}/page/{{ pagi.index }}" class="pagi-link">{{ pagi.index }}</a>
+                    <li ng-show="!searchNewsListCtrl.isHead"><a href="#" aria-label="Previous" class="pagi-link prev"><span aria-hidden="true">prev</span></a></li>
+                    <li ng-repeat="pagi in searchNewsListCtrl.listPage" ng-class="{ active:pagi.active }">
+                        <a href="#category/{{ searchNewsListCtrl.categoryId }}/page/{{ pagi.index }}" class="pagi-link">{{ pagi.index }}</a>
                     </li>
-                    <li ng-show="!categoryNewsListCtrl.isTail"><a href="#" aria-label="Next" class="pagi-link next"><span aria-hidden="true">next</span></a></li>
+                    <li ng-show="!searchNewsListCtrl.isTail"><a href="#" aria-label="Next" class="pagi-link next"><span aria-hidden="true">next</span></a></li>
                 </ul>
-                <div class="position-page">Page <span class="active">{{ categoryNewsListCtrl.currentPage }} </span>of {{ categoryNewsListCtrl.pageCount }}</div>
+                <div class="position-page">Page <span class="active">{{ searchNewsListCtrl.currentPage }} </span>of {{ searchNewsListCtrl.pageCount }}</div>
                 <div class="clearfix"></div>
             </nav>
         </div>

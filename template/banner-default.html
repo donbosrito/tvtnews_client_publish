@@ -2,26 +2,14 @@
     <div class="container">
         <div class="banner-slide-homepage-wrapper overflow-hidden">
             <div class="list-items">
-                <div class="item">
+                <div class="item" ng-repeat=" news in bannerDefaultCtrl.newses | limitTo:3:0 ">
                     <div class="news-layout-3 big">
-                        <a href="#" class="news-image"><img src="assets/images/big-images/slide-2.jpg" alt="" class="img-responsive"></a>
-                        <div class="news-content"><a href="#" class="label-topic"><span>entertainment</span></a><a href="#" class="title">GoFundMe campaign launched to help raise $53 million for Kanye West</a>
+                        <a href="#post/{{ news._id }}" class="news-image"><img ng-src="{{ news.poster }}" alt="" class="img-responsive"></a>
+                        <div class="news-content"><a href="#category/{{ news._category._id }}" class="label-topic"><span>{{ news._category.name }}</span></a><a href="#post/{{ news._id }}" class="title">{{ news.title }}</a>
                             <ul class="info">
                                 <li> <a href="#" class="link">By timothy</a></li>
                                 <li><a href="#" class="link">May 15, 2016</a></li>
                                 <li><a href="#" class="link">15 likes</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="news-layout-3 big">
-                        <a href="#" class="news-image"><img src="assets/images/big-images/slide-2.jpg" alt="" class="img-responsive"></a>
-                        <div class="news-content"><a href="#" class="label-topic"><span>ChangeLife</span></a><a href="#" class="title">Thousands Of Tiny Red Crabs Have Taken Over Orange County Beaches</a>
-                            <ul class="info">
-                                <li><a href="#" class="link">By timothy</a></li>
-                                <li><a href="#" class="link">May 30, 2016</a></li>
-                                <li><a href="#" class="link">36 likes</a></li>
                             </ul>
                         </div>
                     </div>

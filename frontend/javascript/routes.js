@@ -4,7 +4,7 @@ angular.module('tvtnews-routes', ['ngRoute'])
             .when('/index', {
                 templateUrl: 'template/page/main-index.html'
             })
-            .when('/category/:id', {
+            .when('/category/:id/page/:numPage', {
                 templateUrl: 'template/page/main-category.html'
             })
             .when('/post/:id', {
@@ -13,7 +13,7 @@ angular.module('tvtnews-routes', ['ngRoute'])
             .when('/author', {
                 templateUrl: 'template/page/main-author-list.html'
             })
-            .when('/author/detail', {
+            .when('/author/:id/page/:numPage', {
                 templateUrl: 'template/page/main-author-detail.html'
             })
             .when('/404', {
@@ -25,8 +25,17 @@ angular.module('tvtnews-routes', ['ngRoute'])
             .when('/contact', {
                 templateUrl: 'template/page/main-contact-us.html'
             })
+            .when('/user/', {
+                templateUrl: 'template/page/main-user.html'
+            })
+            .when('/user/edit', {
+                templateUrl: 'template/page/main-edit-user.html'
+            })
             .when('/createpost', {
                 templateUrl: 'template/page/main-create-post-news.html'
+            })
+            .when('/search/:tag/page/:numPage', {
+                templateUrl: 'template/page/main-search-articles.html'
             })
             .otherwise({
                 redirectTo: '/index'

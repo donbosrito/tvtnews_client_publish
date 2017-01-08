@@ -1037,7 +1037,6 @@
   background-color: #daad86;
   display: flex;
   display: -webkit-flex;
-  display: -moz-flex;
 }
 .news-layout-4.style-1 .news-content {
   padding: 25px 15px 30px;
@@ -1297,4 +1296,74 @@
 .slick-2-item .item,
 .slick-1-item .item {
   padding: 0 15px;
+}
+
+/*=================== User-Page Profile Style ===================*/
+.profile-user {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.img-cover {
+  width: 100%;
+}
+
+.avatar-user {
+  display: block;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.box-avatar-user {
+  display: inline-block;
+  background-color: #fff;
+}
+
+.box-avatar-user img {
+  margin: 10px;
+}
+
+.info-resume-user {
+  display: block;
+}
+
+.info-resume-user .label-resume, .info-resume-user .info-resume {
+  display: inline-block;
+}
+
+.info-resume-user .label-resume {
+  width: 25%;
+  font-weight: bold;
+}
+
+.info-resume-user .info-resume {
+  color: #000;
+}
+
+.resume-img {
+  display: inline-block;
+  position: relative;
+}
+
+.resume-img img {
+  width: 75%;
+  position: absolute;
+  right: 0;
+  top: 15%;
+  transform: translateY(-15%);
+}
+
+.resume {
+  border: 5px solid;
+  border-radius: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 20px;
+}
+
+/* Style */
+.hot-news-content .news-image img {
+  height: 150px;
 }

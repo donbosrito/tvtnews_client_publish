@@ -390,12 +390,4078 @@
 =            RESPONSIVE SCREEN            =
 =========================================*/
 /*----------  1.1. Media screen max width 1600px  ----------*/
+@media screen and (min-width: 1600px) {
+  .banner-slide-homeminimalist .list-items .news-layout-4 .news-content {
+    padding: 70px 70px 30px;
+  }
+  .banner-slide-homeminimalist .news-layout-4 .news-content .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .banner-slide-homeminimalist .list-items-2 .news-layout-4 .news-content {
+    padding: 30px 30px 40px;
+  }
+  .banner-slide-homeminimalist .list-items-2 .news-layout-4 .news-content .limit-3-line {
+    max-height: calc(24px * 5);
+  }
+  .banner-slide-homepersonalblog .news-layout-4 .news-content {
+    padding: 70px 70px 30px;
+  }
+  .banner-slide-homepersonalblog .news-layout-4 .news-content .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .banner-slide-homepersonalblog .slider-nav {
+    padding: 75px 70px;
+  }
+}
 /*----------  1.2. Media screen max width 1024px  ----------*/
+@media screen and (max-width: 1024px) {
+  /*------------  Home page default  ------------*/
+  .header-middle-wrapper .banner-wrapper {
+    width: 660px;
+  }
+  .travel-weather-wrapper.layout-2,
+  .travel-weather-wrapper.layout-3 {
+    display: none;
+  }
+  /*------------  Home page center  ------------*/
+  .banner-slide-homecenter .slick-next,
+  .banner-slide-homecenter:hover .slick-next {
+    right: 15%;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+  }
+  .banner-slide-homecenter .slick-prev,
+  .banner-slide-homecenter:hover .slick-prev {
+    left: 15%;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+  /*------------  Home page video  ------------*/
+  .news-masonry-2 .masonry-item-wrapper.item-width-1 {
+    width: 50%;
+  }
+  .news-masonry-2 .masonry-item-wrapper.item-width-1:before {
+    padding-top: 120%;
+  }
+  .news-masonry-2 .masonry-item-wrapper.item-width-2 {
+    width: 50%;
+  }
+  .news-masonry-2 .masonry-item-wrapper.item-width-2:before {
+    padding-top: 60%;
+  }
+  /*------------  Home page technology  ------------*/
+  .header-table-cell-2 .header-topbar-wrapper,
+  .header-table-cell-2 .header-bottom {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .header-main.technology .navigation > li {
+    margin: 0 15px;
+  }
+  /*------------  Home page gaming  ------------*/
+  .watch-now-wrapper .info-watch-now-wrapper .sub-wrapper {
+    padding: 0 30px;
+  }
+  .watch-now-wrapper .info-watch-now-wrapper .title {
+    font-size: 28px;
+  }
+  .middle-banner-slider .slider-nav-wrapper {
+    overflow: hidden;
+  }
+  .middle-banner-slider .slider-for-1-item-sidebar .comment-wrapper {
+    padding: 20px;
+  }
+  .middle-banner-slider .slider-for-1-item-sidebar .basic-info-wrapper {
+    padding-bottom: 5px;
+  }
+  .middle-banner-slider .slider-for-1-item-sidebar .basic-info-wrapper .info {
+    line-height: 30px;
+  }
+  .middle-banner-slider .slider-for-1-item-sidebar .list-comment .item {
+    margin-top: 10px;
+  }
+  .middle-banner-slider .slider-for-1-item-sidebar .video-wrapper .video,
+  .middle-banner-slider .slider-for-1-item-sidebar .comment-contain-scrollbar {
+    height: 400px;
+  }
+  .middle-banner-slider .slider-nav-1-item-sidebar {
+    margin-top: 30px;
+  }
+  .block-game-reviews .layout-list-news .circle-progress {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .block-game-reviews .layout-list-news .news-layout-1 .circle-review {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .block-game-reviews .layout-list-news .news-layout-1 .news-image:before {
+    opacity: 1;
+  }
+  .modal-video .close {
+    opacity: 1;
+  }
+  /*------------  About us  ------------*/
+  .feedback-wrapper .feedback-content {
+    font-size: 14px;
+  }
+  .statistics-item-wrapper {
+    padding: 20px;
+  }
+  .statistics-item-icon {
+    max-width: 90%;
+  }
+  .statistics-item-figure {
+    font-size: 30px;
+    padding: 20px 0 10px 0;
+  }
+  /*------------  Contact Us  ------------*/
+  .info-container {
+    padding: 15px 15px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  .info-container .info-tag {
+    font-size: 15px;
+  }
+  .info-container .info-icon-wrapper {
+    width: 40px;
+    padding-right: 15px;
+    padding-top: 5px;
+  }
+  .group-contact-info .col-md-6:nth-child(odd) {
+    padding-right: 10px;
+  }
+  .group-contact-info .col-md-6:nth-child(even) {
+    padding-left: 10px;
+  }
+  .form-group {
+    padding-top: 30px;
+  }
+  /*------------  404  ------------*/
+  .wrapper-text-404 .error-404 {
+    font-size: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .useful-link .text {
+    padding-bottom: 10px;
+  }
+  .link-list .link-list-item {
+    height: 35px;
+    line-height: 35px;
+  }
+  /*------------  Single Post  ------------*/
+  .writter-info-wrapper .writter-text {
+    font-size: 13px;
+  }
+  .writter-info-wrapper .writter-pic {
+    display: block;
+  }
+  .writter-info-wrapper .info li {
+    display: block;
+    padding: 0;
+    text-align: right;
+  }
+  .writter-info-wrapper .info li + li:before {
+    display: none;
+  }
+  /*------------  Homepage Mnimalist  ------------*/
+  .news-layout-4 .news-content .title {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .news-layout-4.style-1 .news-content {
+    padding: 25px 30px;
+  }
+  .news-layout-4.style-1 .precept i {
+    font-size: 30px;
+  }
+  .news-layout-4.style-1 .precept p {
+    font-size: 16px;
+  }
+  .news-layout-4.style-2 {
+    padding: 30px 25px;
+  }
+  .news-layout-4 .news-content {
+    padding: 30px 25px;
+  }
+  .banner-slide-homeminimalist blockquote,
+  .banner-slide-homepersonalblog blockquote {
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 0;
+    line-height: 24px;
+  }
+  .banner-slide-homeminimalist blockquote .icon-quote,
+  .banner-slide-homepersonalblog blockquote .icon-quote {
+    font-size: 30px;
+  }
+  .banner-slide-homeminimalist blockquote p,
+  .banner-slide-homepersonalblog blockquote p {
+    max-height: 72px;
+  }
+  .banner-slide-homeminimalist .news-layout-4 .news-content .title,
+  .banner-slide-homepersonalblog .news-layout-4 .news-content .title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .banner-slide-homeminimalist .list-items {
+    width: 100%;
+  }
+  .banner-slide-homeminimalist .list-items-2 {
+    display: none;
+  }
+  /*------------  Gaming Detail  ------------*/
+  .video-thumbnail {
+    margin-bottom: 30px;
+  }
+  .video-thumbnail-small {
+    margin-bottom: 10px;
+    height: 100px;
+  }
+  .video-thumbnail-small .video-button-play {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .video-thumbnail-small .video-button-play .icons {
+    font-size: 14px;
+  }
+  .video-list-item {
+    padding: 0 10px;
+  }
+  .post-review-header .sharing-list {
+    padding-left: 10px;
+  }
+  .post-review-header .sharing-list .sharing-icons {
+    margin-left: 10px;
+  }
+  .gaming-top-news .single-recent-post-widget:first-child .post-number:after {
+    top: 30px;
+    left: 16px;
+    width: 35px;
+    height: 35px;
+  }
+  .gaming-top-news .single-recent-post-widget:hover:before,
+  .gaming-top-news .single-recent-post-widget:focus:before,
+  .gaming-top-news .single-recent-post-widget:hover:after,
+  .gaming-top-news .single-recent-post-widget:focus:after {
+    display: none;
+  }
+  .width-100 {
+    width: 100%;
+  }
+  /*------------  Homepage Gaming 02  ------------*/
+  .gaming-layout .video-button-play {
+    top: 40%;
+  }
+  .banner-gaming-02 .masonry-item-wrapper.item-width-2 > div {
+    bottom: 10px;
+  }
+  /*------------  Gaming 01  ------------*/
+  .header-main.gaming-01 .hamburger-menu {
+    display: inline-block;
+    top: -3px;
+  }
+  .header-main.gaming-01 .logo-wrapper .logo {
+    margin-left: 0;
+  }
+  .header-main.gaming-01 .header-bottom {
+    display: none;
+  }
+  .header-main.gaming-01 .group-btn-header .gaming-btn {
+    width: calc(50% - 30px);
+  }
+  .gaming-banner-01 .row > [class*='col-'] {
+    width: 100%;
+  }
+  .gaming-banner-01 .gaming-banner-layout.big .news-content {
+    position: static;
+    padding-bottom: 0;
+  }
+  .gaming-purchase {
+    padding-top: 40px;
+  }
+  .gaming-banner-02 .slick-3-item-couple {
+    margin: 0 -15px;
+  }
+  .gaming-banner-02 .news-esport {
+    margin-bottom: 30px;
+  }
+  .gaming-banner-02 .item-couple {
+    padding: 0 15px;
+  }
+  /*------------  Homepage Lifestyle  ------------*/
+  /*------------  Homepage Travel 01  ------------*/
+  .nav-travel {
+    padding-left: 10px;
+  }
+  .nav-travel > li {
+    margin: 0 10px;
+  }
+  .travel-weather-wrapper {
+    margin-left: 0;
+  }
+  .travel-01 .sticky-header .travel-weather-wrapper {
+    margin-top: 10px;
+  }
+  .banner-travel-01 .slider-for .slider-img:before {
+    padding-bottom: 40%;
+  }
+  .banner-travel-01 .slider-for .slider-info-wrapper {
+    padding: 30px 0 15px 30px;
+  }
+  .banner-travel-01 .slider-for .slider-label {
+    padding: 5px 10px;
+  }
+  .banner-travel-01 .slider-for .slider-title {
+    font-size: 30px;
+    max-height: 24px;
+    overflow: hidden;
+  }
+  .banner-travel-01 .slider-nav .slider-info-wrapper {
+    padding: 30px 0 10px 30px;
+  }
+  .banner-travel-01 .slider-nav .slider-label {
+    font-size: 13px;
+  }
+  .banner-travel-01 .slider-nav .slider-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    max-height: 25px;
+    overflow: hidden;
+  }
+  .banner-travel-01 .slider-nav .slider-author {
+    display: none;
+  }
+  .travel-social-widget-01 .travel-social-item,
+  .travel-social-widget-01 .social-behaviour {
+    padding-left: 0;
+  }
+  .travel-layout-1.big .travel-content .title {
+    font-size: 18px;
+  }
+  .travel-layout-1.big .travel-content .info li {
+    font-size: 12px;
+  }
+  .travel-single-post-widget .post-info .title {
+    font-size: 15px;
+  }
+  .travel-layout-2 .travel-content {
+    padding: 30px 20px 15px 20px;
+  }
+  .travel-layout-2 .travel-content .label {
+    padding: 5px 10px;
+  }
+  .travel-layout-2 .travel-content .title {
+    max-height: 20px;
+    overflow: hidden;
+  }
+  .travel-layout-2 .travel-content .info-wrapper {
+    margin-top: 10px;
+  }
+  .travel-layout-2 .travel-content .info li {
+    padding: 0 5px;
+    font-size: 12px;
+  }
+  .block-travel-03 .travel-single-post-widget .post-info .label-wrapper .label-topic {
+    margin-bottom: 10px;
+  }
+  .travel-layout-3 .travel-content .title {
+    font-size: 18px;
+  }
+  .travel-video-campaign-01 .video-thumbnail-small .video-button-play {
+    line-height: 36px;
+  }
+  .travel-more-news .travel-layout-2 .travel-content .info li {
+    font-size: 11px;
+  }
+  .travel-footer-lastest-post .travel-single-post-widget .post-info .title {
+    margin-bottom: 0;
+  }
+  /*------------  Homepage Fashion 01  ------------*/
+  .header-main.fashion-01 .header-middle-wrapper {
+    height: 120px;
+  }
+  .header-main.fashion-01 .nav-search {
+    left: 30px;
+    right: 30px;
+    width: auto;
+  }
+  .fashion-banner-1 {
+    padding-bottom: 0;
+  }
+  .fashion-banner-layout .news-content-wrapper {
+    margin: 0 5%;
+  }
+  .fashion-banner-layout .news-content-wrapper.at-bottom {
+    margin: 0;
+  }
+  .fashion-banner-layout .news-content-wrapper.at-bottom .news-content {
+    padding: 30px 20px 25px;
+  }
+  .fashion-banner-layout .news-content {
+    padding: 30px 20px 25px;
+  }
+  .fashion-banner-layout .news-content .title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  /*------------  Homepage Food  ------------*/
+  .header-middle-food-wrapper .logo-left-wrapper .logo-wrapper-food {
+    max-width: 80px;
+  }
+  .fashion-banner-3 .img-wrapper:before {
+    padding-top: 400px;
+  }
+  .search-box-food.custom-for-fixed-header.expand-search-box {
+    width: calc(100% - 130px);
+  }
+  .widget-food {
+    padding: 30px 20px;
+  }
+  /*------------  Homepage Travel 02  ------------*/
+  .travel-02 .header-middle-wrapper {
+    padding-top: 50px;
+  }
+  .travel-02 .header-middle-wrapper .header-left,
+  .travel-02 .header-middle-wrapper .header-right {
+    padding: 0 10px;
+  }
+  .travel-02 .header-middle-wrapper .logo-wrapper {
+    vertical-align: middle;
+  }
+  .travel-author .avatar {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .nav-travel-02 > li {
+    margin: 0 12px;
+  }
+  .padding-top-300 {
+    padding-top: 250px;
+  }
+  .top-destination-02 .travel-img-wrapper .travel-pic .overlay:before {
+    opacity: 0.5;
+  }
+  .top-destination-02 .travel-img-wrapper .img-decoration:before,
+  .top-destination-02 .travel-img-wrapper .img-decoration:after {
+    transform: scale(1);
+  }
+  .top-destination-02 .travel-img-wrapper .item-content {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    height: auto;
+  }
+  .top-destination-02 .travel-img-wrapper .item-content .label,
+  .top-destination-02 .travel-img-wrapper .item-content .description {
+    opacity: 1;
+    visibility: visible;
+  }
+  .top-destination-02 .travel-img-wrapper .item-content .label,
+  .top-destination-02 .travel-img-wrapper .item-content .title {
+    z-index: 3;
+  }
+  .travel-weather-widget-content .weather-temp {
+    top: 35%;
+  }
+  .travel-weather-widget-content .weather-info li {
+    min-width: 100px;
+  }
+}
 /*----------  1.3. Media screen max width 768px  ----------*/
+@media screen and (max-width: 768px) {
+  /*------------  Spacing  ------------*/
+  .padding-top-100 {
+    padding-top: 80px;
+  }
+  .padding-bottom-100 {
+    padding-bottom: 80px;
+  }
+  .padding-top-80 {
+    padding-top: 60px;
+  }
+  .padding-bottom-80 {
+    padding-bottom: 60px;
+  }
+  .padding-top-60 {
+    padding-top: 40px;
+  }
+  .padding-bottom-60 {
+    padding-bottom: 40px;
+  }
+  .padding-bottom-50 {
+    padding-bottom: 30px;
+  }
+  .padding-bottom-70 {
+    padding-bottom: 50px;
+  }
+  .margin-top-120 {
+    margin-top: 100px;
+  }
+  .margin-top-100 {
+    margin-top: 80px;
+  }
+  .margin-top-80 {
+    margin-top: 60px;
+  }
+  .margin-top-60 {
+    margin-top: 40px;
+  }
+  .margin-bottom-120 {
+    margin-bottom: 100px;
+  }
+  .margin-bottom-100 {
+    margin-bottom: 80px;
+  }
+  .margin-bottom-80 {
+    margin-bottom: 60px;
+  }
+  .margin-bottom-60 {
+    margin-bottom: 40px;
+  }
+  .margin-bottom-50 {
+    margin-bottom: 30px;
+  }
+  .margin-bottom-70 {
+    margin-bottom: 50px;
+  }
+  /*------------  Layout News  ------------*/
+  .news-layout-2 .news-content,
+  .gaming-layout-2 .news-content {
+    padding-left: 20px;
+  }
+  .news-layout-2.bg-gray .news-content,
+  .gaming-layout-2.bg-gray .news-content,
+  .news-layout-2.bg-white .news-content,
+  .gaming-layout-2.bg-white .news-content {
+    padding: 20px;
+  }
+  .news-layout-3.big .news-content .title,
+  .gaming-layout-3.big .news-content .title {
+    font-size: 22px;
+  }
+  .news-layout-3.big .news-content .label-topic,
+  .gaming-layout-3.big .news-content .label-topic {
+    font-size: 14px;
+  }
+  .block-news-1 .layout-main-news {
+    padding-right: 10px;
+  }
+  .block-news-1 .layout-list-news {
+    padding-left: 10px;
+  }
+  .block-news-2 .layout-list-news {
+    margin: 0 -10px;
+  }
+  .block-news-2 .layout-list-news .block-item {
+    padding: 20px 10px 0 10px;
+  }
+  .list-block-3 .col-md-4 .block-news-3 {
+    margin-top: 40px;
+  }
+  .list-block-3 .col-md-4:nth-child(-n + 3) .block-news-3 {
+    margin-top: 40px;
+  }
+  .list-block-3 .col-md-4:nth-child(-n + 2) .block-news-3 {
+    margin-top: 0;
+  }
+  .block-news-4 .layout-main-news {
+    margin-bottom: 0;
+  }
+  .block-news-4 .layout-list-news {
+    margin: 0 -10px;
+  }
+  .block-news-4 .layout-list-news .block-item {
+    padding: 20px 10px 0 10px;
+  }
+  .block-list {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .block-list .block-item {
+    padding: 20px 10px 0 10px;
+  }
+  .block-list.column-4 .block-item {
+    width: 33.3333%;
+  }
+  .block-list.column-4 .block-item:nth-child(-n+4) {
+    padding-top: 20px;
+  }
+  .block-list.column-4 .block-item:nth-child(-n+3) {
+    padding-top: 0;
+  }
+  .block-list.column-1 .block-item {
+    padding-top: 30px;
+  }
+  .pagination-wrapper {
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .slick-4-item,
+  .slick-4-item-notauto,
+  .slick-3-item,
+  .slick-2-item,
+  .slick-1-item {
+    margin: 0 -10px;
+  }
+  .slick-4-item .item,
+  .slick-4-item-notauto .item,
+  .slick-3-item .item,
+  .slick-2-item .item,
+  .slick-1-item .item {
+    padding: 0 10px;
+  }
+  /*------------  Home page default  ------------*/
+  .sidebar {
+    margin-top: 60px;
+  }
+  .sidebar .widget {
+    margin-bottom: 40px;
+  }
+  .sidebar .col-1 {
+    width: 100%;
+  }
+  .sidebar .col-2 {
+    width: 50%;
+    float: left;
+  }
+  .sidebar .col-2:nth-child(odd) {
+    padding-right: 15px;
+  }
+  .sidebar .col-2:nth-child(even) {
+    padding-left: 15px;
+  }
+  .sidebar .col-2 .widget:last-child {
+    margin-bottom: 0;
+  }
+  .title-topic,
+  .block-heading {
+    margin-bottom: 30px;
+  }
+  .navigation,
+  .button-search {
+    display: none;
+  }
+  .header-middle-wrapper {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .header-middle-wrapper .banner-wrapper {
+    width: auto;
+    display: table-caption;
+    padding: 25px 0 10px 0;
+  }
+  .header-middle-wrapper .banner-wrapper img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .header-middle {
+    background-color: #161616;
+  }
+  .header-middle.sticky-header .banner-wrapper {
+    display: none;
+  }
+  .menu-wrapper {
+    padding: 15px 0;
+    text-align: center;
+  }
+  .hamburger-menu {
+    float: left;
+  }
+  .hot-news {
+    padding-bottom: 40px;
+  }
+  .hot-news-heading {
+    margin-bottom: 20px;
+  }
+  .tabs-list-2 {
+    margin-bottom: 20px;
+  }
+  .tabs-list-2 li {
+    margin-bottom: 10px;
+  }
+  .tabs-list-2 .link {
+    font-size: 16px;
+  }
+  .tabs-list-3 {
+    margin-bottom: 30px;
+  }
+  .footer-bottom {
+    padding: 50px 0;
+  }
+  /*------------  Home page center  ------------*/
+  .header-main.center .hamburger-menu {
+    display: inline-block;
+  }
+  .banner-slide-homecenter .slick-next,
+  .banner-slide-homecenter:hover .slick-next {
+    right: 70px;
+  }
+  .banner-slide-homecenter .slick-prev,
+  .banner-slide-homecenter:hover .slick-prev {
+    left: 70px;
+  }
+  .banner-news-wrapper .main-news {
+    width: 100%;
+  }
+  .banner-news-wrapper .main-news .owl-prev,
+  .banner-news-wrapper .main-news .owl-next,
+  .banner-news-wrapper .main-news:hover .owl-prev,
+  .banner-news-wrapper .main-news:hover .owl-next {
+    opacity: 1;
+    visibility: visible;
+  }
+  .banner-news-wrapper .main-news .owl-prev,
+  .banner-news-wrapper .main-news:hover .owl-prev {
+    left: 15px;
+  }
+  .banner-news-wrapper .main-news .owl-next,
+  .banner-news-wrapper .main-news:hover .owl-next {
+    right: 15px;
+  }
+  .banner-news-wrapper .title-news {
+    display: none;
+  }
+  .gallery-slick-wrapper .slider-for:hover .slick-prev,
+  .gallery-slick-wrapper .slider-for .slick-prev,
+  .gallery-slick-wrapper .slider-for:hover .slick-next,
+  .gallery-slick-wrapper .slider-for .slick-next {
+    opacity: 1;
+    visibility: visible;
+  }
+  .gallery-slick-wrapper .slider-for:hover .slick-prev,
+  .gallery-slick-wrapper .slider-for .slick-prev {
+    left: 15px;
+  }
+  .gallery-slick-wrapper .slider-for:hover .slick-next,
+  .gallery-slick-wrapper .slider-for .slick-next {
+    right: 15px;
+  }
+  .footer-main-wrapper {
+    margin: 0 -15px;
+  }
+  .footer-main-wrapper .column-1,
+  .footer-main-wrapper .column-2,
+  .footer-main-wrapper .column-3 {
+    width: 50%;
+    padding: 0 15px;
+    margin: 0;
+  }
+  .footer-main-wrapper .column-3 {
+    margin-top: 40px;
+  }
+  /*------------  Home page technology  ------------*/
+  .header-main.technology .header-table-cell-1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    width: 100%;
+  }
+  .header-main.technology .header-table-cell-2 {
+    display: none;
+  }
+  .masonry-item-wrapper.item-width-2 {
+    width: 100%;
+  }
+  .masonry-item-wrapper.item-width-1 {
+    width: 50%;
+  }
+  .masonry-item-wrapper.item-height-1:before {
+    padding-top: 60%;
+  }
+  .top-news {
+    padding: 20px;
+  }
+  .single-recent-post-widget {
+    margin-bottom: 20px;
+  }
+  /*------------  Home page gaming  ------------*/
+  .banner-esport-live-score .esport-main-wrapper {
+    padding: 0 15px;
+  }
+  .header-banner-slider .main-video-wrapper .ic-play-wrapper.inactive {
+    display: table;
+  }
+  .watch-now-wrapper {
+    display: none;
+  }
+  .middle-banner-slider .slider-for-1-item-sidebar .comment-contain-scrollbar {
+    display: none;
+  }
+  /*------------  About us  ------------*/
+  .banner-about-us {
+    padding: 80px 0;
+  }
+  .banner-content-wrapper .banner-big-slogan {
+    font-size: 50px;
+  }
+  .sub-topic-wrapper {
+    margin-top: 0;
+  }
+  .img-introduce-wrapper {
+    margin: 30px auto 0 auto;
+  }
+  .our-client-wrapper {
+    margin-top: 50px;
+  }
+  .statistics-wrapper .col-md-3 {
+    margin-top: 30px;
+  }
+  .statistics-wrapper .col-md-3:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+  .feedback-wrapper {
+    margin-top: -10px;
+  }
+  .feedback-wrapper .quotation {
+    padding-right: 15px;
+  }
+  .feedback-wrapper .feedback-content {
+    line-height: 26px;
+  }
+  .feedback-wrapper .feedback-author {
+    margin-top: 5px;
+    padding-left: 67px;
+  }
+  /*------------  Contact Us  ------------*/
+  .content-contact .info-tag {
+    font-size: 14px;
+  }
+  .content-contact .info-content {
+    font-size: 13px;
+  }
+  .content-contact .info-icon-wrapper {
+    width: 68px;
+  }
+  .group-contact-info .content-text {
+    margin-bottom: 20px;
+  }
+  .group-contact-form {
+    margin-top: 60px;
+  }
+  .form-group {
+    padding-top: 20px;
+  }
+  /*------------  404  ------------*/
+  .wrapper-404 {
+    height: 380px;
+  }
+  .wrapper-img-404 {
+    top: 0px;
+    bottom: 0px;
+  }
+  .wrapper-text-404 .error-404 {
+    font-size: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .wrapper-text-404 .content-404 {
+    font-size: 13px;
+    margin-top: 0px;
+  }
+  .helper-404 .content-text {
+    margin-bottom: 0;
+  }
+  .search-form {
+    padding-top: 40px;
+  }
+  /*------------  Single Post  ------------*/
+  .title-single-post {
+    margin-bottom: 20px;
+  }
+  .social-action-wrapper {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  /*------------  Hamburger menu  ------------*/
+  .hamburger-menu.style-2 {
+    top: 2px;
+  }
+  /*------------  Homepage Minimalist  ------------*/
+  .header-main.minimalist .header-table-cell-1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    width: 100%;
+  }
+  .header-main.minimalist .header-table-cell-2 {
+    display: none;
+  }
+  .read-more {
+    padding-top: 20px;
+  }
+  .block-minimalist-1 .equal-height > div {
+    margin-bottom: 30px;
+  }
+  .block-minimalist-1 .equal-height > div:last-child {
+    margin-bottom: 0;
+  }
+  /*------------  Homepage Personal Blog  ------------*/
+  .banner-slide-homepersonalblog blockquote + div {
+    display: none;
+  }
+  .banner-slide-homepersonalblog .news-layout-4 .news-content .title {
+    max-height: 56px;
+    overflow: hidden;
+  }
+  .banner-slide-homepersonalblog .more-text {
+    max-height: 72px;
+  }
+  /*------------  Gaming Detail  ------------*/
+  .post-review-header .sharing-list {
+    width: 300px;
+  }
+  .post-review-header .header-right .review-rate {
+    margin-bottom: 40px;
+  }
+  .post-review-content .text {
+    margin-bottom: 30px;
+  }
+  .gaming-top-news .single-recent-post-widget:first-child .post-number:after {
+    top: 30px;
+    left: 17px;
+  }
+  .gaming-detail-sidebar {
+    margin-bottom: 100px;
+  }
+  /*------------  Homepage Gaming 02  ------------*/
+  .banner-gaming-02 .masonry-item-wrapper.item-width-2 > div {
+    bottom: 9px;
+  }
+  .banner-gaming-02 .gaming-layout.big .news-content .title {
+    font-size: 20px;
+  }
+  .banner-gaming-02 .gaming-layout.big .news-content .description {
+    display: none;
+  }
+  .banner-gaming-02 .gaming-layout .news-content .title {
+    font-size: 14px;
+  }
+  .news-layout-gaming .video-button-play {
+    top: 50%;
+  }
+  /*------------  Homepage Gaming 01  ------------*/
+  .gaming-banner-layout.big .news-content .title {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  .header-main.gaming-01 .menu-wrapper {
+    padding: 0;
+  }
+  .header-main.gaming-01 .hamburger-menu {
+    top: 7px;
+  }
+  .gaming-banner-01 .gaming-banner-layout.big .news-content {
+    padding: 25px 15px 0;
+  }
+  .gaming-banner-01 .gaming-banner-layout.big .news-content > div {
+    width: auto;
+  }
+  .gaming-review-list {
+    margin: 0 -10px;
+  }
+  .gaming-review-list .item {
+    padding: 0 10px;
+  }
+  .block-gaming-1 .pagination-wrapper {
+    margin: 30px 0 0;
+  }
+  .gaming-banner-02 .news-esport {
+    margin-bottom: 20px;
+  }
+  .gaming-banner-02 .slick-3-item-couple {
+    margin: 0 -10px;
+  }
+  .gaming-banner-02 .item-couple {
+    padding: 0 10px;
+  }
+  .footer-main.gaming-01 {
+    padding: 50px 0 45px;
+  }
+  .footer-main .col-2 {
+    margin-bottom: 45px;
+  }
+  .footer-main .col-2:last-child {
+    margin-bottom: 0;
+  }
+  .footer-bottom.gaming-01 .footer-bottom-wrapper .column-right .copyright {
+    float: none;
+  }
+  /*------------  Homepage Lifestyle  ------------*/
+  .header-lifestyle .fixed-header-mobile {
+    display: block;
+  }
+  .header-lifestyle .header-topbar {
+    display: none;
+  }
+  .header-lifestyle .logo-wrapper {
+    margin-left: 0;
+  }
+  .header-lifestyle .logo-wrapper img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .banner-lifestyle-1 .logo-wrapper {
+    display: none;
+  }
+  .banner-lifestyle-1 .block-news {
+    padding: 30px 0 30px 0;
+  }
+  .lifestyle-layout-2 {
+    display: block;
+  }
+  .lifestyle-layout-2 .img-wrapper,
+  .lifestyle-layout-2 .news-content {
+    display: block;
+    width: 100%;
+  }
+  .block-lifestyle-2 .layout-on-sm-scr {
+    display: block;
+  }
+  .lifestyle-main-news .sidebar {
+    margin-top: 80px;
+  }
+  .lifestyle-main-news.padding-top-100 {
+    padding-top: 60px;
+  }
+  .lifestyle-main-news.padding-bottom-100 {
+    padding-bottom: 60px;
+  }
+  .lifestyle-pagination {
+    padding: 5px 0;
+    margin-top: 50px;
+  }
+  .lifestyle-layout-1.big .news-content {
+    padding: 25px 30px 25px;
+  }
+  .lifestyle-layout-1.big .news-content .title {
+    font-size: 28px;
+  }
+  .lifestyle-layout-1.big .news-content .info {
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  /*------------  Homepage Travel 01  ------------*/
+  .travel-01 .header-middle {
+    background-color: #fff;
+  }
+  .header-travel-01 .menu-wrapper {
+    width: 100%;
+  }
+  .header-travel-01 .menu-wrapper .header-left {
+    text-align: center;
+  }
+  .header-travel-01 .menu-wrapper .header-left .hamburger-menu {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  .header-travel-01 .menu-wrapper .header-left .logo-wrapper {
+    margin-left: 0;
+  }
+  .travel-weather-wrapper {
+    display: none;
+  }
+  .banner-travel-01 .slider-for .container {
+    width: auto;
+  }
+  .banner-travel-01 .slider-for .slider-info {
+    left: 0;
+    right: 0;
+  }
+  .block-travel-01 .layout-main-travel {
+    padding-right: 12px;
+  }
+  .block-travel-01 .layout-list-travel {
+    padding-left: 12px;
+  }
+  .block-travel-01 .layout-list-travel .travel-single-post-widget {
+    margin-bottom: 20px;
+  }
+  .block-travel-02 .layout-main-travel {
+    margin: 0 -12px;
+  }
+  .block-travel-02 .block-travel-heading {
+    margin-bottom: 12px;
+  }
+  .travel-more-news .block-travel-content {
+    margin: 0 -12px;
+  }
+  .travel-more-news .travel-layout-2 {
+    padding: 0 12px;
+  }
+  .travel-layout-2 {
+    padding: 12px;
+  }
+  .travel-layout-2 .travel-content .info li:last-child {
+    padding-left: 5px;
+  }
+  .travel-layout-2 .travel-content .info li:last-child:before {
+    content: '|';
+  }
+  .block-travel-03 .layout-main-travel {
+    margin-bottom: 20px;
+  }
+  .block-travel-03 .layout-list-travel {
+    margin: 0 -12px;
+  }
+  .block-travel-03 .layout-list-travel .block-item {
+    margin-bottom: 20px;
+    padding: 0 12px;
+  }
+  .travel-layout-3 .travel-video {
+    padding-right: 12px;
+  }
+  .travel-layout-3 .travel-content {
+    padding-left: 12px;
+  }
+  .travel-layout-3 .travel-content .title {
+    margin-bottom: 10px;
+  }
+  .travel-layout-3 .travel-content .info-wrapper {
+    margin-bottom: 15px;
+  }
+  .travel-video-campaign-01 .video-list {
+    margin: 0 -12px 20px -12px;
+  }
+  .travel-video-campaign-01 .block-travel-heading {
+    margin-bottom: 20px;
+  }
+  .travel-video-campaign-01 .travel-video-list-item {
+    margin: 0 12px;
+  }
+  .travel-video-campaign-01 .video-thumbnail-small {
+    margin-bottom: 0;
+  }
+  .travel-video-campaign-01 .video-thumbnail {
+    margin-bottom: 0;
+  }
+  .footer-travel-01 .footer-main-wrapper .column-1,
+  .footer-travel-01 .footer-main-wrapper .column-2,
+  .footer-travel-01 .footer-main-wrapper .column-3 {
+    width: 50%;
+  }
+  .footer-travel-01 .footer-main-wrapper .column-2,
+  .footer-travel-01 .footer-main-wrapper .column-3 {
+    margin-left: 0;
+  }
+  .travel-footer-lastest-post .travel-single-post-widget .post-info .title {
+    padding-bottom: 10px;
+  }
+  .travel-footer-newsletter .form-wrapper {
+    margin-bottom: 60px;
+  }
+  .footer-bottom-travel-01 .footer-bottom-wrapper .column-left .footer-link li {
+    padding-right: 10px;
+  }
+  /*------------  Homepage Fashion 01  ------------*/
+  .header-main.fashion-01 .logo-wrapper {
+    width: 200px;
+  }
+  .header-main.fashion-01 .header-bottom {
+    margin-top: 0;
+  }
+  .header-main.fashion-01 .header-bottom .navigation {
+    display: none;
+  }
+  .header-main.fashion-01 .hamburger-menu {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+  .fashion-block-heading {
+    margin-bottom: 40px;
+  }
+  .fashion-title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+  }
+  .fashion-banner-layout .news-content {
+    padding: 20px 20px 15px;
+  }
+  .fashion-banner-layout .news-content .title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  /*------------  Homepage Food  ------------*/
+  .header-topbar-food {
+    padding: 15px 0;
+  }
+  .header-middle-food.sticky-header .header-middle-food-wrapper .search-box-food.custom-for-fixed-header.on-lg-scr {
+    display: none;
+  }
+  .header-bottom-food-wrapper .logo-middle-wrapper {
+    display: none;
+  }
+  .banner-food-1 {
+    margin-top: 30px;
+  }
+  .header-middle-food {
+    background-color: #fff;
+  }
+  .header-middle-food .header-middle-food-wrapper .logo-left-wrapper {
+    width: 100% !important;
+  }
+  .header-middle-food-wrapper {
+    margin-top: 0;
+  }
+  .header-middle-food-wrapper .on-lg-scr {
+    display: none;
+  }
+  .header-middle-food-wrapper .logo-left-wrapper {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+  .header-middle-food-wrapper .logo-left-wrapper .menu-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    height: 60px;
+  }
+  .header-middle-food-wrapper .logo-left-wrapper .search-box-food.custom-for-fixed-header {
+    display: none;
+  }
+  .header-middle-food-wrapper .logo-left-wrapper .search-box-food.custom-for-fixed-header.sticky-header {
+    display: block;
+  }
+  .header-middle-food-wrapper .logo-left-wrapper .search-box-food.custom-for-fixed-header input {
+    height: 60px;
+    font-size: 18px;
+  }
+  .header-middle-food-wrapper .logo-left-wrapper .search-box-food.custom-for-fixed-header .line-search {
+    bottom: -3px;
+  }
+  .header-middle-food-wrapper .logo-left-wrapper .search-box-food.custom-for-fixed-header.expand-search-box {
+    width: calc(100% - 65px);
+  }
+  .header-middle-food-wrapper .logo-left-wrapper .logo-wrapper-food {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    max-width: 90px;
+  }
+  .slider-banner-food.slider-food-2 .slick-next {
+    opacity: 1;
+    right: 15px;
+  }
+  .slider-banner-food.slider-food-2 .slick-prev {
+    opacity: 1;
+    left: 15px;
+  }
+  .grid-news-food .grid-item {
+    width: 50%;
+  }
+  .single-recent-post-widget.food,
+  .next-event-widget .single-recent-post-widget.food:first-child {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  .food-socials .text-wrapper {
+    margin: 20px 0 30px;
+  }
+  .food-socials .follow-wrapper .socials {
+    margin-top: -10px;
+  }
+  .tweet-wrapper {
+    margin-bottom: 15px;
+  }
+  .tweet-wrapper .info-wrapper {
+    margin: 0;
+  }
+  .tweet-wrapper .info-wrapper .icons-food {
+    margin-right: 5px;
+  }
+  .tweet-wrapper .info-wrapper .icons-food.big {
+    font-size: 16px;
+  }
+  .block-fashion-2 .layout-main-news {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .block-fashion-2 .layout-list-news {
+    width: 100%;
+    padding-left: 0;
+  }
+  .block-fashion-2 .layout-list-news > div {
+    margin-bottom: 30px;
+  }
+  .block-fashion-2 .fashion-layout-1 .news-content .title {
+    font-size: 22px;
+  }
+  .block-fashion-2 .fashion-layout-3 .news-content {
+    position: static;
+    padding: 10px 0 0 0;
+  }
+  .block-fashion-2 .fashion-layout-3 .news-content .title {
+    color: #333333;
+    line-height: 1.4;
+    font-weight: normal;
+  }
+  .block-fashion-2 .fashion-layout-3.big .news-content {
+    padding: 10px 0 0 0;
+  }
+  .block-fashion-2 .fashion-layout-3.big .news-content .title {
+    font-size: 22px;
+    color: #333333;
+    font-weight: normal;
+    line-height: 1.4;
+  }
+  .block-fashion-2 .fashion-layout-3.big .fashion-btn-video-wrapper {
+    left: 10px;
+    bottom: 7px;
+    top: auto;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+  .block-fashion-2 .fashion-layout-3.big .fashion-btn-video-wrapper > span {
+    width: 36px;
+    height: 36px;
+  }
+  .block-fashion-2 .fashion-layout-3.big .fashion-btn-video-wrapper > span i {
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .block-fashion-1 > div {
+    margin-bottom: 30px;
+  }
+  .fashion-block-list .block-item {
+    padding-top: 30px;
+  }
+  .fashion-block-list.column-3 .block-item,
+  .fashion-block-list.column-4 .block-item {
+    width: 50%;
+  }
+  .fashion-block-list.column-3 .block-item:nth-child(-n+3),
+  .fashion-block-list.column-4 .block-item:nth-child(-n+3) {
+    padding-top: 30px;
+  }
+  .fashion-block-list.column-3 .block-item:nth-child(-n+2),
+  .fashion-block-list.column-4 .block-item:nth-child(-n+2) {
+    padding-top: 0;
+  }
+  .footer-bottom.fashion-01 {
+    padding: 40px 0 35px;
+  }
+  .footer-bottom.fashion-01 .footer-bottom-wrapper .column-left {
+    padding-bottom: 20px;
+  }
+  .footer-bottom.fashion-01 .footer-bottom-wrapper .column-left .logo-footer {
+    width: 200px;
+  }
+  .footer-bottom.fashion-01 .footer-bottom-wrapper .column-right {
+    margin-top: 0;
+  }
+  .slider-food.slider-food-new-tweet {
+    margin-top: -10px;
+  }
+  .title-food.custom-1,
+  .title-food.custom-2 {
+    margin-bottom: 30px;
+  }
+  .slider-banner-food.custom-for-banner .food-layout-1:hover {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+  .slider-banner-food.custom-for-banner .food-layout-1 .news-image:before {
+    opacity: 1;
+  }
+  .slider-banner-food.custom-for-banner .food-layout-1 .news-content {
+    opacity: .4;
+  }
+  .slider-banner-food.custom-for-banner .slick-slide {
+    max-width: 450px;
+  }
+  .slider-banner-food.custom-for-banner .slick-center {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  .slider-banner-food.custom-for-banner .slick-center .food-layout-1 .news-image:before {
+    opacity: 0;
+  }
+  .slider-banner-food.custom-for-banner .slick-center .food-layout-1 .news-content {
+    opacity: 1;
+  }
+  /*------------  Homepage Travel 02  ------------*/
+  .travel-item-content {
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+  .travel-02 .header-middle-wrapper {
+    padding-top: 25px;
+  }
+  .travel-02 .header-middle {
+    background: transparent;
+  }
+  .travel-02 .sticky-header {
+    background-color: #000;
+  }
+  .padding-top-300 {
+    padding-top: 175px;
+  }
+  .travel-author .avatar {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .header-travel-02 .menu-wrapper .hamburger-menu {
+    display: inline-block;
+  }
+  .banner-travel-02 .slider-wrapper {
+    margin-bottom: 24px;
+  }
+  .banner-travel-02 .slider-wrapper .slider .slick-dots {
+    margin-bottom: 15px;
+  }
+  .banner-travel-02 .banner-travel-02-wrapper .slider-wrapper,
+  .banner-travel-02 .banner-travel-02-wrapper .banner-wrapper-img {
+    width: 100%;
+    padding: 0 12px;
+  }
+  .banner-travel-02 .banner-wrapper-img .banner-img {
+    margin: 0 -12px;
+  }
+  .banner-travel-02 .banner-wrapper-img .banner-travel-02-item {
+    padding: 0 12px;
+  }
+  .block-travel-content-02 .travel-layout-2 {
+    width: 50%;
+  }
+  .block-travel-04 .layout-main-travel {
+    margin-bottom: 24px;
+  }
+  .block-travel-04 .layout-list-travel {
+    margin: 0 -12px;
+  }
+  .block-travel-04 .layout-list-travel .item-wrapper {
+    padding: 0 12px;
+  }
+  .block-travel-04 .layout-list-travel .travel-item-content {
+    padding: 15px 30px 30px 30px;
+  }
+  .travel-weather-widget-content .weather-temp {
+    top: 50%;
+  }
+  .travel-weather-widget-content .weather-info li {
+    min-width: 0;
+    padding: 0 3px;
+  }
+  .block-travel-05 .block-travel-content-02 .layout-main-travel {
+    margin: 0 -12px;
+    padding-bottom: 0;
+  }
+  .block-travel-05 .block-travel-content-02 .layout-main-travel .block-travel-item-wrapper {
+    padding: 0 12px;
+    padding-bottom: 24px;
+    width: 100%;
+  }
+  .block-travel-05 .block-travel-content-02 .layout-main-travel .travel-item-content {
+    padding: 15px 30px 30px 30px;
+  }
+  .block-travel-05 .block-travel-content-02 .layout-list-travel {
+    margin: 0 -12px;
+  }
+  .block-travel-05 .block-travel-content-02 .layout-list-travel .item-wrapper {
+    padding: 0 12px;
+    padding-bottom: 24px;
+    width: 50%;
+  }
+  .block-travel-06 .block-travel-content-02 .layout-main-travel .block-travel-item-wrapper {
+    padding: 0 12px;
+    padding-bottom: 24px;
+  }
+  .block-travel-06 .block-travel-content-02 .layout-main-travel .travel-item-content {
+    padding: 15px 25px;
+  }
+  .travel-tourism-tweet-widget-02 .travel-list-tweet {
+    height: 500px;
+  }
+  .travel-tourism-tweet-widget-02 .post-info .tweet {
+    width: 90%;
+  }
+  .footer-travel-02 .footer-link-item {
+    margin: 0 5px;
+  }
+  .footer-travel-02 .logo-wrapper {
+    margin-left: 0;
+  }
+}
 /*----------  1.4. Media screen max width 767px  ----------*/
+@media screen and (max-width: 767px) {
+  /*------------  Layout News  ------------*/
+  .label-wrapper .label-topic {
+    margin-bottom: 5px;
+  }
+  .news-layout-1 .news-content {
+    padding-top: 15px;
+  }
+  .news-layout-1 .news-content .info {
+    margin-top: 5px;
+  }
+  .news-layout-1 .news-content .description {
+    margin-top: 5px;
+  }
+  .news-layout-1.big .news-content .title {
+    font-size: 18px;
+  }
+  .news-layout-2 .news-content .description {
+    margin-top: 5px;
+  }
+  .news-layout-3.big .news-content {
+    padding: 20px;
+  }
+  .news-layout-3.big .news-content .label-topic {
+    font-size: 13px;
+    padding-bottom: 5px;
+  }
+  .news-layout-3.big .news-content .title {
+    font-size: 18px;
+  }
+  .block-news-1 .layout-list-news {
+    width: 40%;
+  }
+  .block-news-1 .layout-main-news {
+    width: 60%;
+  }
+  /*------------  Home page default  ------------*/
+  .hot-news-heading .icons {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+  }
+  .hot-news-heading .title {
+    font-size: 16px;
+    line-height: 46px;
+  }
+  .hot-news-heading .hot-news-prev,
+  .hot-news-heading .hot-news-next {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .photos .heading .title {
+    padding: 30px 0;
+  }
+  /*------------  Home page video  ------------*/
+  .news-masonry-2 {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .news-masonry-2 .masonry-item-wrapper {
+    padding: 10px;
+  }
+  .news-masonry-2 .masonry-item-wrapper .block-item {
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+  }
+  .news-masonry-2 .masonry-item-wrapper .news-layout-3.big .news-content .title {
+    font-size: 16px;
+  }
+  .news-masonry-2 .masonry-item-wrapper .news-layout-1 .news-content .title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .slick-prev,
+  .slick-next {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    line-height: 40px;
+  }
+  .breaking-news-list {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .breaking-news-list .item {
+    padding: 0 10px;
+  }
+  /*------------  Home page gaming  ------------*/
+  .header-banner-slider .main-video-wrapper .main-photo {
+    min-height: 300px;
+  }
+  .modal-video .video {
+    max-width: 580px;
+    height: 326px;
+  }
+  .modal-video .close {
+    font-size: 30px;
+    line-height: 10px;
+  }
+  .middle-banner-slider .slider-for-1-item-sidebar .video-wrapper .video {
+    height: 320px;
+  }
+  .middle-banner-slider .slider-nav-1-item-sidebar {
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .middle-banner-slider .slider-nav-1-item-sidebar .item {
+    padding: 0 10px;
+  }
+  .esport-wrapper .logo {
+    width: 55px;
+    height: 55px;
+  }
+  /*------------  About us  ------------*/
+  .banner-about-us {
+    padding: 60px 0;
+  }
+  .banner-content-wrapper {
+    padding: 0 20px;
+  }
+  .banner-content-wrapper .banner-big-slogan {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+  .banner-content-wrapper .banner-content-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .statistics-item {
+    min-height: 180px;
+  }
+  .statistics-item-wrapper {
+    padding: 20px;
+  }
+  .accordition-about-us .panel {
+    margin-bottom: 15px;
+  }
+  /*------------  404  ------------*/
+  .wrapper-404 {
+    height: 280px;
+  }
+  .wrapper-text-404 {
+    margin-top: 0;
+  }
+  .wrapper-text-404 .error-404 {
+    font-size: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+  .wrapper-text-404 .content-404 {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+  /*------------  Single Post  ------------*/
+  .single-post .main-content .col-xs-3 {
+    width: 100%;
+    text-align: center;
+  }
+  .single-post .main-content .col-xs-9 {
+    width: 100%;
+  }
+  .writter-info-wrapper {
+    padding-bottom: 20px;
+  }
+  .writter-info-wrapper > * {
+    float: none;
+    vertical-align: middle;
+  }
+  .writter-info-wrapper .info li {
+    text-align: left;
+  }
+  .writter-info-wrapper .writter-text {
+    padding: 0;
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  .writter-info-wrapper .writter-text-wrapper > * {
+    text-align: left;
+    width: 100%;
+    display: block;
+    padding-left: 20px;
+  }
+  .content-image {
+    padding-top: 15px;
+  }
+  .content-post-wrapper .content-pagragraph + .content-pagragraph {
+    margin-top: 15px;
+  }
+  .sharing-wrapper .button {
+    padding: 0 10px;
+    width: 40px;
+    text-align: center;
+  }
+  .sharing-wrapper .button .ic-social {
+    position: relative;
+    padding: 0;
+    left: 0;
+  }
+  .sharing-wrapper .button:hover .unhovered {
+    top: 0;
+  }
+  .sharing-wrapper .button .hovered,
+  .sharing-wrapper .button .share-text {
+    display: none;
+  }
+  .sharing-wrapper .button.other-share {
+    width: 0;
+    padding: 0;
+  }
+  .sharing-wrapper .activeOtherShare .button.other-share {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .sharing-wrapper .ic-more,
+  .sharing-wrapper .ic-less,
+  .sharing-wrapper .ic-ellipsis {
+    padding: 0;
+  }
+  .single-post .main-left .title-post {
+    font-size: 24px;
+  }
+  .social-action-wrapper .action-text {
+    display: none;
+  }
+  /*------------  Author list  ------------*/
+  .author-layout .wrapper-images {
+    width: 120px;
+  }
+  /*------------  Homepage Minimalist  ------------*/
+  .footer-bottom.minimalist .container {
+    width: initial;
+    padding: 0;
+  }
+  .footer-bottom.minimalist .footer-bottom-wrapper .column-left {
+    padding: 30px 0;
+  }
+  .footer-bottom.minimalist .footer-bottom-wrapper .column-right {
+    padding: 30px 0;
+  }
+  .banner-slide-homeminimalist .list-items .more-text {
+    max-height: none;
+  }
+  .banner-slide-homeminimalist .list-items .news-layout-4 .news-image {
+    width: 100%;
+  }
+  .banner-slide-homeminimalist .list-items .news-layout-4 .news-content {
+    width: 100%;
+    padding: 25px 30px 30px;
+  }
+  .banner-slide-homeminimalist .slick-prev {
+    left: auto;
+    right: 45px;
+  }
+  .banner-slide-homeminimalist .slick-next {
+    right: 0;
+  }
+  .banner-slide-homeminimalist .slick-slider .slick-track {
+    height: auto;
+  }
+  /*------------  Homepage Personal Blog  ------------*/
+  .banner-slide-homepersonalblog blockquote {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 0;
+  }
+  .banner-slide-homepersonalblog blockquote p {
+    max-height: none;
+  }
+  .banner-slide-homepersonalblog blockquote + div {
+    display: block;
+  }
+  .banner-slide-homepersonalblog .slick-slider .slick-track {
+    height: auto;
+  }
+  .banner-slide-homepersonalblog .more-text {
+    max-height: none;
+  }
+  .banner-slide-homepersonalblog .news-layout-4 .news-image {
+    width: 100%;
+  }
+  .banner-slide-homepersonalblog .news-layout-4 .news-content {
+    width: 100%;
+    padding: 25px 30px 30px;
+  }
+  .banner-slide-homepersonalblog .news-layout-4 .news-content .title {
+    max-height: none;
+    font-size: 16px;
+  }
+  .banner-slide-homepersonalblog .news-layout-4 .news-content .description {
+    font-size: 14px;
+  }
+  .banner-slide-homepersonalblog .slick-prev {
+    left: auto;
+    right: 45px;
+  }
+  .banner-slide-homepersonalblog .slick-next {
+    right: 0;
+  }
+  /*------------  Homepage Gaming 02  ------------*/
+  .banner-gaming-02 .masonry-item-wrapper.item-width-2 > div {
+    bottom: 8px;
+  }
+  .gaming-trailer-main {
+    padding-bottom: 0;
+  }
+  .gaming-trailer-main .block-heading {
+    margin-bottom: 0;
+  }
+  .gaming-trailer-main .video-content-wrapper .slick-list {
+    padding: 30px 0 50px;
+  }
+  .trailer-wrapper:hover .trailer-image {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  .video-content-wrapper-02 {
+    margin: 0;
+  }
+  /*------------  Homepage Gaming 01  ------------*/
+  .header-main.gaming-01 .header-middle {
+    padding: 15px 0;
+  }
+  .header-main.gaming-01 .search-wrapper {
+    padding-top: 30px;
+    display: none;
+  }
+  .header-main.gaming-01 .group-btn-header {
+    padding-top: 30px;
+    display: none;
+  }
+  .gaming-banner-01 .gaming-banner-layout.big .news-content {
+    padding: 20px 5px 0;
+  }
+  .gaming-purchase .purchase-warpper {
+    padding: 20px 25px;
+  }
+  .gaming-purchase .price-wrapper {
+    margin-top: -3px;
+  }
+  .gaming-purchase .price-wrapper .price-new {
+    font-size: 20px;
+  }
+  .gaming-purchase .price-wrapper .price-old {
+    font-size: 14px;
+  }
+  .video-content-wrapper .slick-list {
+    padding: 50px 0;
+  }
+  /*------------  Homepage Lifestyle  ------------*/
+  .header-lifestyle .logo-wrapper img {
+    max-width: 55%;
+  }
+  .lifestyle-main-layout .news-content {
+    padding: 20px 20px;
+  }
+  .lifestyle-main-layout .news-content .info {
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .lifestyle-main-layout .content-text,
+  .description-wrapper .bio-wrapper .content-text {
+    font-size: 14px;
+  }
+  .lifestyle-layout-1.big .news-content .title {
+    font-size: 24px;
+  }
+  .lifestyle-layout-1.big .news-content .info {
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  .lifestyle-layout-1 .news-content .title,
+  .lifestyle-layout-4 .news-content .title {
+    font-size: 20px;
+  }
+  .lifestyle-layout-3 .news-content .title,
+  .lifestyle-layout-4-custom .news-content .title {
+    font-size: 18px;
+  }
+  .lifestyle-layout-1-custom .news-video .button-play {
+    right: 20px;
+    top: 20px;
+  }
+  .footer-bottom.lifestyle .container {
+    padding: 0;
+  }
+  .footer-bottom.lifestyle .footer-bottom-wrapper .column-left {
+    padding: 30px 0;
+  }
+  .footer-bottom.lifestyle .footer-bottom-wrapper .column-left img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .footer-bottom.lifestyle .footer-bottom-wrapper .column-left .title {
+    line-height: 10px;
+  }
+  /*------------  Homepage Fashion 01  ------------*/
+  .info-fashion {
+    padding: 15px 0 0 0;
+  }
+  .fashion-label-wrapper .fashion-label-topic {
+    margin-bottom: 10px;
+  }
+  .fashion-label-wrapper .info-fashion {
+    margin-bottom: 5px;
+  }
+  .fashion-banner-layout .news-content .title {
+    margin-top: 5px;
+  }
+  .fashion-layout-1 .news-content .title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .fashion-layout-1 .news-content .description {
+    margin: 10px 0 0 0;
+  }
+  .fashion-layout-1.big .fashion-label-wrapper {
+    padding-bottom: 5px;
+  }
+  .fashion-layout-1.big .news-content {
+    padding-top: 30px;
+  }
+  .fashion-layout-1.big .news-content .title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .fashion-layout-1 .fashion-info-wrapper {
+    margin-top: 5px;
+  }
+  .fashion-layout-2 .news-content .title {
+    font-size: 20px;
+  }
+  .fashion-layout-2 .news-content .description {
+    margin: 10px 0 0 0;
+  }
+  .fashion-layout-3.big .news-content {
+    padding: 15px 20px;
+  }
+  .fashion-layout-3.big .news-content .title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .fashion-layout-3.big .fashion-btn-video-wrapper > span {
+    width: 50px;
+    height: 50px;
+  }
+  .fashion-layout-3.big .fashion-btn-video-wrapper > span i {
+    line-height: 48px;
+    font-size: 25px;
+  }
+  .fashion-single-post-widget .fashion-ratings {
+    margin-bottom: 5px;
+  }
+  .fashion-info-wrapper .info-right {
+    float: left;
+    margin-top: 5px;
+    width: 100%;
+  }
+  /*------------  Homepage Travel 01  ------------*/
+  .block-travel-01 .layout-main-travel {
+    padding-right: 7px;
+  }
+  .block-travel-01 .layout-list-travel {
+    padding-left: 7px;
+  }
+  .block-travel-heading {
+    margin-bottom: 20px;
+  }
+  .travel-layout-2 {
+    padding: 7px;
+  }
+  .block-travel-03 .layout-list-travel {
+    margin: 0 -7px;
+  }
+  .block-travel-03 .layout-list-travel .block-item {
+    padding: 0 7px;
+  }
+  .travel-layout-3 .travel-video {
+    padding-right: 7px;
+  }
+  .travel-layout-3 .travel-content {
+    padding-left: 7px;
+  }
+  .travel-video-campaign-01 .video-list {
+    margin: 0 -7px 20px -7px;
+  }
+  .travel-video-campaign-01 .travel-video-list-item {
+    margin: 0 7px;
+  }
+  .travel-more-news .block-travel-content {
+    margin: 0 -7px;
+  }
+  .travel-more-news .travel-layout-2 {
+    padding: 0 7px;
+  }
+  .travel-footer-newsletter .form-wrapper {
+    margin-bottom: 40px;
+  }
+  /*------------  Homepage Food  ------------*/
+  .header-topbar-food {
+    padding: 0;
+  }
+  .topbar-right {
+    display: none;
+  }
+  .topbar-left {
+    float: none;
+  }
+  .header-topbar-food-wrapper {
+    text-align: center;
+  }
+  .icons-food.big {
+    font-size: 14px;
+  }
+  .title-food.custom-3 {
+    font-size: 14px;
+  }
+  .title-food.custom-3.big {
+    font-size: 24px;
+  }
+  .title-food.custom-3.medium {
+    font-size: 20px;
+  }
+  .title-food.custom-3.small {
+    font-size: 18px;
+  }
+  .title-food.custom-3 .main-in-list {
+    font-size: 16px;
+  }
+  .category.big {
+    font-size: 12px;
+  }
+  .food-layout-1 .news-content {
+    padding: 15px 20px 20px;
+  }
+  .food-layout-1 .news-content .title-food {
+    margin: 0 0 10px;
+  }
+  .food-layout-2 .news-content {
+    padding: 20px;
+  }
+  .food-layout-2 .news-content .content-text {
+    margin: 15px 0 20px;
+  }
+  .food-layout-2.small .news-content {
+    padding: 20px;
+  }
+  .slider-banner-food {
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  .slider-banner-food.slider-food-2 .slick-next,
+  .slider-banner-food.slider-food-2:hover .slick-next {
+    right: 5px;
+  }
+  .slider-banner-food.slider-food-2 .slick-prev,
+  .slider-banner-food.slider-food-2:hover .slick-prev {
+    left: 5px;
+  }
+  .slider-banner-food .food-layout-1 {
+    margin: 0 5px;
+  }
+  .slider-banner-food.custom-for-banner .food-layout-1 {
+    margin: 0 10px;
+  }
+  .slider-banner-food.custom-for-banner .slick-slide {
+    max-width: 320px;
+  }
+  /*------------  Homepage Travel 02  ------------*/
+  .banner-travel-02 .slider-wrapper {
+    margin-bottom: 15px;
+  }
+  .banner-travel-02 .banner-wrapper-img .banner-img {
+    margin: 0 -7px;
+  }
+  .banner-travel-02 .banner-wrapper-img .banner-travel-02-item {
+    padding: 0 7px;
+  }
+  .block-travel-04 .layout-main-travel {
+    margin-bottom: 15px;
+  }
+  .block-travel-04 .layout-list-travel {
+    margin: 0 -7px;
+  }
+  .block-travel-04 .layout-list-travel .item-wrapper {
+    padding: 0 7px;
+  }
+  .travel-weather-widget-content .weather-info li {
+    padding: 0 2px;
+  }
+  .block-travel-05 .block-travel-content-02 .layout-main-travel .block-travel-item-wrapper {
+    padding-bottom: 15px;
+  }
+  .block-travel-05 .block-travel-content-02 .layout-list-travel {
+    margin: 0 -7px;
+  }
+  .block-travel-05 .block-travel-content-02 .layout-list-travel .item-wrapper {
+    padding: 0 7px;
+    padding-bottom: 15px;
+  }
+  .block-travel-06 .block-travel-content-02 .layout-main-travel .block-travel-item-wrapper {
+    padding: 0 7px;
+    padding-bottom: 15px;
+  }
+}
 /*----------  1.5. Media screen max width 667px  ----------*/
+@media screen and (max-width: 667px) {
+  /*------------  Gaming Detail  ------------*/
+  .post-review-content .block-quote:after {
+    width: 85%;
+  }
+  /*------------  Homepage Travel 01  ------------*/
+  .travel-deals-widget-01 .travel-single-post-widget {
+    margin-bottom: 15px;
+  }
+  .travel-tourism-tweet-widget-01 .travel-single-post-widget {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .footer-bottom-travel-01 .footer-bottom-wrapper .column-left .link {
+    font-size: 13px;
+  }
+  /*------------  Homepage Travel 02  ------------*/
+  .travel-02 .form-wrapper {
+    width: 200px;
+  }
+  .travel-weather-widget-content .weather-temp {
+    top: 35%;
+  }
+  .travel-weather-widget-content .weather-info li {
+    min-width: 100px;
+  }
+  .footer-travel-02 .footer-right {
+    font-size: 13px;
+  }
+}
 /*----------  1.6. Media screen max width 600px  ----------*/
+@media screen and (max-width: 600px) {
+  /*------------  Spacing  ------------*/
+  .padding-top-120 {
+    padding-top: 70px;
+  }
+  .padding-top-100 {
+    padding-top: 60px;
+  }
+  .padding-bottom-120 {
+    padding-bottom: 70px;
+  }
+  .padding-bottom-100 {
+    padding-bottom: 60px;
+  }
+  .padding-top-80 {
+    padding-top: 50px;
+  }
+  .padding-bottom-80 {
+    padding-bottom: 50px;
+  }
+  .padding-top-60 {
+    padding-top: 40px;
+  }
+  .padding-bottom-60 {
+    padding-bottom: 40px;
+  }
+  .margin-top-120 {
+    margin-top: 70px;
+  }
+  .margin-top-100 {
+    margin-top: 60px;
+  }
+  .margin-top-80 {
+    margin-top: 50px;
+  }
+  .margin-bottom-120 {
+    margin-bottom: 70px;
+  }
+  .margin-bottom-100 {
+    margin-bottom: 60px;
+  }
+  .margin-bottom-80 {
+    margin-bottom: 50px;
+  }
+  .margin-top-60 {
+    margin-top: 40px;
+  }
+  .margin-bottom-60 {
+    margin-bottom: 40px;
+  }
+  .block-news-1 .layout-main-news {
+    width: 100%;
+  }
+  .block-news-1 .layout-list-news {
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+  /*------------  Layout News  ------------*/
+  .block-news-2 .layout-list-news.column-4 .block-item,
+  .block-news-2 .layout-list-news.column-3 .block-item {
+    width: 50%;
+  }
+  .block-news-2 .layout-list-news.column-1 .block-item {
+    padding-top: 30px;
+  }
+  .list-block-3 .col-md-4 {
+    width: 100%;
+  }
+  .list-block-3 .col-md-4:nth-child(-n + 2) .block-news-3 {
+    margin-top: 40px;
+  }
+  .list-block-3 .col-md-4:first-child .block-news-3 {
+    margin-top: 0;
+  }
+  .block-list.column-4 .block-item,
+  .block-list.column-3 .block-item {
+    width: 50%;
+  }
+  .block-list.column-4 .block-item:nth-child(-n+3),
+  .block-list.column-3 .block-item:nth-child(-n+3) {
+    padding-top: 20px;
+  }
+  .block-list.column-4 .block-item:nth-child(-n+2),
+  .block-list.column-3 .block-item:nth-child(-n+2) {
+    padding-top: 0;
+  }
+  .news-layout-2,
+  .gaming-layout-2 {
+    display: block;
+  }
+  .news-layout-2 .news-content,
+  .gaming-layout-2 .news-content {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .news-layout-2 .news-image,
+  .gaming-layout-2 .news-image,
+  .news-layout-2 .news-video,
+  .gaming-layout-2 .news-video {
+    display: block;
+    width: 100%;
+  }
+  .news-layout-2.small .news-image,
+  .gaming-layout-2.small .news-image,
+  .news-layout-2.small .news-video,
+  .gaming-layout-2.small .news-video {
+    width: 100%;
+  }
+  /*------------  Home page default  ------------*/
+  .sidebar .widget {
+    margin-bottom: 40px;
+  }
+  .sidebar .col-1 {
+    width: 100%;
+  }
+  .sidebar .col-2 {
+    width: 100%;
+    float: left;
+  }
+  .sidebar .col-2:nth-child(odd) {
+    padding-right: 0;
+  }
+  .sidebar .col-2:nth-child(even) {
+    padding-left: 0;
+  }
+  .sidebar .col-2 .widget:last-child {
+    margin-bottom: 40px;
+  }
+  .sidebar .col-2:last-child .widget:last-child {
+    margin-bottom: 0;
+  }
+  .block-heading .heading-right {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .block-heading.on-left .heading-right {
+    text-align: left;
+  }
+  /*------------  home page video  ------------*/
+  .news-masonry-2 .masonry-item-wrapper {
+    max-height: none;
+  }
+  .news-masonry-2 .masonry-item-wrapper.item-width-2 {
+    width: 100%;
+  }
+  .news-masonry-2 .masonry-item-wrapper.item-width-1 {
+    width: 100%;
+  }
+  .news-masonry-2 .masonry-item-wrapper.item-width-1:before {
+    padding-top: calc(100% + 70px);
+  }
+  .news-masonry-2 .masonry-item-wrapper.item-width-1 .news-image {
+    max-height: 100%;
+  }
+  .news-masonry-2 .masonry-item-wrapper .news-layout-1 .news-content .title {
+    white-space: normal;
+  }
+  /*------------  Footer  ------------*/
+  .footer-bottom-wrapper {
+    display: block;
+  }
+  .footer-bottom-wrapper .column-left,
+  .footer-bottom-wrapper .column-right {
+    display: block;
+    float: left;
+    text-align: left;
+  }
+  .footer-bottom-wrapper .column-left .title {
+    margin-top: 10px;
+  }
+  .footer-bottom-wrapper .column-right {
+    margin-top: 10px;
+  }
+  .footer-bottom-wrapper .column-right .copyright {
+    margin-top: 0;
+  }
+  .footer-bottom-wrapper .column-right .footer-link li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .footer-main-wrapper .column-1,
+  .footer-main-wrapper .column-2,
+  .footer-main-wrapper .column-3 {
+    width: 100%;
+  }
+  .footer-main-wrapper .column-2 {
+    margin-top: 40px;
+  }
+  /*------------  Contact Us  ------------*/
+  .group-contact-form {
+    margin-top: 50px;
+  }
+  /*------------  Author list  ------------*/
+  .author-layout {
+    padding: 15px;
+  }
+  .author-layout .wrapper-content {
+    padding-left: 20px;
+  }
+  .author-layout .wrapper-info .left-info,
+  .author-layout .wrapper-info .right-info {
+    width: 100%;
+    text-align: left;
+  }
+  .author-layout .wrapper-description {
+    margin-top: 0;
+  }
+  .author-layout .wrapper-description .text {
+    margin-bottom: 15px;
+  }
+  .author-layout .wrapper-description .text:last-child {
+    margin-bottom: 0;
+  }
+  /*------------  Homepage Minimalist  ------------*/
+  .banner-slide-homeminimalist .slick-prev,
+  .banner-slide-homeminimalist .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+  .banner-slide-homeminimalist .slick-prev:before,
+  .banner-slide-homeminimalist .slick-next:before {
+    line-height: 30px;
+  }
+  .banner-slide-homeminimalist .slick-prev {
+    bottom: 30px;
+    right: 35px;
+  }
+  .banner-slide-homeminimalist .list-items .news-layout-4 .news-content {
+    padding: 15px 20px 20px;
+  }
+  .banner-slide-homeminimalist .list-items .news-layout-4 .title {
+    line-height: 30px;
+  }
+  .news-layout-4.style-1 .news-content {
+    padding: 20px;
+  }
+  .news-layout-4.style-1 .precept p {
+    font-size: 14px;
+  }
+  .footer-bottom.minimalist .footer-bottom-wrapper .column-right {
+    margin-top: 0;
+  }
+  /*------------  Homepage Personal Blog  ------------*/
+  .banner-slide-homepersonalblog .slick-prev,
+  .banner-slide-homepersonalblog .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+  .banner-slide-homepersonalblog .slick-prev:before,
+  .banner-slide-homepersonalblog .slick-next:before {
+    line-height: 30px;
+  }
+  .banner-slide-homepersonalblog .slick-prev {
+    right: 35px;
+  }
+  .banner-slide-homepersonalblog .news-layout-4 .news-content {
+    padding: 20px;
+  }
+  .block-minimalist-1 .equal-height {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .block-minimalist-1 .equal-height > div {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  .block-minimalist-2 .layout-list-news .block-item {
+    padding: 20px 10px 0 10px;
+  }
+  .news-layout-4 .news-content {
+    padding: 20px;
+  }
+  .news-layout-4 .news-content .description {
+    margin-top: 10px;
+  }
+  .news-layout-4.style-1 .news-content {
+    padding: 20px;
+  }
+  .news-layout-4.style-2 {
+    padding: 20px;
+  }
+  /*------------  Gaming Detail  ------------*/
+  .gaming-sale .item-left {
+    padding-right: 10px;
+  }
+  /*------------  Homepage Gaming 02  ------------*/
+  .banner-gaming-02 .masonry-item-wrapper.item-width-1 {
+    width: 50%;
+  }
+  .banner-gaming-02 .masonry-item-wrapper.item-width-2 {
+    width: 100%;
+  }
+  .gaming-trailer-main .block-heading {
+    margin-bottom: 30px;
+  }
+  .gaming-trailer-main .video-content-wrapper .slick-list {
+    padding: 0;
+  }
+  /*------------  Homepage Gaming 01  ------------*/
+  .gaming-banner-layout .platform-wrapper .btn-platform {
+    margin-top: 30px;
+  }
+  .gaming-purchase {
+    text-align: center;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper .tab-item {
+    line-height: 50px;
+    padding: 0 20px;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper .tab-item:before,
+  .block-heading-wrapper .gaming-tab-wrapper .tab-item:after {
+    left: 20px;
+    bottom: 8px;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper .tab-item:after {
+    left: 45px;
+  }
+  .sort-wrapper .dropdown-text {
+    line-height: 50px;
+  }
+  .gaming-tab-video-wrapper {
+    padding-bottom: 50px;
+  }
+  .gaming-tab-video-wrapper .video-content-wrapper {
+    padding: 0 15px;
+  }
+  .gaming-tab-video-wrapper .video-content-wrapper .slick-list {
+    padding: 20px 0 0;
+  }
+  .trailer-wrapper:hover .trailer-image {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  .video-slide {
+    margin: 0 -10px;
+  }
+  .video-slide .item {
+    padding: 0 10px;
+  }
+  .gaming-banner-02 .esport-wrapper .team-wrapper-outside {
+    padding: 0;
+  }
+  .gaming-banner-02 .esport-wrapper .team-wrapper-inside {
+    padding: 0 3px;
+  }
+  .gaming-banner-02 .esport-wrapper .team .name {
+    padding-right: 5px;
+  }
+  .gaming-banner-02 .esport-wrapper .date-time .time i {
+    margin-right: 5px;
+  }
+  .gaming-banner-02 .group-gaming-btn {
+    line-height: 36px;
+  }
+  .block-gaming-2 .layout-main-news {
+    margin-bottom: 30px;
+  }
+  .gaming-promo-widget .promo-wrapper img {
+    width: 100%;
+  }
+  .footer-main .col-2 [class*="col-"] {
+    width: 100%;
+  }
+  .footer-main .col-2 [class*="col-"] > div {
+    margin-bottom: 45px;
+  }
+  .footer-main .col-2 [class*="col-"]:last-child > div:last-child {
+    margin-bottom: 0;
+  }
+  .footer-bottom.gaming-01 .footer-bottom-wrapper .column-left {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-bottom.gaming-01 .footer-bottom-wrapper .column-right {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+  .footer-bottom.gaming-01 .footer-bottom-wrapper .column-right .footer-link .link {
+    margin-top: 0;
+  }
+  /*------------  Homepage Lifestyle  ------------*/
+  .lifestyle-main-news .block-news + .block-news,
+  .lifestyle-pagination {
+    margin-top: 30px;
+  }
+  .block-lifestyle-2 .col-xs-6:nth-child(odd),
+  .lifestyle-main-news .main-news.main-left .block-news .col-xs-6:nth-child(odd) {
+    padding-right: 7.5px;
+  }
+  .block-lifestyle-2 .col-xs-6:nth-child(even),
+  .lifestyle-main-news .main-news.main-left .block-news .col-xs-6:nth-child(even) {
+    padding-left: 7.5px;
+  }
+  .lifestyle-main-news .sidebar {
+    margin-top: 60px;
+  }
+  .description-wrapper {
+    padding: 30px 30px 15px;
+  }
+  .description-wrapper .bio-wrapper {
+    margin: 15px 0;
+  }
+  .subscribe-wrapper {
+    padding: 20px;
+  }
+  .subscribe-wrapper .text {
+    margin: 5px 0 10px;
+  }
+  .subscribe-wrapper .form-wrapper {
+    margin: 0;
+  }
+  .subscribe-wrapper .form-wrapper input {
+    width: calc(100% - 50px);
+  }
+  .subscribe-wrapper .form-wrapper button {
+    margin: 0 0 0 10px;
+    width: 40px;
+  }
+  .subscribe-wrapper .form-wrapper .icons {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 14px;
+  }
+  .subscribe-wrapper .form-wrapper .text {
+    display: none;
+  }
+  .lifestyle-layout-1.big .news-content {
+    padding: 20px;
+  }
+  .lifestyle-layout-1.big .news-content .title {
+    font-size: 20px;
+  }
+  .lifestyle-layout-1.big .news-content .info {
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .lifestyle-layout-1 .news-image:after,
+  .lifestyle-layout-1 .news-video:after {
+    background: #141414;
+    background: -webkit-linear-gradient(bottom, #141414, transparent);
+    background: -o-linear-gradient(bottom, #141414, transparent);
+    background: -moz-linear-gradient(bottom, #141414, transparent);
+  }
+  .lifestyle-layout-3 .news-content .title,
+  .lifestyle-layout-4-custom .news-content .title {
+    font-size: 16px;
+  }
+  .lifestyle-layout-5 .news-title {
+    padding: 20px;
+  }
+  .lifestyle-layout-5 .news-title .title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  /*------------  Homepage Travel 01  ------------*/
+  .travel-weather-wrapper {
+    margin-top: 0;
+  }
+  .travel-01 .sticky-header .travel-weather-wrapper {
+    margin-top: 0;
+  }
+  #travel-weather i {
+    font-size: 65px;
+  }
+  #travel-weather .weather-temp {
+    font-size: 17px;
+  }
+  #travel-weather .weather-region {
+    font-size: 14px;
+  }
+  .banner-travel-01 .slider-for .slider-title {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .banner-travel-01 .slider-nav .slider-info-wrapper {
+    padding: 25px 0 0 30px;
+  }
+  .banner-travel-01 .slider-nav .slider-label {
+    padding: 3px 5px;
+  }
+  .banner-travel-01 .slider-nav .slider-title {
+    font-size: 16px;
+  }
+  .block-travel-01 .layout-list-travel .travel-single-post-widget {
+    margin-bottom: 20px;
+  }
+  .travel-single-post-widget .post-info .title {
+    font-size: 14px;
+    max-height: 58px;
+    overflow: hidden;
+  }
+  .travel-more-news .layout-main-travel {
+    margin: 0 -5px;
+  }
+  .travel-more-news .travel-layout-2 {
+    padding: 0 5px;
+  }
+  /*------------  Homepage Fashion 01  ------------*/
+  .fashion-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .fashion-layout-2 .img-wrapper {
+    width: 100%;
+    display: block;
+  }
+  .fashion-layout-2 .news-content {
+    width: 100%;
+    display: block;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  .fashion-layout-2.small .img-wrapper {
+    width: 100%;
+    display: block;
+  }
+  .fashion-layout-2.small .news-content {
+    width: 100%;
+    display: block;
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  .fashion-layout-2 .fashion-label-topic.has-line:before {
+    width: 2px;
+    height: 50px;
+    bottom: calc(100% + 13px);
+    left: 20px;
+    top: auto;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+  /*------------  Homepage Food  ------------*/
+  .block-heading.food {
+    margin-bottom: 30px;
+  }
+  .block-heading.food .title-food.custom-1 {
+    margin-bottom: 0;
+  }
+  .block-heading.food .heading-right {
+    margin-top: 15px;
+  }
+  .title-food.custom-3 {
+    font-size: 15px;
+  }
+  .title-food.custom-3.big {
+    font-size: 22px;
+  }
+  .title-food.custom-3.medium {
+    font-size: 18px;
+  }
+  .title-food.custom-3.small {
+    font-size: 16px;
+  }
+  .title-food.custom-3.main-in-list {
+    font-size: 17px;
+  }
+  .description-wrapper.food {
+    padding: 40px 20px 20px;
+  }
+  .description-wrapper.food .bio-wrapper .name {
+    margin: 0 0 20px 0;
+    padding: 0 0 15px 0;
+  }
+  .description-wrapper.food .social-account-wrapper {
+    margin: 10px 0 0 5px;
+  }
+  .food-layout-2 .news-content .content-text {
+    margin: 10px 0 15px;
+  }
+  .blockquote-food-wrapper .quotation {
+    font-size: 40px;
+  }
+  .blockquote-food-wrapper .content {
+    padding: 0 15px;
+  }
+  .single-recent-post-widget.food,
+  .next-event-widget .single-recent-post-widget.food:first-child {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .food-layout-2 .news-content .title-food {
+    margin: 5px 0;
+  }
+  .list-category {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+  .block-news-food-wrapper .block-news + .block-news {
+    margin-top: 20px;
+  }
+  .block-news-food-wrapper .block-news .row .col-xs-6:nth-child(odd) {
+    padding-right: 10px;
+  }
+  .block-news-food-wrapper .block-news .row .col-xs-6:nth-child(even) {
+    padding-left: 10px;
+  }
+  .stay-connect-widget .tbx-food.email {
+    margin: 15px 0 20px;
+  }
+  /*------------  Homepage Travel 02  ------------*/
+  .travel-02 .form-wrapper {
+    width: 160px;
+  }
+  .travel-weather-widget-content .weather-temp {
+    top: 50%;
+  }
+  .block-travel-05 .block-travel-content-02 .layout-list-travel .layout-list-travel-item .travel-content {
+    padding: 15px 25px;
+  }
+  .footer-travel-02 .footer-wrapper {
+    position: relative;
+  }
+  .footer-travel-02 .footer-left,
+  .footer-travel-02 .footer-right {
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+  }
+  .footer-travel-02 .logo-wrapper {
+    position: absolute;
+    top: 32%;
+    left: 0;
+  }
+  /*--------------- Breaking News -----------------*/
+  .breaking-news.layout-2 .vticker li .link {
+    height: 24px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .breaking-news.layout-2 .vticker li .link .btn-read {
+    display: none;
+  }
+}
+/*--------------- Star Rating -----------------*/
+.stars {
+  margin-bottom: -10px;
+}
+.stars a.star-1,
+.stars a.star-2,
+.stars a.star-3,
+.stars a.star-4,
+.stars a.star-5 {
+  margin-bottom: 10px;
+}
 /*----------  1.7. Media screen max width 480px  ----------*/
+@media screen and (max-width: 480px) {
+  /*------------  Layout News  ------------*/
+  .block-news-2 .layout-list-news .news-layout-1 .news-content .title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .block-news-2 .layout-list-news .news-layout-1 .news-content .description {
+    display: none;
+  }
+  .block-news-2 .layout-list-news.column-1 .news-layout-1 .news-content .title {
+    font-weight: 700;
+  }
+  .block-news-2 .layout-list-news.column-1 .news-layout-1 .news-content .description {
+    display: block;
+  }
+  .gaming-banner-layout.big .news-content .title,
+  .news-layout-3.big .news-content .title {
+    font-size: 16px;
+  }
+  .gaming-banner-layout.big .news-image img,
+  .news-layout-3.big .news-image img {
+    min-height: 260px;
+  }
+  .gaming-layout-1.big .news-content .title,
+  .news-layout-1.big .news-content .title {
+    font-size: 16px;
+  }
+  .single-recent-post-widget .post-info .title {
+    font-size: 14px;
+  }
+  .block-list.column-2 .news-layout-1 .news-content .title,
+  .block-list.column-3 .news-layout-1 .news-content .title,
+  .block-list.column-4 .news-layout-1 .news-content .title {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .block-list.column-2 .news-layout-1 .news-content .description,
+  .block-list.column-3 .news-layout-1 .news-content .description,
+  .block-list.column-4 .news-layout-1 .news-content .description {
+    display: none;
+  }
+  .block-list.column-1 .news-layout-1 .news-content .title {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .block-list.column-1 .news-layout-1 .news-content .description {
+    display: block;
+  }
+  /*------------  Home page default  ------------*/
+  .banner-slide-homepage .list-items .item .news-image img {
+    min-height: 260px;
+  }
+  /*------------  Home page center  ------------*/
+  .banner-slide-homecenter .item .news-image img {
+    min-height: 260px;
+  }
+  .tabs-list-2 .link {
+    font-size: 14px;
+  }
+  .banner-news-wrapper .main-news {
+    margin-bottom: 20px;
+  }
+  .banner-news-wrapper .main-news .owl-nav {
+    display: none;
+  }
+  .banner-news-wrapper .main-news .owl-dots {
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: block !important;
+  }
+  .banner-news-wrapper .main-news .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.5;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
+  .banner-news-wrapper .main-news .owl-dots .owl-dot:last-child {
+    margin-right: 0;
+  }
+  .banner-news-wrapper .main-news .owl-dots .owl-dot.active {
+    opacity: 1;
+  }
+  .gallery-slick-wrapper .slider-for .slick-next,
+  .gallery-slick-wrapper .slider-for .slick-prev {
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*------------  Home page gaming  ------------*/
+  .modal-video .video {
+    width: 320px;
+    height: 200px;
+  }
+  .modal-video .close {
+    font-size: 30px;
+  }
+  .header-banner-slider .main-video-wrapper .main-photo {
+    min-height: 240px;
+  }
+  .header-banner-slider .news-layout-3 .news-content .title {
+    font-size: 14px;
+  }
+  .middle-banner-slider .news-layout-1 .news-content .title {
+    font-size: 13px;
+  }
+  /*------------  Home page technology  ------------*/
+  .masonry-item-wrapper.item-width-1 {
+    width: 100%;
+  }
+  .pagination-wrapper .position-page {
+    display: none;
+  }
+  /*------------  About us  ------------*/
+  .banner-about-us {
+    padding: 50px 0;
+  }
+  .banner-content-wrapper {
+    padding: 0 15px;
+  }
+  .banner-content-wrapper .banner-smalls-slogan {
+    font-size: 16px;
+  }
+  .banner-content-wrapper .banner-big-slogan {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .banner-content-wrapper .banner-content-text {
+    font-size: 14px;
+  }
+  .statistics-item-icon {
+    max-width: 100%;
+  }
+  .statistics-item-figure {
+    font-size: 30px;
+  }
+  .statistics-wrapper .col-md-3.col-xs-6 {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .statistics-wrapper .col-md-3.col-xs-6:first-child {
+    margin-top: 0;
+  }
+  .feedback-wrapper {
+    margin-top: -5px;
+  }
+  .feedback-wrapper .quotation {
+    display: none;
+  }
+  .feedback-wrapper .feedback-content {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .feedback-wrapper .feedback-author {
+    padding-left: 15px;
+  }
+  .feedback-wrapper .author-name {
+    font-size: 15px;
+  }
+  .feedback-wrapper .author-position {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .feedback-wrapper .btn-slick-custom {
+    bottom: 10px;
+  }
+  .slider-our-clients {
+    margin: 0 -10px;
+  }
+  .slider-our-clients .item-client {
+    padding: 0 10px;
+  }
+  /*------------  Contact Us  ------------*/
+  .group-contact-info .content-text {
+    margin-bottom: 40px;
+  }
+  .group-contact-info .col-md-6 {
+    padding: 0 15px !important;
+  }
+  .group-contact-info .col-md-6:nth-child(-n + 2) .info-container {
+    margin-top: 20px;
+  }
+  .group-contact-info .col-md-6:first-child .info-container {
+    margin-top: 0;
+  }
+  .group-contact-info .col-xs-6 {
+    width: 100%;
+  }
+  .group-contact-form .col-md-6 {
+    width: 100%;
+  }
+  .group-contact-form .tbx-name {
+    padding-right: 15px;
+  }
+  .group-contact-form .tbx-email {
+    padding-left: 15px;
+  }
+  .block-quote-wrapper {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .block-quote-wrapper .quotation-wrapper:after {
+    left: 50px;
+  }
+  .block-quote-wrapper .quotation {
+    font-size: 40px;
+  }
+  .block-quote-wrapper .quote-content {
+    margin: -10px 0 0 50px;
+    font-size: 14px;
+  }
+  .contact-form .tbx-email,
+  .contact-form .tbx-name {
+    width: 100%;
+    padding: 0 15px;
+  }
+  /*------------  Single Post  ------------*/
+  .comment-feedback-wrapper {
+    margin-top: -5px;
+  }
+  .comment-feedback-wrapper .action-type {
+    display: none;
+  }
+  .comment-feedback-wrapper .action + .action:before {
+    content: "";
+    padding: 0 3px;
+  }
+  .comment-feedback-wrapper .ic-heart,
+  .comment-feedback-wrapper .ic-reply {
+    font-size: 15px;
+  }
+  .comment-nested-wrapper .item-comment {
+    overflow: hidden;
+  }
+  .comment-nested-wrapper .inside-media-list {
+    margin-left: -49px;
+  }
+  /*------------  Homepage Minimalist  ------------*/
+  .block-minimalist-1 .equal-height > div {
+    width: 100%;
+  }
+  .block-minimalist-2 .layout-list-news.column-2 .block-item {
+    width: 100%;
+  }
+  /*------------  Homepage Gaming 01  ------------*/
+  .gaming-banner-02 .group-gaming-btn {
+    display: none;
+  }
+  /*------------  Homepage Minimalist  ------------*/
+  .block-minimalist-1 .equal-height > div {
+    width: 100%;
+  }
+  .block-minimalist-2 .layout-list-news.column-2 .block-item {
+    width: 100%;
+  }
+  /*------------  Homepage Lifestyle  ------------*/
+  .banner-lifestyle-1 .block-news {
+    padding: 0 0 15px;
+  }
+  .block-lifestyle-1 {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .lifestyle-layout-1.big .news-content {
+    padding: 10px 20px;
+  }
+  .lifestyle-layout-1.big .news-content .title {
+    font-size: 18px;
+  }
+  .block-lifestyle-2 .col-xs-6,
+  .lifestyle-main-news .main-news.main-left .block-news .col-xs-6 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .block-lifestyle-2 .col-xs-6:nth-child(odd),
+  .lifestyle-main-news .main-news.main-left .block-news .col-xs-6:nth-child(odd) {
+    padding-right: 15px;
+  }
+  .block-lifestyle-2 .col-xs-6:nth-child(even),
+  .lifestyle-main-news .main-news.main-left .block-news .col-xs-6:nth-child(even) {
+    padding-left: 15px;
+  }
+  .block-lifestyle-2 .col-xs-6:last-child,
+  .lifestyle-main-news .main-news.main-left .block-news .col-xs-6:last-child {
+    margin-bottom: 0;
+  }
+  .lifestyle-main-news .sidebar {
+    margin-top: 40px;
+  }
+  .lifestyle-main-news.padding-top-100 {
+    padding-top: 40px;
+  }
+  .lifestyle-main-news.padding-bottom-100 {
+    padding-bottom: 40px;
+  }
+  .lifestyle-layout-4 .news-content .title,
+  .lifestyle-layout-1-custom .news-content .title {
+    font-size: 18px;
+  }
+  .lifestyle-layout-1-custom .news-video .button-play {
+    width: 40px;
+    height: 40px;
+  }
+  .lifestyle-layout-1-custom .news-video .button-play .icons {
+    font-size: 20px;
+  }
+  .lifestyle-layout-1-custom .news-content .title {
+    max-height: 50px;
+    overflow: hidden;
+  }
+  /*------------  Homepage Fashion 01  ------------*/
+  .header-main.fashion-01 .logo-wrapper {
+    width: 150px;
+  }
+  .footer-bottom.fashion-01 .footer-bottom-wrapper .column-left .logo-footer {
+    width: 150px;
+  }
+  .fashion-title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .fashion-title:before {
+    width: 80px;
+  }
+  .fashion-block-heading {
+    margin-bottom: 30px;
+  }
+  .fashion-block-heading .fashion-btn-see-more {
+    position: static;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+  .fashion-block-heading .heading-left {
+    float: none;
+  }
+  .fashion-block-heading .heading-right {
+    float: none;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .fashion-block-list.column-2 .block-item,
+  .fashion-block-list.column-3 .block-item,
+  .fashion-block-list.column-4 .block-item {
+    width: 100%;
+  }
+  .fashion-block-list.column-2 .block-item:nth-child(-n+2),
+  .fashion-block-list.column-3 .block-item:nth-child(-n+2),
+  .fashion-block-list.column-4 .block-item:nth-child(-n+2) {
+    padding-top: 30px;
+  }
+  .fashion-block-list.column-2 .block-item:first-child,
+  .fashion-block-list.column-3 .block-item:first-child,
+  .fashion-block-list.column-4 .block-item:first-child {
+    padding-top: 0;
+  }
+  .fashion-banner-1 > div {
+    padding: 0;
+  }
+  .fashion-banner-1 .slick-dots {
+    position: static;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  .fashion-banner-1 .slick-dots li {
+    height: 10px;
+    width: 10px;
+  }
+  .fashion-banner-1 .slick-dots li button {
+    height: 10px;
+    width: 10px;
+    padding: 0;
+    background-color: #333;
+    border: 1px solid #f6f6f6;
+  }
+  .fashion-banner-1 .slick-dots li button:before {
+    content: '';
+  }
+  .fashion-banner-1 .slick-dots .slick-active button {
+    background-color: #ffb0c1;
+    border-color: #ffb0c1;
+  }
+  .fashion-tips-list .fashion-banner-layout .news-content {
+    opacity: 1;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+  }
+  .fashion-tips-list .slick-list {
+    overflow: hidden;
+  }
+  .fashion-banner-layout .news-content-wrapper {
+    margin: 0;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: static;
+  }
+  .fashion-banner-layout .news-content-wrapper.at-bottom {
+    position: absolute;
+  }
+  .fashion-banner-layout .news-content-wrapper.at-bottom .news-content {
+    padding: 20px 15px 15px;
+  }
+  .fashion-banner-layout .news-content {
+    padding: 20px 15px 15px;
+  }
+  .fashion-banner-layout .news-content .title {
+    font-size: 18px;
+  }
+  .fashion-layout-1 .fashion-label-wrapper {
+    padding-bottom: 5px;
+  }
+  .fashion-layout-1 .news-content .title {
+    font-size: 18px;
+  }
+  .fashion-layout-2 .news-content .title {
+    font-size: 18px;
+  }
+  .fashion-layout-3 .news-content {
+    position: static;
+    padding: 10px 0 0 0;
+  }
+  .fashion-layout-3 .news-content .title {
+    font-size: 18px;
+    color: #333333;
+  }
+  .fashion-layout-3.big .news-content {
+    padding: 10px 0 0 0;
+  }
+  .fashion-layout-3.big .news-content .title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .fashion-layout-3.big .fashion-btn-video-wrapper {
+    left: 10px;
+    bottom: 7px;
+    top: auto;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+  .fashion-layout-3.big .fashion-btn-video-wrapper > span {
+    width: 36px;
+    height: 36px;
+  }
+  .fashion-layout-3.big .fashion-btn-video-wrapper > span i {
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .fashion-banner-3 > div {
+    padding: 0;
+  }
+  .fashion-banner-3 .img-wrapper:before {
+    padding-top: 320px;
+  }
+  .fashion-single-post-widget .post-info .title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .fashion-photos {
+    padding-top: 40px;
+  }
+  .fashion-photos .heading {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  /*------------  Homepage Food  ------------*/
+  .block-news-food-wrapper .block-news + .block-news {
+    margin-top: 15px;
+  }
+  .block-news-food-wrapper .block-news .row .col-xs-6 {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .block-news-food-wrapper .block-news .row .col-xs-6:last-child {
+    margin-bottom: 0;
+  }
+  .block-news-food-wrapper .block-news .row .col-xs-6:nth-child(odd) {
+    padding-right: 15px;
+  }
+  .block-news-food-wrapper .block-news .row .col-xs-6:nth-child(even) {
+    padding-left: 15px;
+  }
+  .title-food.custom-3.main-in-list {
+    line-height: 24px;
+  }
+  .food-layout-2.custom-for-horizontal .img-wrapper,
+  .food-layout-2.custom-for-horizontal .news-content {
+    display: block;
+    width: 100%;
+  }
+  .food-layout-2.custom-for-horizontal.img-left .news-content {
+    border-left: solid 1px #ededed;
+  }
+  .food-layout-2.custom-for-horizontal.img-right .news-content {
+    border-right: solid 1px #ededed;
+  }
+  .list-category {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  .grid-news-food .grid-item {
+    width: 100%;
+  }
+  /*-------------- Breaking News --------------*/
+  .breaking-news.layout-2 {
+    display: none;
+  }
+}
 /*----------  1.8. Media screen max width 414px  ----------*/
+@media screen and (max-width: 414px) {
+  /*------------  Spacing  ------------*/
+  .padding-top-100 {
+    padding-top: 40px;
+  }
+  .padding-bottom-100 {
+    padding-bottom: 40px;
+  }
+  .padding-bottom-70 {
+    padding-bottom: 30px;
+  }
+  .margin-top-100 {
+    margin-top: 40px;
+  }
+  .margin-bottom-100 {
+    margin-bottom: 40px;
+  }
+  .margin-bottom-70 {
+    margin-bottom: 30px;
+  }
+  /*------------  Layout News  ------------*/
+  .navigation-mobile {
+    width: 100%;
+  }
+  .news-layout-3.big .news-image img {
+    min-height: 250px;
+  }
+  .news-layout-3 .info {
+    display: none;
+  }
+  .news-layout-3 .info-wrapper {
+    display: none;
+  }
+  .info-wrapper .info-left,
+  .info-wrapper .info-right {
+    width: 100%;
+    float: left;
+  }
+  /*------------  home page video  ------------*/
+  .breaking-news-2 {
+    padding: 20px 0;
+  }
+  .news-masonry-2 {
+    display: inline-block;
+    font-size: 0;
+    padding: 20px 0;
+  }
+  .news-masonry-2 .masonry-item-wrapper:before {
+    content: none;
+  }
+  .news-masonry-2 .masonry-item-wrapper > .block-item {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .news-masonry-2 .masonry-item-wrapper .news-video {
+    height: auto;
+  }
+  .news-masonry-2 .masonry-item-wrapper .news-image img {
+    min-height: 220px;
+  }
+  .news-masonry-2 .block-news-2 .layout-list-news.column-2 .block-item {
+    width: 100%;
+  }
+  .news-masonry-2 .block-news-2 .layout-list-news.column-2 .block-item .news-content .title {
+    font-size: 16px;
+  }
+  .news-masonry-2 .news-layout-3.big .news-content {
+    position: relative;
+    padding: 10px 0 0 0;
+  }
+  .masonry-item-wrapper .title {
+    white-space: normal;
+  }
+  /*------------  Author list  ------------*/
+  .author-layout {
+    display: block;
+    text-align: center;
+  }
+  .author-layout .wrapper-images {
+    width: 140px;
+    display: inline-block;
+  }
+  .author-layout .wrapper-content {
+    display: block;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .author-layout .wrapper-info .left-info,
+  .author-layout .wrapper-info .right-info {
+    text-align: center;
+  }
+  /*------------  Gaming Detail  ------------*/
+  .video-thumbnail {
+    height: 350px;
+  }
+  .post-review-content .block-quote {
+    padding-left: 10px;
+  }
+  .post-review-content .block-quote:before {
+    display: none;
+  }
+  .post-review-content .block-quote:after {
+    width: 100%;
+    left: 0;
+  }
+  .gaming-sale {
+    padding: 15px 20px;
+  }
+  .gaming-sale .item-left {
+    display: block;
+  }
+  .gaming-sale .item-right {
+    display: block;
+  }
+  .post-review-title {
+    font-size: 24px;
+  }
+  .post-review-header .header-left {
+    display: inline-block;
+  }
+  .post-review-header .header-right {
+    display: inline-block;
+    text-align: left;
+  }
+  .post-review-header .header-right .review-rate {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  .post-review-header .vote-number {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .post-review-header .sharing-list {
+    width: 100%;
+    border: none;
+    padding-left: 0;
+    padding-bottom: 15px;
+    line-height: 25px;
+  }
+  .post-review-header .sharing-list .sharing-item {
+    display: block;
+  }
+  .post-review-header .sharing-list .sharing-item-facebook {
+    margin-left: 12px;
+  }
+  .post-review-header .sharing-list .link-facebook {
+    margin-left: 12px;
+  }
+  .post-review-header .sharing-list .link-twitter {
+    margin-left: 7px;
+  }
+  .gaming-detail-sidebar {
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  /*------------  Homepage Gaming 02  ------------*/
+  .banner-gaming-02 .masonry-item-wrapper.item-width-1,
+  .banner-gaming-02 .masonry-item-wrapper.item-width-2 {
+    width: 100%;
+  }
+  .banner-gaming-02 .gaming-layout {
+    padding-right: 5px;
+  }
+  .banner-gaming-02 .gaming-layout .news-content .title {
+    font-size: 20px;
+  }
+  .gaming-layout .video-button-play {
+    top: 40%;
+  }
+  .gaming-masonry .item-width-1 {
+    margin-bottom: 3px;
+  }
+  /*------------  Homepage Gaming 01  ------------*/
+  .gaming-tab-video-wrapper {
+    padding-top: 45px;
+  }
+  .block-heading-wrapper {
+    background-color: transparent;
+  }
+  .block-heading-wrapper .column-left {
+    float: none;
+  }
+  .block-heading-wrapper .column-right {
+    float: none;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper .tab-item:after {
+    display: none;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper > li {
+    float: none;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper > li > .tab-item {
+    background-color: #505050;
+    margin-top: 5px;
+    z-index: 1;
+    line-height: 40px;
+    padding: 0;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper > li > .tab-item:before {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    z-index: -1;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper > li > .tab-item:hover,
+  .block-heading-wrapper .gaming-tab-wrapper > li > .tab-item:focus {
+    color: #FFF !important;
+    background-color: #505050;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper > li > .tab-item:hover:before,
+  .block-heading-wrapper .gaming-tab-wrapper > li > .tab-item:focus:before {
+    width: 100%;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper > li:first-child .tab-item {
+    margin-top: 0;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper > .active > .tab-item:before {
+    width: 100%;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper > .active > .tab-item:hover:before {
+    width: 100%;
+    background-color: #e51515;
+  }
+  .block-heading-wrapper .gaming-tab-wrapper .tab-more .active .tab-item {
+    background-color: #e51515;
+    color: #FFF !important;
+  }
+  .block-heading-wrapper .sort-wrapper .text-choose {
+    display: inline-block;
+  }
+  .block-heading-wrapper .sort-wrapper .dropdown-text {
+    display: inline-block;
+  }
+  .sort-wrapper .dropdown-list-item {
+    left: 0;
+    right: auto;
+  }
+  /*------------  Homepage Travel 01  ------------*/
+  .travel-01 .topbar-link li {
+    padding: 0 5px;
+  }
+  #travel-weather i {
+    font-size: 50px;
+    padding-right: 5px;
+  }
+  #travel-weather .weather-temp {
+    font-size: 16px;
+  }
+  #travel-weather .weather-region {
+    font-size: 13px;
+  }
+  .banner-travel-01 .slider-nav {
+    display: none;
+  }
+  .banner-travel-01 .slider-for .banner-item-travel-01:not(.slick-active) {
+    z-index: -1;
+  }
+  .banner-travel-01 .slider-for .slider-img .pic {
+    overflow: hidden;
+  }
+  .banner-travel-01 .slider-for .slider-img:before {
+    padding-bottom: 100%;
+  }
+  .banner-travel-01 .slider-for .slider-title {
+    font-size: 20px;
+  }
+  .block-travel-01 .block-travel-heading .title-topic:before,
+  .top-destination .block-travel-heading .title-topic:before,
+  .travel-news-widget-01 .block-travel-heading .title-topic:before,
+  .travel-deals-widget-01 .block-travel-heading .title-topic:before {
+    bottom: -7px;
+  }
+  .block-travel-01 .block-travel-heading .heading-left,
+  .top-destination .block-travel-heading .heading-left,
+  .travel-news-widget-01 .block-travel-heading .heading-left,
+  .travel-deals-widget-01 .block-travel-heading .heading-left {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .block-travel-01 .block-travel-heading .heading-right,
+  .top-destination .block-travel-heading .heading-right,
+  .travel-news-widget-01 .block-travel-heading .heading-right,
+  .travel-deals-widget-01 .block-travel-heading .heading-right {
+    float: left;
+  }
+  .block-travel-01 .layout-main-travel {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+  .block-travel-01 .layout-list-travel {
+    width: 100%;
+    padding-left: 0;
+  }
+  .block-travel-02 .travel-layout-2 {
+    width: 100%;
+  }
+  .block-travel-02 .block-travel-content {
+    margin: 0 -10px;
+  }
+  .block-travel-02 .slick-slide {
+    padding: 0 10px;
+  }
+  .travel-portfolio .block-travel-heading.white {
+    padding-bottom: 85px;
+  }
+  .travel-portfolio .block-travel-heading .heading-left {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .travel-portfolio .block-travel-heading .heading-left .title-topic:before {
+    bottom: -7px;
+  }
+  .travel-portfolio .block-travel-heading .heading-right {
+    display: block;
+    float: left;
+  }
+  .block-travel-03 .layout-list-travel .block-item {
+    width: 100%;
+  }
+  .block-travel-03 .travel-video {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .block-travel-03 .travel-content {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+  .block-travel-03 .travel-layout-3 .travel-content .info li {
+    display: inline-block;
+    padding: 0 7px;
+  }
+  .block-travel-03 .travel-layout-3 .travel-content .info li:first-child {
+    padding-left: 0;
+  }
+  .block-travel-03 .travel-layout-3 .travel-content .info li + li:before {
+    content: '|';
+  }
+  .travel-grid .grid-sizer,
+  .travel-grid .grid-item {
+    width: 50%;
+  }
+  .travel-grid .grid-item--width2 {
+    width: 100%;
+  }
+  .travel-grid .label {
+    margin-bottom: 10px;
+  }
+  .travel-grid .title {
+    font-size: 18px;
+  }
+  .travel-video-campaign-01 .video-thumbnail {
+    height: 350px;
+  }
+  .travel-video-campaign-01 .video-list {
+    margin-bottom: 10px;
+  }
+  .travel-video-content-01 .video-thumbnail {
+    margin-bottom: 0;
+  }
+  .travel-more-news .travel-layout-2 {
+    padding: 0;
+  }
+  .travel-more-news .block-travel-content {
+    margin: 0 -10px;
+  }
+  .travel-more-news .slick-slide {
+    padding: 0 10px;
+  }
+  .footer-travel-01 .footer-main-wrapper .column-1,
+  .footer-travel-01 .footer-main-wrapper .column-2,
+  .footer-travel-01 .footer-main-wrapper .column-3 {
+    width: 100%;
+  }
+  .footer-bottom-travel-01 .footer-bottom-wrapper .column-left {
+    margin-top: 10px;
+  }
+  .footer-bottom-travel-01 .footer-bottom-wrapper .column-left .link {
+    line-height: 30px;
+  }
+  /*------------  Homepage Travel 02  ------------*/
+  .travel-02 .header-topbar {
+    display: none;
+  }
+  .padding-top-300 {
+    padding-top: 120px;
+  }
+  .banner-travel-02 .banner-wrapper-img .travel-item-content {
+    padding: 10px;
+  }
+  .banner-travel-02 .banner-wrapper-img .travel-item-content .title {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .banner-travel-02 .banner-wrapper-img .travel-item-content .description {
+    display: none;
+  }
+  .block-travel-content-02 .travel-layout-2 {
+    width: 100%;
+  }
+  .block-travel-content-02 .layout-main-travel {
+    margin: 0 -7px;
+  }
+  .travel-weather-widget-content .weather-info li {
+    min-width: 0;
+  }
+  .block-travel-04 .block-travel-heading-02 .heading-left,
+  .block-travel-04 .block-travel-heading-02 .heading-right {
+    display: block;
+  }
+  .block-travel-04 .block-travel-heading-02 .heading-left {
+    padding-bottom: 20px;
+  }
+  .block-travel-04 .block-travel-heading-02 .heading-right {
+    text-align: left;
+  }
+  .block-travel-04 .layout-list-travel .item-wrapper {
+    padding-bottom: 15px;
+  }
+  .block-travel-04 .layout-list-travel .travel-item-content {
+    padding: 10px;
+  }
+  .block-travel-04 .layout-list-travel .travel-item-content .title {
+    font-size: 18px;
+  }
+  .travel-layout-4 .travel-image {
+    display: block;
+    width: 100%;
+  }
+  .block-travel-05 .block-travel-content-02 .layout-list-travel .layout-list-travel-item .travel-content {
+    padding: 10px;
+  }
+  .block-travel-06 .block-travel-content-02 .layout-main-travel .column {
+    width: 100%;
+  }
+  .footer-travel-02 .footer-left,
+  .footer-travel-02 .footer-right {
+    text-align: center;
+  }
+  .footer-travel-02 .footer-left {
+    padding-top: 70px;
+  }
+  .footer-travel-02 .logo-wrapper {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+  }
+}
 /*----------  1.9. Media screen max width 380px  ----------*/
+@media screen and (max-width: 380px) {
+  .header-topbar-wrapper {
+    display: none;
+  }
+  .hot-news-heading .title {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  .breadcrumb-text {
+    font-size: 20px;
+  }
+  .news-layout-4.style-2 .img-wrapper {
+    display: block;
+    width: 100%;
+  }
+  .news-layout-4.style-2 .news-content {
+    display: block;
+    width: 100%;
+    padding: 20px 0 0;
+  }
+  .label-rating {
+    display: none;
+  }
+  /*------------  Gaming Detail  ------------*/
+  .video-thumbnail {
+    height: 300px;
+  }
+  .post-review-content .block-quote:after {
+    width: 100%;
+  }
+  .gaming-top-news .post-score {
+    font-size: 16px;
+  }
+  .gaming-comments .comment-nested-wrapper > .media-list > .item-comment:first-child {
+    padding-top: 20px;
+  }
+  /*------------  Homepage Gaming 02  ------------*/
+  .banner-gaming-02 .gaming-layout.big .news-content .title {
+    font-size: 16px;
+  }
+  .banner-gaming-02 .gaming-layout .news-content .title {
+    font-size: 16px;
+  }
+  /*------------  Homepage Fashion 01 01  ------------*/
+}
 /*----------  1.10. Media screen max width 320px  ----------*/
+@media screen and (max-width: 320px) {
+  .menu-wrapper {
+    text-align: right;
+  }
+  .header-main.technology .header-table-cell-1 {
+    text-align: right;
+  }
+  .header-main.minimalist .header-table-cell-1 {
+    text-align: right;
+  }
+  .hot-news-heading .icons {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+  .hot-news-heading .title {
+    line-height: 36px;
+    padding-left: 10px;
+  }
+  .hot-news-heading .hot-news-prev,
+  .hot-news-heading .hot-news-next {
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .info,
+  .comment-wrapper .comment-info {
+    font-size: 11px;
+  }
+  .block-news-2 .layout-list-news .news-layout-1 .news-content .title {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .block-news-2 .layout-list-news.column-1 .news-layout-1 .news-content .title {
+    font-size: 14px;
+  }
+  .news-layout-3.big .news-image img {
+    min-height: 220px;
+  }
+  .news-layout-1 .news-content .title,
+  .news-layout-1.big .news-content .title {
+    font-size: 14px;
+  }
+  .news-layout-2 .news-content .title {
+    font-size: 14px;
+  }
+  .single-recent-post-widget .post-info .title {
+    font-size: 13px;
+  }
+  .block-list.column-4 .news-layout-1 .news-content .title,
+  .block-list.column-3 .news-layout-1 .news-content .title,
+  .block-list.column-2 .news-layout-1 .news-content .title {
+    font-size: 13px;
+  }
+  .middle-banner-slider .slider-for-1-item-sidebar .video-wrapper .video {
+    height: 200px;
+  }
+  .author-layout {
+    text-align: left;
+  }
+  .author-layout .wrapper-info .left-info {
+    text-align: left;
+  }
+  .author-layout .wrapper-info .right-info {
+    text-align: left;
+  }
+  .hot-news-heading .title {
+    line-height: 1;
+  }
+  /*------------  Gaming Detail  ------------*/
+  .video-thumbnail {
+    height: 250px;
+  }
+  .gaming-tag {
+    margin-bottom: 50px;
+  }
+  .gaming-tag .list-tag {
+    display: inline;
+  }
+  .gaming-top-news .post-score {
+    font-size: 15px;
+  }
+  /*------------  Homepage Gaming 02  ------------*/
+  .banner-gaming-02 .gaming-layout.big .news-content .title {
+    font-size: 13px;
+  }
+  .banner-gaming-02 .gaming-layout .news-content .title {
+    font-size: 13px;
+  }
+  .gaming-top-news .post-number {
+    padding-left: 20px;
+  }
+  .gaming-top-news .post-score {
+    padding-right: 20px;
+  }
+  .single-gaming-post-widget:first-child .post-number {
+    padding-left: 30px;
+  }
+  .gaming-layout-3.big .news-content {
+    padding: 15px 20px;
+  }
+  /*------------  Homepage Gaming 01  ------------*/
+  .gaming-purchase .purchase-warpper {
+    width: 100%;
+  }
+  /*------------  Homepage Lifestyle  ------------*/
+  .lifestyle-layout-1-custom .news-video .button-play {
+    width: 40px;
+    height: 40px;
+  }
+  .lifestyle-layout-1-custom .news-video .button-play .icons {
+    font-size: 14px;
+  }
+  .lifestyle-layout-1-custom .news-content .title {
+    max-height: 42px;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  /*------------  Homepage Travel 01  ------------*/
+  .block-travel-heading .title-topic {
+    font-size: 18px;
+  }
+  .block-travel-heading.white .nav-tabs .link {
+    font-size: 14px;
+  }
+  .travel-video-content-01 .video-thumbnail {
+    height: 250px;
+  }
+  /*------------  Homepage Fashion 01  ------------*/
+  .fashion-layout-1 .fashion-label-wrapper,
+  .fashion-layout-2 .fashion-label-wrapper {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .fashion-layout-1 .fashion-label-wrapper .info-fashion,
+  .fashion-layout-2 .fashion-label-wrapper .info-fashion {
+    margin-bottom: 5px;
+  }
+  .fashion-layout-1 .fashion-label-topic.has-line:before,
+  .fashion-layout-2 .fashion-label-topic.has-line:before {
+    bottom: calc(100% + 8px);
+  }
+  /*------------  Homepage Food  ------------*/
+  .banner-food-1 {
+    margin-top: 17px;
+  }
+  .fashion-single-post-widget .post-info .title {
+    font-size: 14px;
+  }
+}
+/*------------  Homepage Travel 02  ------------*/
+.travel-author {
+  left: 15px;
+}
+.travel-item-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.block-travel-04 .layout-main-travel .travel-item-content {
+  padding: 15px 20px 20px 20px;
+}
+.block-trave-05 .block-travel-content-02 .layout-main-travel .travel-item-content {
+  padding: 15px 20px 20px 20px;
+}
+.block-trave-06 .block-travel-content-02 .layout-main-travel .travel-item-content {
+  padding: 15px 20px 20px 20px;
+}

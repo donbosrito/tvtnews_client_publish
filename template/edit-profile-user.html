@@ -1,0 +1,52 @@
+<div class="profile-user">
+    <div class="cover-user">
+        <a class="box-cover-user">
+            <img class="img-cover" src="assets/images/background/bg-blackpink.png">
+        </a>
+    </div>
+    <div class="avatar-user">
+        <a class="box-avatar-user">
+            <a class="btn btn-change-avatar" ng-click="editProfileUserCtrl.browserImage()" type="filepicker"><span class="fa fa-pencil"></span></a>
+            <img width="200px" height="200px" src="{{ editProfileUserCtrl.user.avatar }}" />
+        </a>
+    </div>
+    <div class="row resume">
+        <div class="col-md-5 resume-img">
+            <img src="assets/images/more-images/img-sidebar-user-1.png" />
+        </div>
+        <div class="col-md-7 resume-user">
+            <div class="info-resume-user">
+                <h3 class="label-resume">Username: </h3>
+                <h3 class="info-resume">{{ editProfileUserCtrl.user.username || 'empty' }}</h3></h3>
+            </div>
+            <div class="info-resume-user">
+                <h3 class="label-resume">Gender: </h3>
+                <h3 class="info-resume">
+                    <select ng-model="editProfileUserCtrl.user.gender">
+                        <option>Nam</option>
+                        <option>Nữ</option>
+                    </select>
+                </h3>
+            </div>
+            <div class="info-resume-user">
+                <h3 class="label-resume">Email: </h3>
+                <h3 class="info-resume" editable-email="editProfileUserCtrl.user.email" >{{ editProfileUserCtrl.user.email || 'empty' }}</h3>
+            </div>
+            <div class="info-resume-user">
+                <h3 class="label-resume">Fullname: </h3>
+                <h3 class="info-resume" editable-text="editProfileUserCtrl.user.fullname">{{ editProfileUserCtrl.user.fullname || 'empty' }}</h3>
+            </div>
+            <div class="info-resume-user">
+                <h3 class="label-resume">Nickname: </h3>
+                <h3 class="info-resume" editable-text="editProfileUserCtrl.user.nickname">{{ editProfileUserCtrl.user.nickname || 'empty' }}</h3>
+            </div>
+            <div class="info-resume-user">
+                <h3 class="label-resume">Birthday: </h3>
+                <h3 class="info-resume" editable-date="editProfileUserCtrl.user.birthday">{{ editProfileUserCtrl.user.birthday | date:'yyyy-MM-dd' || 'empty'}}</h3>
+            </div>
+            <div class="info-resume-user">
+                <a href="#user/edit" class="btn btn-edit-info label-resume action-button shadow animate yellow" ng-click="editProfileUserCtrl.saveInfoChange(editProfileUserCtrl.user)">Lưu thay đổi</a>
+            </div>
+        </div>
+    </div>
+</div>
