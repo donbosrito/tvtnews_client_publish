@@ -18,7 +18,7 @@
                     }
                 });
 
-                $scope.isLogin = $window.sessionStorage.token;
+                $scope.isLogin = localStorage.getItem("token"); //$window.sessionStorage.token;
 
                 $http({
                     method: 'GET',
@@ -39,9 +39,13 @@
                     }
 
                     $http(request).then(function (response) {
-                        $window.sessionStorage.token = response.data.user.accessToken;
-                        $window.sessionStorage.userId = response.data.user._id;
-                        $window.sessionStorage.role = response.data.user.typeMember;
+                        //$window.sessionStorage.token = response.data.user.accessToken;
+                        //$window.sessionStorage.userId = response.data.user._id;
+                        //$window.sessionStorage.role = response.data.user.typeMember;
+
+                        localStorage.setItem("token", response.data.user.accessToken);
+                        localStorage.setItem("userId", response.data.user._id);
+                        localStorage.setItem("role", response.data.user.typeMember);
 
                         window.alert("Login account successful!");
                         location.reload();
@@ -138,9 +142,13 @@
                         }
 
                         $http(request).then(function (dataSuccess) {
-                            $window.sessionStorage.token = dataSuccess.data.user.accessToken;
-                            $window.sessionStorage.userId = dataSuccess.data.user._id;
-                            $window.sessionStorage.role = dataSuccess.data.user.typeMember;
+                            //$window.sessionStorage.token = dataSuccess.data.user.accessToken;
+                            //$window.sessionStorage.userId = dataSuccess.data.user._id;
+                            //$window.sessionStorage.role = dataSuccess.data.user.typeMember;
+
+                            localStorage.setItem("token", response.data.user.accessToken);
+                            localStorage.setItem("userId", response.data.user._id);
+                            localStorage.setItem("role", response.data.user.typeMember);
 
                             window.alert("Login account successful!");
                             location.reload();
@@ -206,9 +214,14 @@
                     FB.logout(function(response) {
                         // Person is now logged out
                     });
-                    delete $window.sessionStorage.token;
-                    delete $window.sessionStorage.userId;
-                    delete $window.sessionStorage.typeMember;
+                    //delete $window.sessionStorage.token;
+                    //delete $window.sessionStorage.userId;
+                    //delete $window.sessionStorage.typeMember;
+
+                    localStorage.removeItem("token");
+                    localStorage.removeItem("userId");
+                    localStorage.removeItem("role");
+
                     window.location = "index.html";
                 }
 
@@ -305,14 +318,15 @@
             templateUrl: "template/profile-user.html",
             controller: function ($http, $scope, $window, $location) {
 
-                if ($window.sessionStorage.token == null)
+                //if ($window.sessionStorage.token == null)
+                if (localStorage.getItem("token") == null)
                     window.location = "index.html";
 
                 var controller = this;
 
-                var token = $window.sessionStorage.token;
-                var userId = $window.sessionStorage.userId;
-                var role = JSON.stringify($window.sessionStorage.role);
+                var token = localStorage.getItem("token"); //$window.sessionStorage.token;
+                var userId = localStorage.getItem("userId"); //$window.sessionStorage.userId;
+                var role = JSON.stringify(localStorage.getItem("role")); //$window.sessionStorage.role);
                 var isVipAcc = false;
                 if (role === JSON.stringify("ADMIN") || role === JSON.stringify("AUTHOR")) {
                     isVipAcc = true;
@@ -408,13 +422,14 @@
             templateUrl: "template/edit-profile-user.html",
             controller: function ($http, $scope, $window, $location) {
 
-                if ($window.sessionStorage.token == null)
+                //if ($window.sessionStorage.token == null)
+                if (localStorage.getItem("token") == null)
                     window.location = "index.html";
 
                 var controller = this;
 
-                var token = $window.sessionStorage.token;
-                var userId = $window.sessionStorage.userId;
+                var token = localStorage.getItem("token"); //$window.sessionStorage.token;
+                var userId = localStorage.getItem("token"); //$window.sessionStorage.userId;
 
                 var headerGetUser = {
                     "access_token": token,
@@ -1252,8 +1267,8 @@
             restrict: "E",
             templateUrl: "template/create-post-news.html",
             controller: function ($http, $window) {
-                var token = $window.sessionStorage.token;
-                var userId = $window.sessionStorage.userId;
+                var token = localStorage.getItem("token"); //$window.sessionStorage.token;
+                var userId = localStorage.getItem("userId"); //$window.sessionStorage.userId;
 
                 var listContent = new Array();
                 var controller = this;
@@ -1535,12 +1550,13 @@
                 });
 
                 controller.insertCommentOfSinglePost = function () {
-                    if ($window.sessionStorage.token != null) {
+                    //if ($window.sessionStorage.token != null) {
+                    if (localStorage.getItem("token") != null) {
 
                         var controller = this;
 
-                        var token = $window.sessionStorage.token;
-                        var userId = $window.sessionStorage.userId;
+                        var token = localStorage.getItem("token"); //$window.sessionStorage.token;
+                        var userId = localStorage.getItem("userId"); //$window.sessionStorage.userId;
 
                         var commentContent = controller.commentContent;
 
@@ -1570,10 +1586,10 @@
                     }
                 };
                 controller.replyAComment = function ($index, commentID, ArticleID) {
-                    if ($window.sessionStorage.token != null) {
-
-                        var token = $window.sessionStorage.token;
-                        var userId = $window.sessionStorage.userId;
+                    //if ($window.sessionStorage.token != null) {
+                    if (localStorage.getItem("token") != null) {
+                        var token = localStorage.getItem("token"); //$window.sessionStorage.token;
+                        var userId = localStorage.getItem("userId"); //$window.sessionStorage.userId;
 
 
                         var replyContent = controller.replyContent[$index];
