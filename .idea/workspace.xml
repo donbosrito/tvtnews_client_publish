@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6c3711e-28a9-4966-86fe-453c74be6260" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/logo/logo.png" afterPath="$PROJECT_DIR$/assets/images/logo/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/components.css" afterPath="$PROJECT_DIR$/assets/css/components.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/javascript/directives.js" afterPath="$PROJECT_DIR$/frontend/javascript/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/author-detail-layout.html" afterPath="$PROJECT_DIR$/template/author-detail-layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/banner-default.html" afterPath="$PROJECT_DIR$/template/banner-default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/edit-profile-user.html" afterPath="$PROJECT_DIR$/template/edit-profile-user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/footer/footer-default.html" afterPath="$PROJECT_DIR$/template/footer/footer-default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/header/header-default.html" afterPath="$PROJECT_DIR$/template/header/header-default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/hot-news.html" afterPath="$PROJECT_DIR$/template/hot-news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/lastest-news.html" afterPath="$PROJECT_DIR$/template/lastest-news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/main-single-post.html" afterPath="$PROJECT_DIR$/template/main-single-post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/page/main-category.html" afterPath="$PROJECT_DIR$/template/page/main-category.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/profile-user.html" afterPath="$PROJECT_DIR$/template/profile-user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/sidebar/more-author.html" afterPath="$PROJECT_DIR$/template/sidebar/more-author.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,8 +53,8 @@
       <file leaf-file-name="directives.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/javascript/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3279">
-              <caret line="977" column="22" lean-forward="false" selection-start-line="977" selection-start-column="22" selection-end-line="977" selection-end-column="22" />
+            <state relative-caret-position="96">
+              <caret line="956" column="0" lean-forward="true" selection-start-line="956" selection-start-column="0" selection-end-line="956" selection-end-column="0" />
               <folding>
                 <element signature="e#13964#15033#0" expanded="false" />
               </folding>
@@ -141,6 +127,7 @@
       <find>alert</find>
       <find>login</find>
       <find>avatar</find>
+      <find>fb</find>
       <find>sing</find>
     </findStrings>
     <replaceStrings>
@@ -536,12 +523,12 @@
       <option name="presentableId" value="Default" />
       <updated>1483868841836</updated>
       <workItem from="1483868844701" duration="4703000" />
-      <workItem from="1483957900856" duration="13238000" />
+      <workItem from="1483957900856" duration="13563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17941000" />
+    <option name="totallyTimeSpent" value="18266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1402" height="877" extended-state="6" />
@@ -941,8 +928,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/javascript/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3279">
-          <caret line="977" column="22" lean-forward="false" selection-start-line="977" selection-start-column="22" selection-end-line="977" selection-end-column="22" />
+        <state relative-caret-position="96">
+          <caret line="956" column="0" lean-forward="true" selection-start-line="956" selection-start-column="0" selection-end-line="956" selection-end-column="0" />
           <folding>
             <element signature="e#13964#15033#0" expanded="false" />
           </folding>
