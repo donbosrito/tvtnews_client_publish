@@ -1021,7 +1021,21 @@
     app.directive("authorLayout", function () {
         return {
             restrict: "E",
-            templateUrl: "template/author-layout.html"
+            templateUrl: "template/author-layout.html",
+            controller: function ($http, $location) {
+                var controller = this;
+                $http({ method: 'GET', url: 'https://tvtnews-server.herokuapp.com/api/v1/users'})
+                    .success(function(res) {
+                        controller.authors = new Array();
+                        for (var i = 0; i < res.users.length; i++)
+                        {
+                            if (res.users[i].typeMember == "AUTHOR") {
+                                controller.authors.push(res.users[i]);
+                            }
+                        }
+                    });
+            },
+            controllerAs: 'authorCtrl'
         };
     });
 
@@ -1034,7 +1048,6 @@
                 $http({ method: 'GET', url: 'https://tvtnews-server.herokuapp.com/api/v1/categories/' + $window.sessionStorage.categoryIdArticle + '/articles'})
                     .success(function(res){
                         controller.relatedNews = res.articles;
-                        console.log(controller.relatedNews);
                     });
 
                 console.log($window.sessionStorage.categoryIdArticle);

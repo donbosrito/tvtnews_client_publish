@@ -22,7 +22,7 @@
                             <div class="info-right">
                                 <ul class="info">
                                     <li><a href="#" class="link">by {{ categoryNewsListCtrl.firstCategoryNews._author.nickname }}</a></li>
-                                    <li><a href="#" class="link">{{ categoryNewsListCtrl.firstCategoryNews.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
+                                    <li><a href="#" class="link">{{ categoryNewsListCtrl.firstCategoryNews.dateCreated * 1000 | date:'dd-MM-yyyy' }}</a></li>
                                     <li><a href="#" class="link">{{ categoryNewsListCtrl.firstCategoryNews.readingCount }} views</a></li>
                                 </ul>
                             </div>
@@ -54,7 +54,7 @@
                                 <div class="info-right">
                                     <ul class="info">
                                         <li><a href="#" class="link">{{ news._author.nickname }}</a></li>
-                                        <li><a href="#" class="link">{{ news.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
+                                        <li><a href="#" class="link">{{ news.dateCreated * 1000 | date:'dd-MM-yyyy' }}</a></li>
                                         <li><a href="#" class="link">{{ news.readingCount }}</a></li>
                                     </ul>
                                 </div>
