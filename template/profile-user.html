@@ -12,7 +12,8 @@
     </div>
     <div class="row resume">
         <div class="col-md-5 resume-img">
-            <img src="assets/images/more-images/img-sidebar-user-1.png" />
+            <img ng-show="profileUserCtrl.user.gender == 'Nữ'" src="assets/images/more-images/img-sidebar-user-1.png" />
+            <img ng-show="profileUserCtrl.user.gender != 'Nữ'" src="assets/images/more-images/img-sidebar-user-2.png" />
         </div>
         <div class="col-md-7 resume-user">
             <div class="info-resume-user">
@@ -37,7 +38,7 @@
             </div>
             <div class="info-resume-user">
                 <h3 class="label-resume">Birthday: </h3>
-                <h3 class="info-resume">{{ profileUserCtrl.user.birthday | date:'yyyy-MM-dd' }}</h3>
+                <h3 class="info-resume">{{ profileUserCtrl.user.birthday | date:'dd-MM-yyyy' }}</h3>
             </div>
             <div class="info-resume-user">
                 <a href="#user/edit" class="btn btn-edit-info label-resume action-button shadow animate yellow">Update info</a>

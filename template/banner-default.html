@@ -7,9 +7,9 @@
                         <a href="#post/{{ news._id }}" class="news-image"><img ng-src="{{ news.poster }}" alt="" class="img-responsive"></a>
                         <div class="news-content"><a href="#category/{{ news._category._id }}" class="label-topic"><span>{{ news._category.name }}</span></a><a href="#post/{{ news._id }}" class="title">{{ news.title }}</a>
                             <ul class="info">
-                                <li> <a href="#" class="link">By timothy</a></li>
-                                <li><a href="#" class="link">May 15, 2016</a></li>
-                                <li><a href="#" class="link">15 likes</a></li>
+                                <li> <a href="#" class="link">By {{news._author.nickname}}</a></li>
+                                <li><a href="#" class="link">{{news.dateCreated * 1000 | date:"dd-MM-yyyy"}}</a></li>
+                                <li><a href="#" class="link">{{news.likeCount}} likes</a></li>
                             </ul>
                         </div>
                     </div>

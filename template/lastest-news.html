@@ -12,8 +12,8 @@
                         </div>
                         <div class="news-content"><a href="#post/{{ lastNewsCtrl.newses[0]._id }}" class="title">{{lastNewsCtrl.newses[0].title}}</a>
                             <ul class="info">
-                                <li><a href="#" class="link">by {{lastNewsCtrl.newses[0]._author.name }}</a></li>
-                                <li><a href="#" class="link">{{lastNewsCtrl.newses[0].dateCreated * 1000 | date:"yyyy-MM-dd" }}</a></li>
+                                <li><a href="#" class="link">by {{lastNewsCtrl.newses[0]._author.nickname }}</a></li>
+                                <li><a href="#" class="link">{{lastNewsCtrl.newses[0].dateCreated * 1000 | date:"dd-MM-yyyy" }}</a></li>
                                 <li><a href="#" class="link">{{lastNewsCtrl.newses[0].readCount}} views</a></li>
                             </ul>
                         </div>
@@ -26,7 +26,8 @@
                         </div>
                         <div class="post-info"><a href="#post/{{ news._id }}" class="title">{{news.title}}</a>
                             <ul class="info">
-                                <li><a href="#" class="link">{{news.dateCreated * 1000 | date:"yyyy-MM-dd"}}</a></li>
+                                <li><a href="#" class="link">by {{news._author.nickname }}</a></li>
+                                <li><a href="#" class="link">{{news.dateCreated * 1000 | date:"dd-MM-yyyy"}}</a></li>
                                 <li><a href="#" class="link">{{news.readCount}} views</a></li>
                             </ul>
                         </div>

@@ -47,7 +47,6 @@
                         localStorage.setItem("userId", response.data.user._id);
                         localStorage.setItem("role", response.data.user.typeMember);
 
-                        window.alert("Login account successful!");
                         location.reload();
                     });
                 }
@@ -150,7 +149,6 @@
                             localStorage.setItem("userId", response.data.user._id);
                             localStorage.setItem("role", response.data.user.typeMember);
 
-                            window.alert("Login account successful!");
                             location.reload();
                         }).error(function (dataFailure) {
                             window.alert("Đăng ký facebook!");
@@ -171,7 +169,6 @@
                             }
 
                             $http(request).then(function (response) {
-                                window.alert("Register account successful!");
                                 location.reload();
                             });
                         });
@@ -368,13 +365,12 @@
                                 .then(function successCallback(response) {
                                     // this callback will be called asynchronously
                                     // when the response is available
-                                    $window.alert("Cập nhật avatar thành công!");
                                     //$location.path('/user');
                                     $window.location.reload();
                                 }, function errorCallback(response) {
                                     // called asynchronously if an error occurs
                                     // or server returns response with an error status.
-                                    $window.alert("Cập nhật avatar thất bại!");
+                                    $window.alert("Có lỗi xảy ra, vui lòng thử lại!");
                                 });
                         }
                     );
@@ -455,7 +451,6 @@
                     };
 
                     $http({ data: dataUpdate, method: "PUT", url: "https://tvtnews-server.herokuapp.com/api/v1/users/" + userId, headers: headerGetUser }).success(function(response){
-                        $window.alert("Chỉnh sửa thành công!");
                         $location.path('/user')
                     }).error(function (response) {
                         $window.alert("Chỉnh sửa thất bại!");
@@ -483,7 +478,6 @@
                                 .then(function successCallback(response) {
                                 // this callback will be called asynchronously
                                 // when the response is available
-                                    $window.alert("Cập nhật avatar thành công!");
                                     $location.path('/user')
                             }, function errorCallback(response) {
                                 // called asynchronously if an error occurs
@@ -901,7 +895,18 @@
     app.directive("moreAuthor", function () {
         return {
             restrict: "E",
-            templateUrl: "template/sidebar/more-author.html"
+            templateUrl: "template/sidebar/more-author.html",
+            controller: ['$http', '$routeParams', function ($http, $routeParams) {
+                // get data
+                var controller = this;
+                $http({'method': 'GET', 'url': 'https://tvtnews-server.herokuapp.com/api/v1/articles/' + $routeParams.id}).success(function (data1) {
+                    $http({'method': 'GET', 'url': 'https://tvtnews-server.herokuapp.com/api/v1/users/' + data1.article._author._id + '/articles'}).success(function (data2) {
+                        controller.newses = data2.articles;
+                    });
+                });
+
+            }],
+            controllerAs: "moreAuthorNewsCtrl"
         };
     });
 
@@ -947,8 +952,44 @@
         return {
             restrict: "E",
             templateUrl: "template/main-single-post.html",
-            controller: ['$http', '$routeParams', '$window', function ($http, $routeParams, $window) {
+            controller: ['$http', '$routeParams', '$window', '$location', function ($http, $routeParams, $window, $location) {
                 var controller = this;
+
+                window.fbAsyncInit = function() {
+                    FB.init({
+                        appId      : '155342231619633',
+                        xfbml      : true,
+                        version    : 'v2.8'
+                    });
+                };
+
+                (function(d, s, id){
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) {return;}
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+
+                controller.fbShare = function () {
+                    FB.ui(
+                        {
+                            method: 'feed',
+                            name: controller.news.title,
+                            link: $location.absUrl(),
+                            picture: controller.news.poster,
+                            caption: controller.news.summary,
+                            description: controller.news.body,
+                            message: ''
+                        },
+                        function(response) {
+                            if (response && response.post_id) {
+                                alert('Post was published.');
+                            } else {
+                                alert('Post was not published.');
+                            }
+                        });
+                };
 
                 $window.scrollTo(0, 0);
 
@@ -1433,7 +1474,7 @@
                         },
                         data: request
                     }).success(function (data) {
-                        alert("thanh cong");
+                        $location.path('/author/' + userId + '/page/1');
                     }).error(function (error) {
                         console.log(error);
                     });

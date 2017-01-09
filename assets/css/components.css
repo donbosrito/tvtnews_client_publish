@@ -2373,7 +2373,7 @@ h4 {
 }
 .modal-content {
   font-weight: bold;
-  background: linear-gradient(to bottom right,#F87E7B,#B05574);
+  background: #252525;
 }
 .form-control {
   margin: 1em 0;
@@ -2397,20 +2397,6 @@ h4 {
 }
 .form-control:focus::-webkit-input-placeholder {
   font-weight: bold;
-  color: #fff;
-}
-.login, .register {
-  padding: 6px 20px;
-  border-radius: 20px;
-  background: none;
-  border: 2px solid #FAB87F;
-  color: #FAB87F;
-  font-weight: bold;
-  transition: all .5s;
-  margin-top: 1em;
-}
-.login:hover, .register:hover {
-  background: #FAB87F;
   color: #fff;
 }
 

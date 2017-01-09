@@ -12,7 +12,8 @@
     </div>
     <div class="row resume">
         <div class="col-md-5 resume-img">
-            <img src="assets/images/more-images/img-sidebar-user-1.png" />
+            <img ng-show="editProfileUserCtrl.user.gender == 'Nữ'" src="assets/images/more-images/img-sidebar-user-1.png" />
+            <img ng-show="editProfileUserCtrl.user.gender != 'Nữ'" src="assets/images/more-images/img-sidebar-user-2.png" />
         </div>
         <div class="col-md-7 resume-user">
             <div class="info-resume-user">
@@ -42,7 +43,7 @@
             </div>
             <div class="info-resume-user">
                 <h3 class="label-resume">Birthday: </h3>
-                <h3 class="info-resume" editable-date="editProfileUserCtrl.user.birthday">{{ editProfileUserCtrl.user.birthday | date:'yyyy-MM-dd' || 'empty'}}</h3>
+                <h3 class="info-resume" editable-date="editProfileUserCtrl.user.birthday">{{ editProfileUserCtrl.user.birthday | date:'dd-MM-yyyy' || 'empty'}}</h3>
             </div>
             <div class="info-resume-user">
                 <a href="#user/edit" class="btn btn-edit-info label-resume action-button shadow animate yellow" ng-click="editProfileUserCtrl.saveInfoChange(editProfileUserCtrl.user)">Lưu thay đổi</a>

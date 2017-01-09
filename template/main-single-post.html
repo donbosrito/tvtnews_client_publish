@@ -4,9 +4,8 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Home</a></li>
                 <li class="breadcrumb-item"><a href="#category/{{ singlePostCtrl.news._category._id }}/page/1" class="breadcrumb-link">{{ singlePostCtrl.news._category.name }}</a></li>
-                <li class="breadcrumb-item"><span class="breadcrumb-active">{{ singlePostCtrl.news.title }}</span></li>
             </ol>
-            <div class="breadcrumb-text">Single Post</div>
+            <div class="breadcrumb-text">{{ singlePostCtrl.news.title }}</div>
         </div>
     </div>
 </div>
@@ -19,7 +18,7 @@
                 </div>
                 <div class="col-md-9">
                     <div class="social-action-wrapper">
-                        <div class="action-text">follow <span class="identity">daily magz</span></div>
+                        <div class="action-text">follow <span class="identity">TVT News</span></div>
                         <ul class="social-button-wrapper list-unstyled list-inline">
                             <li class="item">
                                 <div data-layout="button_count" data-href="#" data-action="like" data-size="small" data-show-faces="false" data-share="false" class="fb-like fb-like-button"></div>
@@ -40,11 +39,12 @@
                 <div class="sharing-wrapper">
                     <div class="item">
                         <div class="figure-wrapper">
-                            <div class="figure-data">{{ singlePostCtrl.news.sharingCount }}</div>
-                            <div class="figure-text">shares</div>
+                            <div class="figure-data">{{ singlePostCtrl.news.shareCount }}</div>
+                            <div ng-show="singlePostCtrl.news.shareCount >= 2" class="figure-text">shares</div>
+                            <div ng-show="singlePostCtrl.news.shareCount < 2" class="figure-text">share</div>
                         </div>
                     </div>
-                    <div class="item"><a href="#" class="button share-facebook"><i class="fa fa-facebook ic-social hovered"></i><i class="fa fa-facebook ic-social unhovered"></i><div class="share-text">Share</div></a></div>
+                    <div class="item"><a ng-click="singlePostCtrl.fbShare()" class="button share-facebook"><i class="fa fa-facebook ic-social hovered"></i><i class="fa fa-facebook ic-social unhovered"></i><div class="share-text">Share</div></a></div>
                     <div class="item"><a href="#" class="button share-twitter"><i class="fa fa-twitter ic-social hovered"></i><i class="fa fa-twitter ic-social unhovered"></i><div class="share-text">Share</div></a></div>
                     <div class="item other-share-wrapper"><a class="button other-share share-gplus"><i class="fa fa-google-plus"></i></a><a class="button other-share share-pinterest"><i class="fa fa-pinterest"></i></a><a class="button other-share share-linkedin"><i class="fa fa-linkedin"></i></a></div>
                     <div class="item"><a class="button button-more"><i class="fa fa-ellipsis-h ic-more"></i><div class="share-text more">more</div><i class="fa fa-caret-left ic-less hide"></i><div class="share-text less hide">less</div></a></div>
@@ -58,8 +58,8 @@
                                     <a href="#author/{{ singlePostCtrl.news._author._id }}/page/1"><img src="{{ singlePostCtrl.news._author.avatar }}" class="img-responsive writter-pic"></a>
                                     <div class="writter-text-wrapper"><a href="#author/{{ singlePostCtrl.news._author._id }}/page/1" class="link writter-text">By <span class="writter-name">{{ singlePostCtrl.news._author.nickname }}</span></a>
                                         <ul class="info">
-                                            <li><a href="#" class="link">{{ singlePostCtrl.news.dateCreated * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}</a></li>
-                                            <li><a href="#" class="link">{{ singlePostCtrl.news.readingCount }} views</a></li>
+                                            <li><a href="#" class="link">{{ singlePostCtrl.news.dateCreated * 1000 | date:'HH:mm:ss dd-MM-yyyy' }}</a></li>
+                                            <li><a href="#" class="link">{{ singlePostCtrl.news.readCount }} views</a></li>
                                         </ul>
                                     </div>
                                 </div>
