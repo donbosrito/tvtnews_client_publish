@@ -983,9 +983,12 @@
                 $scope.sharePost = function () {
                     var currentLocation = window.location.href;
                     FB.ui({
-                        method: 'share',
-                        display: 'popup',
-                        href: currentLocation,
+                        method: 'feed',
+                        name: controller.news.title,
+                        link: currentLocation,
+                        picture: controller.news.poster,
+                        caption: controller.news.summary,
+                        description: controller.news.body
                     }, function(response) {
                         if (response && response.post_id) {
                             $http({

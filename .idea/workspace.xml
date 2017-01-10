@@ -53,8 +53,8 @@
       <file leaf-file-name="directives.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/javascript/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="962" column="23" lean-forward="true" selection-start-line="962" selection-start-column="23" selection-end-line="962" selection-end-column="23" />
+            <state relative-caret-position="400">
+              <caret line="990" column="57" lean-forward="true" selection-start-line="990" selection-start-column="57" selection-end-line="990" selection-end-column="57" />
               <folding>
                 <element signature="e#13964#15033#0" expanded="false" />
               </folding>
@@ -511,12 +511,12 @@
       <workItem from="1483868844701" duration="4703000" />
       <workItem from="1483957900856" duration="16402000" />
       <workItem from="1484016897093" duration="1301000" />
-      <workItem from="1484022216935" duration="642000" />
+      <workItem from="1484022216935" duration="785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23048000" />
+    <option name="totallyTimeSpent" value="23191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1402" height="877" extended-state="6" />
@@ -916,8 +916,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/javascript/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="962" column="23" lean-forward="true" selection-start-line="962" selection-start-column="23" selection-end-line="962" selection-end-column="23" />
+        <state relative-caret-position="400">
+          <caret line="990" column="57" lean-forward="true" selection-start-line="990" selection-start-column="57" selection-end-line="990" selection-end-column="57" />
           <folding>
             <element signature="e#13964#15033#0" expanded="false" />
           </folding>
