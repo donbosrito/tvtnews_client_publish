@@ -66,6 +66,7 @@
                                 document.getElementById('status').innerHTML =
                                     'Thanks for logging in, ' + response.name + '!';
 
+                                $scope.userFBID = response.name;
                                 console.log("Name FB: " + $scope.nameFBID);
                             });
 
@@ -74,7 +75,7 @@
                             // sign up
                             $http({ method: 'POST', url: 'https://tvtnews-server.herokuapp.com/api/v1/users',
                                 data: {
-                                    "username": JSON.stringify($scope.userFBID),
+                                    "username": $scope.userFBID,
                                     "password": "123456789",
                                     "gender": "Nam",
                                     "birthday": null,
@@ -139,7 +140,7 @@
 
                             $http({ method: 'POST', url: 'https://tvtnews-server.herokuapp.com/api/v1/users',
                                 data: {
-                                    "username": JSON.stringify($scope.userFBID),
+                                    "username": $scope.userFBID,
                                     "password": "123456789",
                                     "gender": "Nam",
                                     "birthday": null,
