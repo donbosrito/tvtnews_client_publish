@@ -992,7 +992,7 @@
                     }, function(response) {
                         if (response && response.post_id) {
                             $http({
-                                method: 'GET',
+                                method: 'POST',
                                 url: 'https://tvtnews-server.herokuapp.com/api/v1/articles/' + $routeParams.id + '/share-post'
                             }).success(function (data) {});
                         }
