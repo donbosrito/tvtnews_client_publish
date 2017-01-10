@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6c3711e-28a9-4966-86fe-453c74be6260" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/javascript/directives.js" afterPath="$PROJECT_DIR$/frontend/javascript/directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/footer/footer-default.html" afterPath="$PROJECT_DIR$/template/footer/footer-default.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="directives.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="directives.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/javascript/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="990" column="57" lean-forward="true" selection-start-line="990" selection-start-column="57" selection-end-line="990" selection-end-column="57" />
+            <state relative-caret-position="565">
+              <caret line="1001" column="42" lean-forward="true" selection-start-line="1001" selection-start-column="42" selection-end-line="1001" selection-end-column="42" />
               <folding>
                 <element signature="e#13964#15033#0" expanded="false" />
               </folding>
@@ -77,6 +78,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1230">
               <caret line="82" column="55" lean-forward="true" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer-default.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/footer/footer-default.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="83" lean-forward="false" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -132,7 +143,6 @@
         <option value="$PROJECT_DIR$/template/author-detail-layout.html" />
         <option value="$PROJECT_DIR$/template/edit-profile-user.html" />
         <option value="$PROJECT_DIR$/template/header/header-default.html" />
-        <option value="$PROJECT_DIR$/template/footer/footer-default.html" />
         <option value="$PROJECT_DIR$/template/page/main-category.html" />
         <option value="$PROJECT_DIR$/template/page/main-single-post.html" />
         <option value="$PROJECT_DIR$/template/category-news-list.html" />
@@ -145,6 +155,7 @@
         <option value="$PROJECT_DIR$/template/main-single-post.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/frontend/javascript/directives.js" />
+        <option value="$PROJECT_DIR$/template/footer/footer-default.html" />
       </list>
     </option>
   </component>
@@ -511,12 +522,12 @@
       <workItem from="1483868844701" duration="4703000" />
       <workItem from="1483957900856" duration="16402000" />
       <workItem from="1484016897093" duration="1301000" />
-      <workItem from="1484022216935" duration="785000" />
+      <workItem from="1484022216935" duration="967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23191000" />
+    <option name="totallyTimeSpent" value="23373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1402" height="877" extended-state="6" />
@@ -726,13 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/footer/footer-default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="64" lean-forward="false" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/page/main-category.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -906,6 +910,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/javascript/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="1001" column="42" lean-forward="true" selection-start-line="1001" selection-start-column="42" selection-end-line="1001" selection-end-column="42" />
+          <folding>
+            <element signature="e#13964#15033#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
@@ -914,13 +928,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/javascript/directives.js">
+    <entry file="file://$PROJECT_DIR$/template/footer/footer-default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="990" column="57" lean-forward="true" selection-start-line="990" selection-start-column="57" selection-end-line="990" selection-end-column="57" />
-          <folding>
-            <element signature="e#13964#15033#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="465">
+          <caret line="31" column="83" lean-forward="false" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+          <folding />
         </state>
       </provider>
     </entry>

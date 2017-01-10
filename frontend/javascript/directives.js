@@ -988,7 +988,7 @@
                         link: currentLocation,
                         picture: controller.news.poster,
                         caption: controller.news.summary,
-                        description: controller.news.body
+                        description: controller.news.summary
                     }, function(response) {
                         if (response && response.post_id) {
                             $http({
