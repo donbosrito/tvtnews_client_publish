@@ -19,6 +19,7 @@
                             <li><a href="#" class="link instagram"><i class="fa fa-rss"></i></a></li>
                             <!--Trigger-->
                             <a ng-show="!isLogin" class="btn btn-success btn-xs" data-target="#login" data-toggle="modal">Login</a>
+                            <a ng-show="!isLogin" class="btn btn-primary btn-xs" scope="public_profile,email" ng-click="LoginFB()">Login With Facebook</a>
                             <a ng-show="isLogin" class="btn btn-info btn-xs" href="#user" >Trang cá nhân</a>
                             <a ng-show="isLogin" class="btn btn-danger btn-xs" href="#" ng-click="LogoutAccount()">Logout</a>
                         </ul>

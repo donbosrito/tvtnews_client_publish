@@ -50,129 +50,124 @@
                         location.reload();
                     });
                 }
-                
-                // Xử lý đăng nhập với Facebook
-                // This is called with the results from from FB.getLoginStatus().
-                function statusChangeCallback(response) {
-                    console.log('statusChangeCallback');
-                    console.log(response);
-                    // The response object is returned with a status field that lets the
-                    // app know the current login status of the person.
-                    // Full docs on the response object can be found in the documentation
-                    // for FB.getLoginStatus().
-                    if (response.status === 'connected') {
-                        // Logged into your app and Facebook
-                        testAPI();
-                    } else if (response.status === 'not_authorized') {
-                        // The person is logged into Facebook, but not your app.
-                        document.getElementById('status').innerHTML = 'Please log ' +
-                            'into this app.';
-                    } else {
-                        // The person is not logged into Facebook, so we're not sure if
-                        // they are logged into this app or not.
-                        document.getElementById('status').innerHTML = 'Please log ' +
-                            'into Facebook.';
-                    }
-                }
 
-                // This function is called when someone finishes with the Login
-                // Button.  See the onlogin handler attached to it in the sample
-                // code below.
-                $scope.checkLoginState = function () {
-                    FB.getLoginStatus(function(response) {
-                        statusChangeCallback(response);
-                    });
-                }
+                // Xử lý đăng nhập facebook
+                $scope.LoginFB = function () {
+                    FB.login(function(response) {
+                        // handle the response
+                        if (response.status === 'connected') {
+                            // Logged into your app and Facebook.
+                            console.log("Đã đăng nhập vào website!");
+                            $scope.userFBID = response.authResponse.userID;
+                            console.log("ID USER: " + $scope.userFBID);
 
-                window.fbAsyncInit = function() {
-                    FB.init({
-                        appId      : '402463633430661',
-                        cookie     : true,  // enable cookies to allow the server to access
-                                            // the session
-                        xfbml      : true,  // parse social plugins on this page
-                        version    : 'v2.8' // use graph api version 2.8
-                    });
+                            FB.api('/me', function(response) {
+                                console.log('Successful login for: ' + response.name);
+                                document.getElementById('status').innerHTML =
+                                    'Thanks for logging in, ' + response.name + '!';
 
-                    // Now that we've initialized the JavaScript SDK, we call
-                    // FB.getLoginStatus().  This function gets the state of the
-                    // person visiting this page and can return one of three states to
-                    // the callback you provide.  They can be:
-                    //
-                    // 1. Logged into your app ('connected')
-                    // 2. Logged into Facebook, but not your app ('not_authorized')
-                    // 3. Not logged into Facebook and can't tell if they are logged into
-                    //    your app or not.
-                    //
-                    // These three cases are handled in the callback function.
+                                console.log("Name FB: " + $scope.nameFBID);
+                            });
 
-                    FB.getLoginStatus(function(response) {
-                        statusChangeCallback(response);
-                    });
+                            console.log(JSON.stringify($scope.userFBID));
 
-                };
-
-                // Load the SDK asynchronously
-                (function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
-                    js.src = "//connect.facebook.net/en_US/sdk.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-
-                // Here we run a very simple test of the Graph API after login is
-                // successful.  See statusChangeCallback() for when this call is made.
-                function testAPI() {
-
-                    console.log('Welcome!  Fetching your information.... ');
-                    FB.api('/me', function(response) {
-                        console.log('Successful login for: ' + response.name);
-                        document.getElementById('status').innerHTML =
-                            'Thanks for logging in, ' + response.name + '!';
-
-                        var request = {
-                            method: 'POST',
-                            url: 'https://tvtnews-server.herokuapp.com/api/v1/users/sign-in-facebook',
-                            data:
-                            {
-                                "typeAccount": "facebook", // Bắt buộc - "facebook"
-                                "typeAccountId": response.authResponse.userID // ID Facebook của người dùng
-                            }
-                        }
-
-                        $http(request).then(function (dataSuccess) {
-                            //$window.sessionStorage.token = dataSuccess.data.user.accessToken;
-                            //$window.sessionStorage.userId = dataSuccess.data.user._id;
-                            //$window.sessionStorage.role = dataSuccess.data.user.typeMember;
-
-                            localStorage.setItem("token", response.data.user.accessToken);
-                            localStorage.setItem("userId", response.data.user._id);
-                            localStorage.setItem("role", response.data.user.typeMember);
-
-                            location.reload();
-                        }).error(function (dataFailure) {
-                            window.alert("Đăng ký facebook!");
-                            var request = {
-                                method: 'POST',
-                                url: 'https://tvtnews-server.herokuapp.com/api/v1/users',
+                            // sign up
+                            $http({ method: 'POST', url: 'https://tvtnews-server.herokuapp.com/api/v1/users',
                                 data: {
-                                    "username": "123456",    //require
-                                    "password": "123456",    //require
+                                    "username": JSON.stringify($scope.userFBID),
+                                    "password": "123456789",
                                     "gender": "Nam",
                                     "birthday": null,
                                     "nickname": null,
-                                    "fullname": "Newbie",
+                                    "fullname": $scope.nameFBID,
                                     "email": null,
-                                    "typeMember": "USER",   //require
-                                    "typeAccount": "facebook"   //require
-                                }
-                            }
+                                    "typeMember": "USER",
+                                    "typeAccount": "facebook"
+                                }}).success(function (response) {
 
-                            $http(request).then(function (response) {
+                                console.log("POST SIGNUP FB OK!");
+                                console.log(response.user.accessToken + " " + response.user._id + " " + response.user.typeMember);
+
+                                localStorage.setItem("token", response.user.accessToken);
+                                localStorage.setItem("userId", response.user._id);
+                                localStorage.setItem("role", response.user.typeMember);
+
                                 location.reload();
+
+                            }).error(function (error) {
+                                console.log(error.resultMessage);
+                                console.log("POST SIGNUP FB ERROR!");
                             });
-                        });
-                    });
+
+                            // sign-in
+                            $http({ method: 'POST', url: 'https://tvtnews-server.herokuapp.com/api/v1/users/sign-in-facebook',
+                                data: {
+                                    "typeAccount": "facebook",
+                                    "typeAccountId": $scope.userFBID
+                                }}).success(function (response) {
+
+                                console.log("POST SIGNIN FB OK!");
+                                console.log(response.user.accessToken + " " + response.user._id + " " + response.user.typeMember);
+
+                                localStorage.setItem("token", response.user.accessToken);
+                                localStorage.setItem("userId", response.user._id);
+                                localStorage.setItem("role", response.user.typeMember);
+
+                                location.reload();
+
+                            }).error(function (error) {
+                                console.log(error.resultMessage);
+                                console.log("POST SIGNIN FB ERROR!");
+                            });
+
+                        } else if (response.status === 'not_authorized') {
+                            // The person is logged into Facebook, but not your app.
+                            console.log("Đã đăng nhập vào facebook nhưng chưa đăng nhập vào website!");
+                            $scope.userFBID = response.authResponse.userID;
+
+                            FB.api('/me', function(response) {
+                                console.log('Successful login for: ' + response.name);
+                                document.getElementById('status').innerHTML =
+                                    'Thanks for logging in, ' + response.name + '!';
+
+                                $scope.nameFBID = response.name;
+                                console.log("Name FB: " + $scope.nameFBID);
+                                //console.log("ID USER: " + $scope.userFBID);
+                            });
+
+                            console.log(JSON.stringify($scope.userFBID));
+
+                            $http({ method: 'POST', url: 'https://tvtnews-server.herokuapp.com/api/v1/users',
+                                data: {
+                                    "username": JSON.stringify($scope.userFBID),
+                                    "password": "123456789",
+                                    "gender": "Nam",
+                                    "birthday": null,
+                                    "nickname": null,
+                                    "fullname": $scope.nameFBID,
+                                    "email": null,
+                                    "typeMember": "USER",
+                                    "typeAccount": "facebook"
+                                }}).success(function (response) {
+
+                                console.log("POST SIGNUP FB OK!");
+
+                                localStorage.setItem("token", response.data.user.accessToken);
+                                localStorage.setItem("userId", response.data.user._id);
+                                localStorage.setItem("role", response.data.user.typeMember);
+
+                            }).error(function (error) {
+                                console.log(error.resultMessage);
+                                console.log("POST SIGNUP FB ERROR!");
+                            });
+
+                        } else {
+                            // The person is not logged into Facebook, so we're not sure if
+                            // they are logged into this app or not.
+                            console.log("Chưa đăng nhập facebook và website!");
+
+                        }
+                    }, {scope: 'public_profile,email'});
                 }
 
                 // Xử lý đăng ký
