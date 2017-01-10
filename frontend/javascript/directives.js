@@ -955,7 +955,7 @@
         return {
             restrict: "E",
             templateUrl: "template/main-single-post.html",
-            controller: ['$http', '$routeParams', '$window', '$location', function ($http, $routeParams, $window, $location) {
+            controller: ['$http', '$routeParams', '$window', '$scope', function ($http, $routeParams, $window, $scope) {
                 var controller = this;
 
                 $window.scrollTo(0, 0);
