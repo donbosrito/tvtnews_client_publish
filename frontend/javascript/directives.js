@@ -958,43 +958,6 @@
             controller: ['$http', '$routeParams', '$window', '$location', function ($http, $routeParams, $window, $location) {
                 var controller = this;
 
-
-
-                controller.fbShare = function () {
-                    window.fbAsyncInit = function() {
-                        FB.init({
-                            appId      : '155342231619633',
-                            xfbml      : true,
-                            version    : 'v2.8'
-                        });
-                    };
-
-                    (function(d, s, id){
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) {return;}
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/en_US/sdk.js";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));
-                    FB.ui(
-                        {
-                            method: 'feed',
-                            name: controller.news.title,
-                            link: $location.absUrl(),
-                            picture: controller.news.poster,
-                            caption: controller.news.summary,
-                            description: controller.news.body,
-                            message: ''
-                        },
-                        function(response) {
-                            if (response && response.post_id) {
-                                alert('Post was published.');
-                            } else {
-                                alert('Post was not published.');
-                            }
-                        });
-                };
-
                 $window.scrollTo(0, 0);
 
                 $http({
@@ -1016,6 +979,22 @@
                         });
                     }, 0);
                 });
+
+                $scope.sharePost = function () {
+                    var currentLocation = window.location.href;
+                    FB.ui({
+                        method: 'share',
+                        display: 'popup',
+                        href: currentLocation,
+                    }, function(response) {
+                        if (response && response.post_id) {
+                            $http({
+                                method: 'GET',
+                                url: 'https://tvtnews-server.herokuapp.com/api/v1/articles/' + $routeParams.id + '/share-post'
+                            }).success(function (data) {});
+                        }
+                    });
+                }
             }],
             controllerAs: 'singlePostCtrl'
         };
