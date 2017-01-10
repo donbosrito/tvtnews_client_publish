@@ -63,11 +63,11 @@
                     <input ng-model="usernameRegister" type="text" name="username" class="username form-control" placeholder="Username"/>
                     <input ng-model="passwordRegister" type="password" name="password" class="password form-control" placeholder="Password"/>
                     <input ng-model="rePasswordRegister" type="password" name="password" class="password form-control" placeholder="Re-password"/>
-                    <select ng-model="typeMemberRegister">
+                    <select ng-model="typeMemberRegister" class="username form-control" style="font-size:14px;">
                         <option>ADMIN</option>
                         <option>AUTHOR</option>
                     </select>
-                    <input class="btn register" type="submit" value="Register" ng-click="RegisterVipAccount()" />
+                    <div class="button-group"><input class="btn-submit" style="width:50%;" type="submit" value="Register" ng-click="RegisterVipAccount()" /></div>
                 </form>
             </div>
         </div>
