@@ -324,15 +324,18 @@
                 var token = localStorage.getItem("token"); //$window.sessionStorage.token;
                 var userId = localStorage.getItem("userId"); //$window.sessionStorage.userId;
                 var role = JSON.stringify(localStorage.getItem("role")); //$window.sessionStorage.role);
-                var isVipAcc = false;
-                if (role === JSON.stringify("ADMIN") || role === JSON.stringify("AUTHOR")) {
-                    isVipAcc = true;
+                var isAdmin = false;
+                if (role === JSON.stringify("ADMIN")) {
+                    isAdmin = true;
+                }
+                $scope.isAdmin = isAdmin;
+
+                var isAuthor = false;
+                if (role === JSON.stringify("AUTHOR")) {
+                    isAuthor = true;
                 }
 
-                $scope.isVipAcc = isVipAcc;
-
-                console.log(role);
-                console.log(isVipAcc);
+                $scope.isAuthor = isAuthor;
 
                 var headerGetUser = {
                     "access_token": token,
