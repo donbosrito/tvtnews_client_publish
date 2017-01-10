@@ -83,7 +83,8 @@
                                     "fullname": $scope.nameFBID,
                                     "email": null,
                                     "typeMember": "USER",
-                                    "typeAccount": "facebook"
+                                    "typeAccount": "facebook",
+                                    "typeAccountId": $scope.userFBID
                                 }}).success(function (response) {
 
                                 console.log("POST SIGNUP FB OK!");
@@ -148,7 +149,8 @@
                                     "fullname": $scope.nameFBID,
                                     "email": null,
                                     "typeMember": "USER",
-                                    "typeAccount": "facebook"
+                                    "typeAccount": "facebook",
+                                    "typeAccountId": $scope.userFBID
                                 }}).success(function (response) {
 
                                 console.log("POST SIGNUP FB OK!");
